@@ -1,0 +1,1 @@
+alert ("Na caixa de texto digite o seu salário para assim funcionar o código python!")
