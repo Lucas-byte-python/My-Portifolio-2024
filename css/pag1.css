@@ -8,11 +8,21 @@
 body {
     background: #201b2c;
     overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
 }
 
 header {
     background-color: #201b2c;
-    box-shadow: 0px 3px 10px #464646;
+    position: fixed;
+    margin-left: 0px;
+    z-index: 1000;
+    height: 120px;
+    width: 100%;
 }
 
 .nav-list li {
@@ -33,7 +43,9 @@ header {
 }
 
 .logo > img {
-    width: 10vw;
+    width: auto;
+    margin-top: -90px;
+    height: 250px;
 }
 
 .nav-list {
@@ -45,6 +57,7 @@ header {
     display: flex;
     justify-content: center;
     list-style: none;
+    margin-top: -100px;
 }
 
 .nav-item {
@@ -144,8 +157,8 @@ h1 {
     margin-top: 100px;
     font-size: 50px;
     text-align: center;
-    color: #00ff88;
-    font-weight: 200;
+    color: #00FF08;
+    font-weight: 800;
 }
 
 h3 {
@@ -188,6 +201,12 @@ p {
     font-weight: 200;
 }
 
+.position-p span {
+    color: #00FF08;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 .position-exc {
     margin-top: 120px;
     border-radius: 20px;
@@ -208,6 +227,12 @@ p {
     margin-right: 250px;
     font-weight: 200;
     font-size: 20px;
+}
+
+.position2-p span {
+    color: #00FF08;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .img-right {
@@ -233,7 +258,19 @@ p {
     color: #53b9c7;
     font-weight: 200;
 }
-    
+
+.p-left span {
+    color: #00FF08;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+P .sem-p {
+    color: #00FF08;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
 .h3-2 {
     margin-top: 100px;
     margin-bottom: -20px;
@@ -258,6 +295,7 @@ p {
     margin-left: 1200px;
     margin-top: 40px;
 }
+
 .btn-one span {
     transition: all 0.3s;
 }
@@ -266,6 +304,7 @@ p {
     text-decoration: none;
     color: white;
 }
+
 .btn-one::before {
     content: '';
     position: absolute;
@@ -285,13 +324,16 @@ p {
     transform: scale(0.1, 1);
     border-radius: 20px;
 }
+
 .btn-one:hover span {
     letter-spacing: 2px;
 }
+
 .btn-one:hover::before {
     opacity: 1; 
     transform: scale(1, 1); 
 }
+
 .btn-one::after {
     content: '';
     position: absolute;
@@ -304,6 +346,7 @@ p {
     background-color: rgba(255,255,255,0.1);
     border-radius: 20px;
 }
+
 .btn-one:hover::after {
     opacity: 0; 
     transform: scale(0.1, 1);
@@ -322,6 +365,7 @@ p {
     transition: all 0.5s;
     position: relative;
 }
+
 .btn-other::before {
     content: '';
     position: absolute;
@@ -353,6 +397,279 @@ p {
 .btn-other:hover::after {
     opacity: 1;
     transform: scale(1,1);
+}
+
+footer {
+    padding: 60px 4%;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+.logo-footer img {
+    width: auto;
+    height: 250px;
+    margin-top: -60px;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    margin-top: -70px;
+    border-top: 2px solid #00FF08;
+}
+
+footer .line-footer p i{
+    color: #00FF08;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+    margin-left: 5px;
+    text-decoration: none;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: #00FF08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    margin-top: 20px;
+}
+
+.flex {
+    display: flex;
+}
+
+.line-footer .footer-p {
+    margin-top: -10px;
+    margin-left: 0px;
+    padding: 10px 0;
+}
+
+.btn-social button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffffff78;
+}
+
+h1 span {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.sem-p {
+    color: #00ff88;
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.menucircular {
+    display: none;
+}
+
+.linha {
+    background-color: #aaa;
+    width: 25px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    margin-left: -12px;
+    margin-top: -1px;
+}
+
+.linha-1 {
+    -webkit-transform: translate3d(0, -8px, 0);
+    transform: translate3d(0, -8px, 0);
+}
+
+.linha-2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.linha-3 {
+    -webkit-transform: translate3d(0, 8px, 0);
+    transform: translate3d(0, 8px, 0);
+}
+
+.menucircular:checked + .menu-btn .linha-1 {
+    -webkit-transform: translate3d(0, 0, 0)rotate(45deg);
+    transform: translate3d(0, 0, 0)rotate(45deg);
+}
+
+.menucircular:checked + .menu-btn .linha-2 {
+    -webkit-transform: translate3d(0, 0, 0)scale(0.1, 1.0);
+    transform: translate3d(0, 0, 0)scale(0.1, 1.0);
+}
+
+.menucircular:checked + .menu-btn .linha-3 {
+    -webkit-transform: translate3d(0, 0, 0)rotate(-45deg);
+    transform: translate3d(0, 0, 0)rotate(-45deg);
+}
+
+.menu-2 {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 30px;
+}
+
+.menu-a i{
+    margin-left: 18px;
+}
+
+.menu-btn, .menu-a {
+    color: #FFF;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    position: absolute;
+    border: 2px solid #282828;
+    border-radius: 50%;
+    background-color: #201b2c;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.menu-btn {
+    z-index: 2;
+    cursor: pointer;
+    -webkit-transform: scale(1.1, 1.1)translate3d(0, 0, 0);
+    transform: scale(1.1, 1.1)translate3d(0, 0, 0);
+    -webkit-transition-timing-function: cubic-bezier(cubic-bezier(.2,.9,.35,1.3));
+    transition-timing-function: cubic-bezier(cubic-bezier(.2,.9,.35,1.3));
+}
+
+.menucircular:checked ~ .menu-a:nth-child(3) {
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transform: translate3d(0.1px, -100px, 0);
+    transform: translate3d(0.1px, -100px, 0);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(4) {
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transform: translate3d(90px, -50px, 0);
+    transform: translate3d(90px, -50px, 0);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(5) {
+    -webkit-transition-duration: .4s;
+    transition-duration: .4s;
+    -webkit-transform: translate3d(90px, 50px, 0);
+    transform: translate3d(90px, 50px, 0);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(6) {
+    -webkit-transition-duration: .45s;
+    transition-duration: .45s;
+    -webkit-transform: translate3d(0.1px, 100px, 0);
+    transform: translate3d(0.1px, 100px, 0);
+}
+
+.menucircular:checked ~ .menu-a:nth-child(7) {
+    -webkit-transition-duration: .35s;
+    transition-duration: .35s;
+    -webkit-transform: translate3d(-90px, -50px, 0);
+    transform: translate3d(-90px, -50px, 0);
+}
+
+.menucircular:checked + .menu-btn {
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+    -webkit-transform: scale(0.9, 0.9)translate3d(0, 0, 0);
+    transform: scale(0.9, 0.9)translate3d(0, 0, 0);
+}
+
+.menucircular:checked ~ .menu-a {
+    -webkit-transition-timing-function: cubic-bezier(.27, .68, .53, .3);
+    transition-timing-function: cubic-bezier(.27, .68, .53, .3);
+}
+
+.menu-btn:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: inset 1px 1px 2px #00FF08, inset 1px -1px 2px #0340d0,
+    inset -1px 1px 2px #efff0c, inset -1px -1px 2px #ff0000;
+}
+
+.ai-1 {
+    background-color: #000000;
+}
+
+.ai-1:hover {
+    background-color: #000000;
+    color: #00FF08;
+}
+
+.ai-2 {
+    background-color: #000000;
+}
+
+.ai-2:hover {
+    background-color: #000000;
+    color: #00FF08;
+}
+
+.ai-3 {
+    background-color: #000000;
+}
+
+.ai-3:hover {
+    background-color: #000000;
+    color: #00FF08;
+}
+
+.ai-4 {
+    background-color: #000000;
+}
+
+.ai-4:hover {
+    background-color: #000000;
+    color: #00FF08;
+}
+
+.ai-5 {
+    background-color: #000000;
+}
+
+.ai-5:hover {
+    background-color: #000000;
+    color: #00FF08;
+}
+
+.container {
+    position: relative;
+    height: 0px;
+}
+
+.menu-2 {
+    position: fixed;
+    bottom: 0;
+    top: 70%;
+    left: -85%;
+    z-index: 1000; 
 }
 
 @media screen and (max-width: 730px) {

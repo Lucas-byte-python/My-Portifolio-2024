@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Exemplo</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <link rel="stylesheet" href="/css/pyscript.css">
+    <link rel="stylesheet" href="/css/poo.css">
+    <script src="/js/poo.js"></script>
+</head>
+<body>
+    <py-script>
+        class Cliente:
+        def __init__(self, id_cliente, nome, idade, data_nascimento):
+            self.id_cliente = id_cliente
+            self.nome = nome
+            self.idade = idade
+            self.data_nascimento = data_nascimento
+        def get_id_cliente(self, int):
+            return self.id_cliente
+        def set_id_cliente(self, id_cliente):
+            self.id_cliente = id_cliente
+        def get_nome(self, str):
+            return self.nome
+        def set_nome(self, nome):
+            self.nome = nome
+        def get_idade(self, int):
+            return self.idade
+        def set_idade(self, idade):
+            self.idade = idade
+        def get_data_nascimento(self,str):
+            return self.data_nascimento
+        def set_data_nascimento(self, data_nascimento):
+            self.data_nascimento = data_nascimento
+
+        class Livro:
+        def __init__(self, codigo, id_livro, titulo, editora):
+            self.codigo = codigo
+            self.id_livro = id_livro
+            self.titulo = titulo
+            self.editora = editora
+        def get_codigo(self):
+            return self.codigo
+        def set_codigo(self, codigo):
+            self.codigo = codigo
+        def get_id_livro(self):
+            return self.id_livro
+        def set_id_livro(self, id_livro):
+            self.id_livro = id_livro
+        def get_titulo(self):
+            return self.titulo
+        def set_titulo(self, titulo):
+            self.titulo = titulo
+        def get_editora(self):
+            return self.editora
+        def set_editora(self, editora):
+            self.editora = editora
+
+        print("Cliente")
+        print("******")
+        cliente = int(input("Digite o ID do cliente: "))
+        cliente2 = input("Digite o nome do cliente: ")
+        cliente3 = int(input("Digite a idade do cliente: "))
+        cliente4 = input("Digite a data de nascimento do cliente: ")
+        print("******")
+        print("O id do cliente é: ", cliente) 
+        print("O nome do cliente é: ", cliente2)
+        print("A idade do cliente é: ", cliente3) 
+        print("A data de nascimento do cliente é: ", cliente4) 
+        print("---------------")
+        print("Livro")
+        print("******")
+        livro1 = int(input("Digite o código do livro: "))
+        livro2 = int(input("Digite o ID do livro: "))
+        livro3 = input("Digite o titulo do livro: ")
+        livro4 = input("Digite a editora do livro: ")
+        print("******")
+        print("O Código do livro é: ", livro1) 
+        print("O id do livro é: ",livro2)
+        print("O titulo do livro é: ",livro3) 
+        print("A editora do livro é:",livro4) 
+    </py-script>
+</body>
+</html>
