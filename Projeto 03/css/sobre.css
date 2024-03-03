@@ -1,0 +1,1094 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+    background-color: white;
+}
+body::-webkit-scrollbar {
+  width: 12px;            
+}
+
+body::-webkit-scrollbar-track {
+  background: gray;      
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0fc2ff;   
+  border-radius: 20px;      
+  border: 3px solid white; 
+}
+/* Esté é o menu em cima */
+.menu{
+    background-image: url(/img/menu.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: 1950px 200px;
+    background-repeat: no-repeat;
+}
+.menu img{
+    margin-top: -0.7rem;
+    margin-left: 0.7rem;
+}
+ul li{
+    display: inline;
+    float: right;
+    padding-right: 3rem;
+    margin-top: 70px;
+    margin-right: 10px;
+    font-family: Helvetica;
+}
+li{
+    font-size: 30px;
+    color: rgb(252, 252, 252);
+    border:4px solid var(--cor-azul);
+    position: relative;
+    text-transform: capitalize;
+    text-decoration:none;
+    color: var(--cor-azul);
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: 'open_sansregular';
+    transition:0.4s;
+    text-shadow: 0 0 0.125em rgba(53, 11, 243, 0.5), 0 0 0.25em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--cor-azul), 0 0 0.5em 0 var(--cor-azul);
+}
+li :hover{
+    color: #00ffff;
+    transition:0.4s;
+    text-shadow: none;
+}
+li :hover:after {
+    opacity: 1;
+}
+li :hover:before {
+    opacity: 1;
+}
+li :before, li :after {
+    content: "";
+    position: absolute;
+    transition: opacity 100ms linear;
+    background-color: var(--cor-azul);
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.linha-01{
+    background-color: white;
+    height: 154px;
+}
+.titulo{
+    text-align: center;
+    color: #000000;
+    font-family: Helvetica;
+    font-size: 50px;
+    font-style: normal;
+    line-height: normal;
+    padding: 20px;
+}
+.sub-titulo{
+    text-align: center;
+    color: #000;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-style: normal;
+    line-height: normal;
+    margin-top: -10px;
+}
+.imagem-pequena{
+    width: 127px;
+    height: 124px;
+    margin-left: 280px;
+    margin-top: -100px;
+    padding: 10px; 
+    animation: go-back 1s infinite alternate;
+}
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+.imagem-pequena-two{
+    width: 127px;
+    height: 124px;
+    flex-shrink: 0;
+    margin-left: 1055px;
+    margin-top: -200px;
+    padding: 10px;
+    animation: go-back 1s infinite alternate;
+}
+
+.quem-somos{
+    width: 100%;
+    height: 450px;
+}
+.quem-somos img{
+    margin-top: -500px;
+}
+.titulos-menores{
+    color: #000000;
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    padding: 20px;
+    margin-left: 1150px;
+    margin-top: 20px;
+}
+.pequeno-texto{
+    color: #000;
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-style: normal;
+    line-height: normal;
+    text-align: justify;
+    margin-left: 900px;
+    margin-right: 200px;
+    padding: 20px;
+}
+.imagens-pequenas{
+    border-radius: 20px;
+    width: 517px;
+    height: 340px;
+    flex-shrink: 0;
+    margin-top: -315px;
+    margin-left: 200px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.missao{
+    height:  450px;
+    background-color: #0fc2ff;
+    width: 100%;
+}
+.missao h1{
+    color: #ffffff;
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 400px;
+    padding: 30px;
+}
+.missao p{
+    color: #ffffff;
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 27px;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 100px;
+    margin-right: 900px;
+    padding: 20px;
+}
+.missao img{
+    border-radius: 20px;
+    width: 517px;
+    height: 340px;
+    flex-shrink: 0;
+    margin-top: -315px;
+    margin-left: 1200px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.ambiente{
+    width: 100%;
+    height: 450px;
+}
+.ambiente h1{
+    color: #000000;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    padding: 3px;
+    margin-left: 1050px;
+    margin-right: 350px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.ambiente p{
+    color: #000;
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+    text-align: justify;
+    margin-left: 900px;
+    margin-right: 200px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.ambiente img{
+    border-radius: 20px;
+    width: 517px;
+    height: 340px;
+    flex-shrink: 0;
+    margin-top: -915px;
+    margin-left: 200px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.cliente{
+    width: 100%;
+    height: 450px;
+    background-color: #0fc2ff;
+}
+.cliente h1{
+    color: #ffffff;
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 400px;
+    padding: 30px;
+}
+.cliente p{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 27px;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 100px;
+    margin-right: 900px;
+    padding: 20px; 
+}
+.cliente img{
+    border-radius: 20px;
+    width: 517px;
+    height: 340px;
+    flex-shrink: 0;
+    margin-top: -315px;
+    margin-left: 1200px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.confianca{
+    height: 450px;
+    width: 100%;
+}
+.confianca h1{
+    color: #000000;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    padding-top: 20px;
+    line-height: normal;
+    margin-left: 1050px;
+    margin-right: 350px;
+    margin-top: 15px;
+}
+.confianca p{
+    color: #000;
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 30px;
+    font-style: normal;
+    line-height: normal;
+    text-align: justify;
+    margin-left: 900px;
+    margin-right: 200px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.confianca img{
+    border-radius: 20px;
+    width: 517px;
+    height: 340px;
+    flex-shrink: 0;
+    margin-top: -310px;
+    margin-left: 200px;
+    box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.25);
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.historia{
+    height: 450px;
+    background-color: #494855;
+    width: 100%;
+}
+.historia h1{
+    color: #60dde2;
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 40px;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 150px;
+    padding: 10px;
+}
+.historia p{
+    color: #fff;
+    text-align: justify;
+    font-family: Helvetica;
+    font-size: 18px !important;
+    font-style: normal;
+    line-height: normal;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+/* Rodapé */
+.rodape{
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/menu.jpg);
+    background-size: 1950px 220px;
+    background-repeat: no-repeat;
+}
+.contato{
+    font-family: Helvetica;
+    margin-left: 200px;
+    color: #ffffff;
+    padding: 25px; 
+    font-size: 40px;
+}
+.gmail{
+    font-family: Helvetica;
+    margin-left: 80px;
+    margin-top: -40px;
+    color: #ffffff;
+    font-size: 22px;
+}
+.whats{
+    font-family: Helvetica;
+    margin-left: 80px;
+    margin-top: -55px;
+    color: #ffffff;
+    font-size: 22px;
+}
+.posic{
+    margin-left: 20px;
+}
+.posic-2{
+    margin-left: 10px;
+}
+.rodeer .rod{
+    font-family: Helvetica;
+    margin-left: 1400px;
+    margin-top: -20px;
+    margin-bottom: -50px;
+    font-size: 17px;
+    color: #ffffff;
+}
+.rod-pe{
+    margin-left: 1650px;
+    margin-top: -100px;
+}
+/* Responsividade para 320px á 600px obs: celular */
+@media (min-width: 320px) and (max-width: 600px) {
+    body{
+        height: auto;
+    }
+    .menu {
+      height: auto;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .menu img {
+      margin-top: -150px;
+      margin-left: 0px;
+    }
+    
+    ul li {
+      display: block;
+      float: none;
+      padding-right: 0;
+      margin-top: 10px;
+      margin-right: 0;
+      text-align: center;
+      margin-left: 210px;
+      font-size: 20px;
+    }
+    .titulo{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .sub-titulo{
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .imagem-pequena{
+        margin-left: 130px;
+        margin-top: 20px;
+    }
+    .imagem-pequena-two{
+        margin-left: -240px;
+        margin-top: 20px;
+    }
+    .quem-somos .titulos-menores{
+        margin-left: 100px;
+        font-size: 15px;
+        margin-top: 90px;
+    }
+    .quem-somos .pequeno-texto{
+        margin-left: 20px;
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .quem-somos .imagens-pequenas{
+        width: 250px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 65px;
+    }
+    .quem-somos{
+        height: 430px;
+    }
+    .missao h1{
+        margin-left: 100px;
+        font-size: 15px;
+        margin-top: 90px;
+    }
+    .missao p{
+        margin-left: 20px;
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .missao img{
+        width: 250px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 65px;
+    }
+    .missao{
+        height: 550px;
+    }
+    .ambiente h1{
+        margin-left: 50px;
+        font-size: 15px;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+    .ambiente p{
+        margin-left: 20px;
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .ambiente img{
+        width: 250px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 65px;
+    }
+    .ambiente{
+        height: 550px;
+    }
+    .cliente h1{
+        margin-left: 50px;
+        font-size: 15px;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+    .cliente p{
+        margin-left: 20px;
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .cliente img{
+        width: 250px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 65px;
+    }
+    .cliente{
+        height: 550px;
+    }
+     .confianca h1{
+        margin-left: 50px;
+        font-size: 15px;
+        margin-top: 30px;
+        margin-right: 50px;
+    }
+    .confianca p{
+        margin-left: 20px;
+        font-size: 15px;
+        margin-right: 20px;
+    }
+    .confianca img{
+        width: 250px;
+        height: 200px;
+        margin-top: 10px;
+        margin-left: 65px;
+    }
+    .confianca{
+        height: 550px;
+    }
+    .historia h1{
+        margin-left: 130px;
+        font-size: 15px;
+        margin-top: 30px;
+        margin-right: 100px;
+        font-size: 20px;
+    }
+    .historia p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .historia{
+        height: 800px;
+    }
+    .historia p .histo-resp{
+        font-size: 10px;
+    }
+    .rodape {
+      height: 453px;
+      background-image: url(menu.jpg);
+      background-size: 1900px 1900px;
+      background-position: center;
+    }
+    
+    .contato {
+      margin-left: 60px;
+      font-size: 30px;
+    }
+    .posic{
+        margin-left: 70px;
+        padding-top: 10px;
+    }
+    .posic-2{
+        margin-left: 57px;
+        padding-top: 10px;
+        padding: -2px;
+    }
+    .gmail{
+        margin-left: 140px;
+        margin-top: -45px;
+        font-size: 16px;
+    }
+    .whats {
+        margin-left: 140px;
+        margin-top: -50px;
+        font-size: 16px;
+        margin-bottom: 15px
+    }
+    
+    .rodeer .rod {
+      padding: -10px;
+      margin-left: 260px;
+      padding-top: 20px;
+      margin-top: -5px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+      font-size: 14px;
+    }
+    
+    .rod-pe {
+      margin-left: 40px;
+      margin-top: -150px;
+      margin-bottom: 30px;
+      width: 160px;
+      height: 160px;
+    }
+}
+/* Responsividade de 1000px á 1200px obr: Tablet*/
+@media (min-width: 1000px) and (max-width: 1200px){
+    .menu{
+      width: 100%;
+      height: 160px;
+      margin-bottom: auto;
+    }
+    
+    .menu img {
+      margin-top: -10px;
+      margin-left: 20px;
+    }
+    
+    ul li {
+      display: inline;
+      float: right;
+      padding-right: 3rem;
+      margin-top: 60px;
+      margin-right: 10px;
+    }
+    .imagem-pequena{
+        margin-left: 5px;
+    }
+    .imagem-pequena-two{
+        margin-left: 650px;
+    }
+    .linha-01 .titulo{
+        font-size: 35px;
+    }
+    .linha-01 .sub-titulo{
+        font-size: 20px;
+    }
+    .quem-somos .titulos-menores{
+        margin-left: 350px;
+        font-size: 35px;
+    }
+    .quem-somos .pequeno-texto{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .quem-somos .imagens-pequenas{
+        margin-top: 20px;
+        margin-left: 200px;
+        width: 650px;
+        height: 500px;
+    }
+    .quem-somos{
+        height: 900px;
+    }
+    .missao h1{
+        margin-left: 350px;
+        font-size: 35px;
+    }
+    .missao p{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .missao img{
+        margin-top: 20px;
+        margin-left: 200px;
+        width: 650px;
+        height: 500px;
+    }
+    .missao{
+        height: 900px;
+    }
+    .ambiente h1{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: 35px;
+    }
+    .ambiente p{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .ambiente img{
+        margin-top: 20px;
+        margin-left: 200px;
+        width: 650px;
+        height: 500px;
+    }
+    .ambiente{
+        height: 900px;
+    }
+    .cliente h1{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: 35px;
+    }
+    .cliente p{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .cliente img{
+        margin-top: 20px;
+        margin-left: 200px;
+        width: 650px;
+        height: 500px;
+    }
+    .cliente{
+        height: 900px;
+    }
+    .confianca h1{
+        margin-left: 250px;
+        margin-right: 250px;
+        font-size: 35px;
+    }
+    .confianca p{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .confianca img{
+        margin-top: 20px;
+        margin-left: 200px;
+        width: 650px;
+        height: 500px;
+    }
+    .confianca{
+        height: 900px;
+    }
+    .historia{
+        height: 700px;
+    }
+}
+/* Responsividade de 700 á 900 obs: IPads*/
+@media (min-width: 700px) and (max-width: 900px){
+  .menu{
+      width: 100%;
+      height: 230px;
+      margin-bottom: auto;
+      margin-bottom: -70px;
+    }
+    
+    .menu img {
+      margin-top: -10px;
+      margin-left: 20px;
+      width: 170px;
+      height: 170px;
+    }
+    
+    ul li {
+      display: inline;
+      float: right;
+      padding-right: 3rem;
+      margin-top: 60px;
+      margin-right: 1px;
+      font-size: 25px;
+    }
+
+    .linha-01 .titulo{
+        font-size: 25px;
+    }
+
+    .linha-01 .imagem-pequena{
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+    .quem-somos .titulos-menores{
+        margin-left: 250px;
+        margin-top: 120px;
+        font-size: 25px;
+    }
+    .quem-somos .pequeno-texto{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .quem-somos .imagens-pequenas{
+        margin-top: 30px;
+        margin-right: 125px;
+        margin-left: 125px;
+    }
+    .quem-somos{
+        height: 750px;
+    }
+    .missao h1{
+        margin-left: 250px;
+        margin-top: 120px;
+        font-size: 25px;
+    }
+    .missao p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .missao img{
+        margin-top: 30px;
+        margin-right: 125px;
+        margin-left: 125px;
+    }
+    .missao{
+        height: 850px;
+    }
+    .ambiente h1{
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+    .ambiente p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .ambiente img{
+        margin-top: 30px;
+        margin-right: 125px;
+        margin-left: 125px;
+    }
+    .ambiente{
+        height: 750px;
+    }
+    .cliente h1{
+        margin-left: 180px;
+        margin-right: 200px;
+        margin-top: 120px;
+        font-size: 25px;
+    }
+    .cliente p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .cliente img{
+        margin-top: 30px;
+        margin-right: 125px;
+        margin-left: 125px;
+    }
+    .cliente{
+        height: 850px;
+    }
+    .confianca h1{
+        margin-left: 250px;
+        margin-right: 250px;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    .confianca p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .confianca img{
+        margin-top: 30px;
+        margin-right: 125px;
+        margin-left: 125px;
+    }
+    .confianca{
+        height: 850px;
+    }
+    .historia{
+        height: 900px;
+    }
+    .historia h1{
+        font-size: 25px;
+        margin-left: 300px;
+        margin-right: 250px;
+    }
+    .linha-01 .imagem-pequena-two{
+        margin-left: 250px;
+    }
+
+    .rodape {
+      height: 410px;
+      background-image: url(menu.jpg);
+      background-size: 1900px 1000px;
+    }
+    
+    .contato {
+      margin-left: 220px;
+      font-size: 40px;
+    }
+    .posic{
+        margin-left: 230px;
+        padding-top: 10px;
+    }
+    .posic-2{
+        margin-left: 217px;
+        padding-top: 10px;
+        padding: -2px;
+    }
+    .gmail{
+        margin-left: 300px;
+        margin-top: -50px;
+        font-size: 20px;
+    }
+    .whats {
+        margin-left: 300px;
+        margin-top: -60px;
+        font-size: 20px;
+        margin-bottom: 15px
+    }
+    
+    .rodeer .rod {
+      padding: -10px;
+      margin-left: 650px;
+      margin-right: -2px;
+      padding-top: 0px;
+      margin-top: -100px;
+      margin-bottom: 110px;
+      font-size: 17px;
+    }
+    
+    .rod-pe {
+      margin-left: 0px;
+      margin-top: -1200px;
+      margin-bottom: 120px;
+      width: 200px;
+      height: 200px;
+      float: none;
+    }
+}
+/* Responsividade de 1250px á 1400px obr: Tablet*/
+@media (min-width: 1250px) and (max-width: 1400px){
+    .menu{
+      width: 100%;
+      height: 160px;
+      margin-bottom: auto;
+    }
+    
+    .menu img {
+      margin-top: -10px;
+      margin-left: 20px;
+    }
+    
+    ul li {
+      display: inline;
+      float: right;
+      padding-right: 3rem;
+      margin-top: 65px;
+      margin-right: 10px;
+    }
+    .linha-01 .imagem-pequena{
+        margin-left: 20px;
+    }
+    .linha-01 .imagem-pequena-two{
+        margin-left: 900px;
+    }
+    .quem-somos .titulos-menores{
+        margin-left: 500px;
+        margin-top: 100px;
+        font-size: 40px;
+    }
+    .quem-somos .pequeno-texto{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .quem-somos .imagens-pequenas{
+        margin-top: 30px;
+        margin-right: 400px;
+        margin-left: 400px;
+    }
+    .quem-somos{
+        height: 750px;
+    }
+    .missao h1{
+        margin-left: 500px;
+        margin-top: 120px;
+        font-size: 40px;
+    }
+    .missao p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .missao img{
+        margin-top: 30px;
+        margin-right: 400px;
+        margin-left: 400px;
+    }
+    .missao{
+        height: 850px;
+    }
+    .ambiente h1{
+        margin-left: 300px;
+        margin-right: 300px;
+        margin-top: 50px;
+        font-size: 40px;
+    }
+    .ambiente p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .ambiente img{
+        margin-top: 30px;
+        margin-right: 400px;
+        margin-left: 400px;
+    }
+    .ambiente{
+        height: 750px;
+    }
+    .cliente h1{
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-top: 120px;
+        font-size: 40px;
+    }
+    .cliente p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .cliente img{
+        margin-top: 30px;
+        margin-right: 400px;
+        margin-left: 400px;
+    }
+    .cliente{
+        height: 750px;
+    }
+    .confianca h1{
+        margin-left: 350px;
+        margin-right: 350px;
+        margin-top: 50px;
+        font-size: 40px;
+    }
+    .confianca p{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .confianca img{
+        margin-top: 30px;
+        margin-right: 400px;
+        margin-left: 400px;
+    }
+    .confianca{
+        height: 750px;
+    }
+    .historia h1{
+        font-size: 35px;
+        margin-left: 550px;
+        margin-right: 550px;
+    }
+    .historia{
+        height: 600px;
+    }
+    .rodape {
+      height: 230px;
+      background-image: url(menu.jpg);
+      background-size: 1900px 1200px;
+    }
+    
+    .contato {
+      margin-left: 470px;
+      font-size: 40px;
+    }
+    .posic{
+        margin-left: 350px;
+        padding-top: 10px;
+    }
+    .posic-2{
+        margin-left: 337px;
+        padding-top: 10px;
+        padding: -2px;
+    }
+    .gmail{
+        margin-left: 430px;
+        margin-top: -50px;
+        font-size: 25px;
+    }
+    .whats {
+        margin-left: 430px;
+        margin-top: -60px;
+        font-size: 25px;
+        margin-bottom: 15px
+    }
+    
+    .rodeer .rod{
+      padding: -10px;
+      text-align: right;
+      margin-left: 700px;
+      margin-right: 10px;
+      padding-top: 0px;
+      margin-top: -20px;
+      margin-bottom: -70px;
+      font-size: 21px;
+    }
+    
+    .rod-pe {
+      margin-left: 50px;
+      margin-top: -2000px;
+      margin-bottom: -100px;
+      width: 220px;
+      height: 220px;
+      float: none;
+    }
+}

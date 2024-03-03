@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Projeto 02/css/velocidade.css">
+  <script src="/Projeto 02/java_script/velocidade.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Projeto 02/image/logo.png">
+  <title>Learning Math</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="/Projeto 02/image/logo.png">
+      <nav>
+        <a href="/Projeto 02/html/home.html">Home</a>
+        <a href="/Projeto 02/html/pitagoras.html">Pitágoras</a>
+        <a href="/Projeto 02/html/area.html">Área</a>
+        <a href="/Projeto 02/html/converter.html">Temperatura</a>
+        <a href="/Projeto 02/html/conversao.html">Conversão</a>
+        <a href="/Projeto 02/html/velocidade.html">Velocidade</a>
+      </nav>
+      <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="container row-reverse">
+      <img src="/Projeto 02/image/principal-velocidade.png" alt="imagem principal">
+        <div>
+          <h1 class="mt-2 title">Aprenda sobre <span class="text-primary decoration">velocidade</span> e suas medidas</h1>
+          <p class="mt-2 mb-2">A área é a medida da região ocupada por um polígono em um plano. Embora a fórmula exata para calcular a área possa variar dependendo do tipo de polígono, há algumas estratégias gerais que podem ser aplicadas.</p>
+          <a href="https://www.instagram.com/learning_math_company/" class="button">Veja nosso insta!</a>
+        </div>
+      </div>
+    </section>
+    <section class="courses-section">
+      <div class="cards">
+        <article class="card">
+          <strong>O que é velocidade?</strong>
+          <p>A velocidade de um corpo é a taxa de variação de sua posição em função do tempo. Por se tratar de uma grandeza vetorial, a velocidade possui módulo, direção e sentido. O módulo da velocidade é a sua intensidade, medida no SI em metros por segundo, e está associado ao conceito de rapidez.</p>
+          <a href="https://pt.wikipedia.org/wiki/Velocidade">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        <article class="card">
+          <strong>Velocidade média</strong>
+          <p>Velocidade média (abreviado como Vm) é a razão entre o deslocamento e o intervalo de tempo em que acontece a realização de algum movimento, ou seja, a distância dividida pelo tempo. A velocidade média é medida em metros por segundo e quilomêtros por hora, de acordo com o SI (Sistema Internacional de Medidas).</p>
+          <a href="https://pt.wikipedia.org/wiki/Rapidez">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        <article class="card">
+          <strong>Uso da velocidade na física</strong>
+          <p>Na física, a velocidade é uma grandeza que identifica o deslocamento de um corpo num determinado tempo. Assim, a velocidade média (Vm) mede num intervalo de tempo médio, a rapidez da deslocação de um corpo.</p>
+          <a href="https://www.sofisica.com.br/conteudos/Mecanica/Cinematica/velocidade.php">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        <article class="card">
+          <strong>Calcule a velocidade de um corpo!</strong>
+          <p>A velocidade de um corpo pode ser calculada tendo as informações de disância/deslocamento e tempo. O cálculo é realizado usando a seguinte formula V = D/T, sendo V a velocidade, D a distância e T o tempo. Em complemento, a velocidade é medida usando as unidades metro por segundo e quilomêtro por hora (m/s e km/h).</p>
+          <div class="calc-velocidade">
+            <p>Digite o valor da distância</p>
+            <input type="number" id="distancia">
+            <p>Digite o valor do tempo</p>
+            <input type="number" id="tempo">
+            <button onclick="calcularVelocidade()">Calcular</button>
+            <p id="velocidade"></p>
+          </div>
+        </article>
+      </div>
+      <h2 class="text-center">Conheça <span class="text-primary">varias</span> outras ferramentas!</h2>
+      <a href="#" class="button mt-2 mx-auto">Conhecer as outras</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="about-column">
+        <img src="/Projeto 02/image/logo.png" class="mt-1 mb-1">
+        <p class="mb-2">Todos os materiais disponíveis foram elaborados por especialistas e professores experientes. Além disso, o site está disponível gratuitamente para qualquer pessoa que queira utilizá-lo, tornando-o uma opção acessível e de qualidade para melhorar suas habilidades em matemática.</p>
+      </div>
+      <nav class="mb-2">
+        <a href="/Projeto 02/html/home.html">Home</a>
+        <a href="/Projeto 02/html/pitagoras.html">Pitágoras</a>
+        <a href="/Projeto 02/html/area.html">Área</a>
+        <a href="/Projeto 02/html/converter.html">Temperatura</a>
+        <a href="/Projeto 02/html/conversao.html">Conversão</a>
+        <a href="/Projeto 02/html/velocidade.html">Velocidade</a>
+      </nav>
+      <form class="newsletter-form">
+        <label for="email" class="mb-1">Receba notificações de conteudo pelo seu email</label>
+        <input type="email" name="email" id="email" class="mb-1" placeholder="Digite seu email"> 
+        <button class="button mb-2">Aceitar receber</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="/Projeto 02/js/velocidade.js"></script>
+</body>
+</html>

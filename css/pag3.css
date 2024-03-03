@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #201b2c;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+
+.mensagem {
+    text-align: center;
+    font-size: 24px;
+    color: #77ffc0;
+    font-weight: bold;
+    margin-top: 50vh; /* Centraliza verticalmente */
+    transform: translateY(-50%);
+}

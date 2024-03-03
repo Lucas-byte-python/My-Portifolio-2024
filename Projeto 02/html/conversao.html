@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Projeto 02/css/conversao.css">
+  <script src="/Projeto 02/java_script/conversao.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Projeto 02/image/logo.png">
+  <title>Learning Math</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="/Projeto 02/image/logo.png">
+      <nav>
+        <a href="/Projeto 02/html/home.html">Home</a>
+        <a href="/Projeto 02/html/pitagoras.html">Pitágoras</a>
+        <a href="/Projeto 02/html/area.html">Área</a>
+        <a href="/Projeto 02/html/converter.html">Temperatura</a>
+        <a href="/Projeto 02/html/conversao.html">Conversão</a>
+        <a href="/Projeto 02/html/velocidade.html">Velocidade</a>
+      </nav>
+      <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="container row-reverse">
+      <img src="/Projeto 02/image/principal-conversão.png" alt="imagem principal">
+        <div>
+          <h1 class="mt-2 title">Faça <span class="text-primary decoration">conversão</span> de medidas</h1>
+          <p class="mt-2 mb-2">A conversão de unidades na Física permite transformar as formas de representação de uma grandeza de acordo com a necessidade. Para tanto, é necessário que se conheçam as unidades estabelecidas pelo sistema internacional de unidades (SI) para cada tipo de grandeza física.</p>
+          <a href="https://www.instagram.com/learning_math_company/" class="button">Veja nosso insta!</a>
+        </div>
+      </div>
+    </section>
+    <section class="courses-section">
+      <div class="cards">
+        <article class="card">
+          <strong>Sistema métrico</strong>
+          <p>O sistema métrico é decimal, isto é, baseado em grandezas que têm 10 como base. Para passar de uma unidade para outra, basta multiplicar (ou dividir) por 10 e seus múltiplis: 100, 1000... A transformação das unidades de medida pode ser feita com ajuda da notação científica, que utiliza as potências de base 10.</p>
+          <a href="https://pt.wikipedia.org/wiki/Sistema_m%C3%A9trico">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        <article class="card">
+          <strong>Pés e polegadas</strong>
+          <p>Pé (ou pés no plural; símbolo: ft ou ') é uma unidade de medida de comprimento. Esse sistema de medida é utilizado atualmente no Reino Unido, nos Estados Unidos e, com menor frequência, no Canadá. Um pé correspondia a onze polegadas e meia. Hoje, a medida é doze polegadas. Esta medida é amplamente usada na aviação e atualmente equivale a 30,48 centímetros.</p>
+          <a href="https://pt.wikipedia.org/wiki/P%C3%A9_(unidade)">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        <article class="card">
+          <strong>Como saber metros em pés?</strong>
+          <p>
+            A conversão de metros em pés pode não parecer muito intuitiva no início. Na realidade, 1 metro equivale aproximadamente a 3,28 pés. Assim, para converter metros em pés, você simplesmente multiplica seu comprimento em metros por 3,28.</p>
+          <a href="/Projeto 02/html/temperatura.html">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        <article class="card">
+          <strong>Conversão</strong>
+          <p>Faça a conversão tanto entre as unidades métricas quanto de metros para pés e polegadas. </p> <br>
+          <p class="top">Insira os valores que você deseja saber:</p>
+        <div class="input-group">
+		<div class="t1">
+			<label for="input">De:</label>
+			<input type="number" id="input">
+		</div>
+	<div class="t2">
+	    <div class="input-group">
+			<label for="from"></label>
+			<select id="from">
+				<option value="mm">Milímetro</option>
+				<option value="cm">Centímetros</option>
+				<option value="dm">Decímetro</option>
+				<option value="m">Metros</option>
+				<option value="dam">Decâmetro</option>
+				<option value="hm">Hectômetro</option>
+				<option value="km">Quilômetros</option>
+				<option value="in">Polegadas</option>
+				<option value="ft">Pés</option>
+				<option value="mi">Milhas</option>
+			</select>
+		</div>
+    </div>
+        <div class="input-group">
+		<label for="to"><p class="oi">Para:</p></label>
+        <select id="to">
+            <option value="mm">Milímetro</option>
+            <option value="cm">Centímetros</option>
+            <option value="dm">Decímetro</option>
+            <option value="m">Metros</option>
+            <option value="dam">Decâmetro</option>
+            <option value="hm">Hectômetro</option>
+            <option value="km">Quilômetros</option>
+            <option value="in">Polegadas</option>
+            <option value="ft">Pés</option>
+            <option value="mi">Milhas</option>
+        </select></div>
+	    </div>
+        <button onclick="converter()">Converter</button>
+        <br>
+		<div class="input-group">
+        <label for="result">Resultado:</label>
+        <input type="number" id="result" readonly></div> <br>
+        <p>Quais são os tipos de comprimentos que existem?</p>
+    <ul>
+        <li>Quilômetro (km)</li>
+        <li>Hectômetro (hm)</li>
+        <li>Decâmetro (dam)</li>
+        <li>Metros (m)</li>
+        <li>Decímetro (dm)</li>
+        <li>Centímetro (cm)</li>
+        <li>Milímetro (mm)</li>
+    </ul>
+        </article>
+      </div>
+      <h2 class="text-center">E <span class="text-primary">varios</span> outros!</h2>
+      <a href="#" class="button mt-2 mx-auto">Conhecer os Cursos</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="about-column">
+        <img src="/Projeto 02/image/logo.png" class="mt-1 mb-1">
+        <p class="mb-2">Todos os materiais disponíveis foram elaborados por especialistas e professores experientes. Além disso, o site está disponível gratuitamente para qualquer pessoa que queira utilizá-lo, tornando-o uma opção acessível e de qualidade para melhorar suas habilidades em matemática.</p>
+      </div>
+      <nav class="mb-2">
+        <a href="/Projeto 02/html/home.html">Home</a>
+        <a href="/Projeto 02/html/pitagoras.html">Pitágoras</a>
+        <a href="/Projeto 02/html/area.html">Área</a>
+        <a href="/Projeto 02/html/converter.html">Temperatura</a>
+        <a href="/Projeto 02/html/conversao.html">Conversão</a>
+        <a href="/Projeto 02/html/velocidade.html">Velocidade</a>
+      </nav>
+      <form class="newsletter-form">
+        <label for="email" class="mb-1">Receba notificações de conteudo pelo seu email</label>
+        <input type="email" name="email" id="email" class="mb-1" placeholder="Digite seu email"> 
+        <button class="button mb-2">Aceitar receber</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="/Projeto 02/java_script/conversao.js"></script>
+</body>
+</html>

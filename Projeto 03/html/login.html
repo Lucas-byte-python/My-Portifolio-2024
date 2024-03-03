@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<title>Login</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/login.css">
+<link rel="icon" href="/img/icone.png">
+</head>
+<body>
+<header class="menu">
+	<ul>
+		<li><a href="/html/login.html">Login</a></li>
+        <li><a href="/html/sobre.html">Sobre</a></li>
+        <li><a href="/html/transportadora.html">Transportadores</a></li>
+        <li><a href="/html/home.html">Home</a></li>
+	</ul>
+	<img src="/img/logo.png" width="200px" height="190px">  
+</header> 
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="logar.php" method="post" onsubmit="return validarFormulario_2()">
+                <h1>Criar Conta</h1>
+                <span>Preencha os requisitos abaixo.</span>
+                <input type="text" name="nome" id="nome" placeholder="Name:">
+                <input type="text" name="cpf" id="cpf" placeholder="CPF:">
+                <input type="text" name="telefone" id="telefone"  placeholder="Telefone:">
+                <input type="email" name="email" id="email"  placeholder="Email:">
+                <input type="password" name="senha" id="senha"  placeholder="Senha:">
+                <button><input name="submit" type="submit" id="submit"></button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="logar.php" method="post" onsubmit="return validarFormulario()">
+                <h1>Entre na sua Conta</h1>
+                <span>Use seu email e senha para logar.</span>
+                <input type="email" id="email" name="email" placeholder="Email:">
+                <input type="password" id="senha" name="senha" placeholder="Senha:">
+                <a href="#">Esqueceu sua senha?</a>
+                <button><input name="submit" type="submit" id="submit"></button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Bem-vindo de volta!</h1>
+                    <p>Conecte-se na sua conta para receber nossas notificações.</p>
+                    <button class="hidden" id="login">Logar na minha conta</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Olá, seja Bem-Vindo!</h1>
+                    <p>Crie sua conta para receber nossas notificações.</p>
+                    <button class="hidden" id="register">Cadastre-se</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/login.js"></script>
+    <script src="/js/jquery.min.js"></script>
+</body>
+</html>

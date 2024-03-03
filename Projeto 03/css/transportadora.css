@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(/img/banner-armazenagem.webp);
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+body::-webkit-scrollbar {
+  width: 12px;            
+}
+
+body::-webkit-scrollbar-track {
+  background: gray;      
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #0fc2ff;   
+  border-radius: 20px;      
+  border: 3px solid white; 
+}
+
+/* Esté é o menu em cima */
+.menu {
+    width: 100%;
+    height: 200px;
+}
+.menu img {
+    margin-top: -0.7rem;
+    margin-left: 0.7rem;
+}
+ul li {
+    font-family: Helvetica;
+    display: inline;
+    float: right;
+    padding-right: 3rem;
+    margin-top: 70px;
+    margin-right: 10px;
+}
+
+li {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border:4px solid var(--cor-azul);
+    position: relative;
+    text-transform: capitalize;
+    text-decoration:none;
+    color: var(--cor-azul);
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: 'open_sansregular';
+    transition:0.4s;
+    text-shadow: 0 0 0.125em rgba(11, 73, 243, 0.5), 0 0 0.25em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--cor-azul), 0 0 0.5em 0 var(--cor-azul);
+}
+li :hover{
+    color: #00ffff;
+    transition:0.4s;
+    text-shadow: none;
+}
+li :hover:after {
+    opacity: 1;
+}
+li :hover:before {
+    opacity: 1;
+}
+li :before, li :after {
+    content: "";
+    position: absolute;
+    transition: opacity 100ms linear;
+    background-color: var(--cor-azul);
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.prim-h1{
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.prim-p{
+    color: #000;
+    font-family: Segoe UI;
+}
+.text{
+    color: #000;
+    font-family: Segoe UI !important;
+    font-size: 23px !important;
+}
+.mapa h1{
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    font-family: Segoe UI;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.fundo{
+    padding-top: 20px;
+    height: 800px;
+    background-color: white;
+}
+.img-2 {
+    margin-top: 10px;
+    padding: 20px;
+    margin-left: 160px;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.text {
+    text-align: justify;
+    font-size: 28px;
+    padding-right: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+button {
+    --c: 		#8A2BE2;
+    /* the color*/
+
+    box-shadow: 0 0 0 .1em inset var(--c);
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background:
+        var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+        var(--_g) calc(200% - var(--_p, 0%)) 0%,
+        var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+        var(--_g) calc(200% - var(--_p, 0%)) 100%;
+    background-size: 50.5% calc(var(--_p, 0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+}
+
+button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+}
+
+button:active {
+    box-shadow: 0 0 9e9q inset #0009;
+    background-color: var(--c);
+    color: #fff;
+}
+
+button {
+    font-family: system-ui, sans-serif;
+    font-size: 20px;
+    width: 400px;
+    height: 40px;
+    cursor: pointer;
+    padding: .1em .6em;
+    font-weight: bold;
+    border: none;
+    margin-left: 200px;
+    margin-top: -50px;
+    border-radius: 20px;
+}
+.tudo{
+    margin-left: 800px;
+    margin-top: -540px;
+    margin-right: 200px;
+}
+.vantagens{
+    width: 100%;
+    height: 450px;
+    background-color: #0fc2ff;
+}
+.posit-img{
+    margin-left: 1330px;
+    margin-top: -300px;
+    border-radius: 15px;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.mapa{
+    width: 100%;
+    height: 850px;
+    background-color: white;
+}
+.mais-inform{
+    width: 100%;
+    height: 400px;
+    background-color: #0fc2ff;
+}
+.pouco-text{
+    font-size: 30px;
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 25px;
+    
+}
+.imagens{
+    margin-left: 180px;
+    padding: 10px;
+
+}
+.um_texto{
+    font-size: 22px;
+    text-align: left;
+    margin-top: -58px;
+    margin-left: 280px;
+    margin-right: 600px;
+}
+.two-h1{
+    padding: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    font-size: 45px;
+}
+.brasil-mapa{
+    margin-left: 550px;
+    padding: 20px;
+    margin-top: 30px;
+    
+}
+.two-button{
+    margin-left: 750px;
+    margin-top: 20px;
+}
+/* Rodapé */
+.rodape{
+    width: 100%;
+    height: auto;
+    background-image: url(/img/banner-armazenagem.webp);
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.contato{
+    margin-left: -1450px;
+    color: #ffffff;
+    padding: 25px; 
+    font-size: 40px;
+}
+.gmail{
+    margin-left: -1400px;
+    margin-top: -40px;
+    color: #ffffff;
+    font-size: 22px;
+}
+.whats{
+    margin-left: -1450px;
+    margin-top: -55px;
+    color: #ffffff;
+    font-size: 22px;
+}
+.posic{
+    margin-left: 20px;
+}
+.posic-2{
+    margin-left: 10px;
+}
+.rodeer .rod{
+    margin-left: 1450px;
+    margin-top: -20px;
+    margin-bottom: -50px;
+    font-size: 17px;
+    color: #ffffff;
+    text-align: left;
+}
+.rod-pe{
+    margin-left: 1650px;
+    margin-top: -100px;
+}
+/* Responsividade pe 320px á 600px */
+@media (min-width: 320px) and (max-width: 600px){
+    .menu {
+        height: 160px;
+        padding: 10px;
+        width: 100%;
+    }
+    .menu img {
+        margin-top: -160px;
+        margin-left: 0px;
+    }
+    ul li {
+        display: block;
+        float: none;
+        padding-right: 0;
+        margin-top: 10px;
+        margin-right: 0;
+        text-align: center;
+        margin-left: 210px;
+        font-size: 20px;
+    }
+    li {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border:4px solid var(--cor-azul);
+    position: relative;
+    text-transform: capitalize;
+    text-decoration:none;
+    color: var(--cor-azul);
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 2em;
+    font-family: 'open_sansregular';
+    transition:0.4s;
+    text-shadow: 0 0 0.125em rgba(11, 73, 243, 0.5), 0 0 0.25em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--cor-azul), 0 0 0.5em 0 var(--cor-azul);
+    }
+    li :hover{
+        color: #00ffff;
+        transition:0.4s;
+        text-shadow: none;
+    }
+    li :hover:after {
+        opacity: 1;
+    }
+    li :hover:before {
+        opacity: 1;
+    }
+    li :before, li :after {
+        content: "";
+        position: absolute;
+        transition: opacity 100ms linear;
+        background-color: var(--cor-azul);
+    }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    .prim-h1{
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        margin-top: -10px;
+    }
+    .prim-p{
+        color: #000;
+        font-family: Segoe UI;
+        font-size: 15px;
+        margin-left: 50px;
+        margin-right: 50px;
+        text-align: center;
+    }
+    .text{
+        color: #000;
+        font-family: Segoe UI !important;
+        font-size: 20px !important;
+    }
+    .mapa h1{
+        color: #000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    h1 {
+        text-align: center;
+        padding: 20px;
+        font-size: 50px;
+        color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    p {
+        font-family: Segoe UI;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .fundo{
+        padding-top: 20px;
+        height: 1320px;
+        background-color: white;
+    }
+    .img-2 {
+        margin-top: 10px;
+        margin-left: 40px;
+        animation-name: floating;
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes floating {
+        0% { transform: translate(0,  0px); }
+        50%  { transform: translate(0, 15px); }
+        100%   { transform: translate(0, -0px); }   
+    }
+
+    .text {
+        text-align: justify;
+        font-size: 28px;
+        padding-right: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: -780px;
+        margin-right: 420px;
+        margin-top: 550px;
+    }
+
+    button {
+        --c: 		#8A2BE2;
+        /* the color*/
+
+        box-shadow: 0 0 0 .1em inset var(--c);
+        --_g: linear-gradient(var(--c) 0 0) no-repeat;
+        background:
+            var(--_g) calc(var(--_p, 0%) - 100%) 0%,
+            var(--_g) calc(200% - var(--_p, 0%)) 0%,
+            var(--_g) calc(var(--_p, 0%) - 100%) 100%,
+            var(--_g) calc(200% - var(--_p, 0%)) 100%;
+        background-size: 50.5% calc(var(--_p, 0%)/2 + .5%);
+        outline-offset: .1em;
+        transition: background-size .4s, background-position 0s .4s;
+    }
+
+    button:hover {
+        --_p: 100%;
+        transition: background-position .4s, background-size 0s;
+    }
+
+    button:active {
+        box-shadow: 0 0 9e9q inset #0009;
+        background-color: var(--c);
+        color: #fff;
+    }
+
+    button {
+        font-family: system-ui, sans-serif;
+        font-size: 20px;
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+        padding: .1em .6em;
+        font-weight: bold;
+        border: none;
+        margin-left: -710px;
+        margin-top: -50px;
+        border-radius: 20px;
+    }
+    .tudo{
+        margin-left: 800px;
+        margin-top: -540px;
+        margin-right: 200px;
+    }
+    .vantagens{
+        width: 100%;
+        height: 650px;
+        background-color: #0fc2ff;
+    }
+    .vantagens h1{
+        font-size: 25px;
+    }
+    .posit-img{
+        margin-left: 35px;
+        width: 300px;
+        height: 200px;
+        margin-top: 20px;
+        border-radius: 15px;
+        animation-name: floating;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+    .mapa{
+        width: 100%;
+        height: 550px;
+        background-color: white;
+    }
+    .mais-inform{
+        width: 100%;
+        height: 400px;
+        background-color: #0fc2ff;
+    }
+    .mais-inform h1{
+        font-size: 20px;
+    }
+    .pouco-text{
+        font-size: 15px;
+        text-align: justify;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 25px; 
+    }
+    .imagens{
+        margin-left: 10px;
+        padding: -200px;
+    }
+    .um_texto{
+        font-size: 15px;
+        text-align: justify;
+        margin-top: -68px;
+        margin-left: 100px;
+        margin-right: 20px;
+    }
+    .two-h1{
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+    .brasil-mapa{
+        margin-left: 10px;
+        padding: 20px;
+        margin-top: 10px;
+        width: 350px;
+        height: 350px;
+        
+    }
+    .two-button{
+        margin-left: 80px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .rodape{
+        height: 477px;
+        background-image: url(banner-armazenagem.webp);
+    }   
+    .contato{
+        margin-left: 20px;
+        font-size: 30px;
+        margin-right: 20px;
+    }
+    .posic{
+        margin-left: 20px;
+        padding-top: 10px;
+    }
+    .posic-2{
+        margin-left: 7px;
+        padding-top: 10px;
+        padding: -2px;
+    }
+    .gmail{
+        margin-left: 30px;
+        margin-top: -30px;
+        font-size: 16px;
+    }
+    .whats{
+        margin-left: -5px;
+        margin-top: -40px;
+        font-size: 16px;
+        margin-bottom: 15px
+    }
+    .rodeer .rod{
+        padding: -10px;
+        margin-left: 250px;
+        margin-top: 30px;
+        margin-bottom: -20px;
+        padding-bottom: 0px;
+        font-size: 14px;
+        text-align: center;
+    }
+    .rod-pe{
+        margin-left: 20px;
+        margin-top: -100px;
+        margin-bottom: 30px;
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,1459 @@
+    /* Resetar css */
+    *{margin: 0; padding: 0; box-sizing: border-box;}
+
+    :root {
+    
+        --cor-black: #000000;
+        --cor-hover: #ffffff;
+      
+    }
+    
+    body{
+        background-image: url(/img/aviao-nuverm.jpg);
+        background-position: justify;
+    }
+    
+    body::-webkit-scrollbar {
+      width: 12px;            
+    }
+    
+    body::-webkit-scrollbar-track {
+      background: gray;      
+    }
+    
+    body::-webkit-scrollbar-thumb {
+      background-color: #0fc2ff;   
+      border-radius: 20px;      
+      border: 3px solid white; 
+    }
+    
+    /* Esté é o menu em cima */
+    .menu{
+        width: 100%;
+        height: 160px;
+        margin-bottom: auto;
+    }
+    
+    .menu img{
+        margin-top: -0.7rem;
+        margin-left: 0.7rem;
+    }
+    
+    ul li{
+        display: inline;
+        float: right;
+        padding-right: 3rem;
+        margin-top: 70px;
+        margin-right: 10px;
+        font-family: Helvetica;
+    }
+    
+    li{
+        font-size: 30px;
+        color: aliceblue;
+        border:4px solid var(--cor-azul);
+        position: relative;
+        text-transform: capitalize;
+        text-decoration:none;
+        color: var(--cor-azul);
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 2em;
+        font-family: 'open_sansregular';
+        transition:0.4s;
+        text-shadow: 0 0 0.125em rgba(53, 11, 243, 0.5), 0 0 0.25em currentColor;
+        box-shadow: inset 0 0 0.5em 0 var(--cor-azul), 0 0 0.5em 0 var(--cor-azul);
+    }
+    
+    li :hover{
+        color: #00ffff;
+        transition:0.4s;
+        text-shadow: none;
+    }
+    
+    li :hover:after {
+        opacity: 1;
+    }
+    
+    li :hover:before {
+        opacity: 1;
+    }
+    
+    li :before, li :after {
+        content: "";
+        position: absolute;
+        transition: opacity 100ms linear;
+        background-color: var(--cor-azul);
+    }
+    
+    /* Esté local remete ao texto central localizado a esquerda */
+    .conteudo{
+       height: 400px;
+    }
+    
+    .conteudo .tema .texto-1{
+      margin-top: 100px;
+      margin-left: 500px;
+      margin-right: 500px;
+    }
+    
+    .conteudo .tema .botao{
+      margin-left: 500px;
+      margin-right: 850px;
+      float: right;
+      margin-top: 150px;
+      height: auto;
+      width: 250px;
+    }
+    
+    .tema .texto-1{
+        font-family: Helvetica;
+        margin-left: 90px;
+        margin-right: 1200px;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: -100px;
+        color: white;
+    }
+    
+    .tema p{
+        font-size: 70px;
+        margin-left: 10rem;
+        color: 	#8A2BE2;
+    }
+    
+    .botao{
+        background-color: paleturquoise;
+        border: none;
+        color: #000000;
+        font-family: Verdana;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition: background-color 0.5s ease;
+        margin-left: 340px;
+        margin-top: 50px;
+    }
+    
+    .botao:hover{
+        background-color: #d886d1;
+    }
+    
+    .aviao-plan{
+        margin-left: 360px;
+       margin-top: auto;
+    }
+    
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+    /* Parte dos temas */
+    .nossos-temas{
+      width: 100%;
+      height: 700px;
+      background: #0fc2ff;
+    }
+    
+    .noss-tema{
+      font-size: 55px;
+      margin-top: 40px;
+      font-family: Helvetica;
+    }
+    
+    .nossos-temas .tipos{
+      background-color: opacy;
+      box-shadow: 2px 2px 2px 2px #3788ae;
+      border: 2px solid #3788ae;
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      margin-left: 10%;
+      margin-right: -100px;
+      margin-top: 80px;
+      text-align: center;
+      display: inline-block;
+      font-family: helvetica;
+      color: white;
+      transition: all .2s ease-in-out;
+    }
+    .nossos-temas .tipos-2:hover{
+      top: -10px;
+    }
+    
+    .nossos-temas .tipos-3:hover{
+      top: -10px;
+    }
+    
+    .nossos-temas .tipos-4:hover{
+      top: -10px;
+    }
+    
+    .nossos-temas .tipos:hover{
+      top: -10px;
+    }
+    
+    .nossos-temas .tipos h3{
+      margin-top: 10px;
+    }
+    
+    .nossos-temas .tipos-2 h3{
+      margin-top: 10px;
+    }
+    
+    .nossos-temas .tipos-3 h3{
+      margin-top: 10px;
+    }
+    
+    .nossos-temas .tipos-4 h3{
+      margin-top: 10px;
+    }
+    
+    
+    .nossos-temas .tipos p{
+      font-size: 15px;
+      text-align: justify;
+      padding: 15px;
+    }
+    
+    .nossos-temas .tipos-2 p{
+      font-size: 15px;
+      text-align: justify;
+      padding: 15px;
+    }
+    
+    .nossos-temas .tipos-3 p{
+      font-size: 15px;
+      text-align: justify;
+      padding: 15px;
+    }
+    
+    .nossos-temas .tipos-4 p{
+      font-size: 15px;
+      text-align: justify;
+      padding: 15px;
+    }
+    
+    .nossos-temas .tipos-2{
+      font-family: helvetica;
+      background-color: opacy;
+      box-shadow: 2px 2px 2px 2px #3788ae;
+      border: 2px solid #3788ae;
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      margin-left: 10%;
+      margin-right: -100px;
+      text-align: center;
+      color: white;
+      transition: all .2s ease-in-out;
+    }
+    
+    .nossos-temas .tipos-3{
+      font-family: helvetica;
+      background-color: opacy;
+      box-shadow: 2px 2px 2px 2px #3788ae;
+      border: 2px solid #3788ae;
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      margin-left: 10%;
+      margin-right: -100px;
+      text-align: center;
+      color: white;
+      transition: all .2s ease-in-out;
+    }
+    
+    .nossos-temas .tipos-4{
+      font-family: helvetica;
+      background-color: opacy;
+      box-shadow: 2px 2px 2px 2px #3788ae;
+      border: 2px solid #3788ae;
+      width: 300px;
+      height: 300px;
+      display: inline-block;
+      position: relative;
+      margin-left: 10%;
+      text-align: center;
+      color: white;
+      transition: all .2s ease-in-out;
+    }
+    
+    /* Slides do Site */
+    .slideshow-container{
+      margin-bottom: -200px;
+    }
+    
+    .slides li {
+      list-style-type: none;
+    }
+    
+    button {
+      cursor: pointer;
+    }
+    
+    .slideshow-container {
+      position: relative;
+      height: 103vh;
+      margin-top: -80px;
+      overflow: hidden;
+    }
+    
+    .slides {
+      height: 600px;
+    }
+    
+    .slide {
+      width: 100%;
+      height: 120%;
+      display: none;
+    }
+    
+    .slide[data-active] {
+      display: block;
+    }
+    
+    .slide img {
+      width: 1940px;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    
+    .previous-button,
+    .next-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 56px;
+      height: 56px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+      background-color: transparent;
+      border: 0;
+    }
+    
+    .previous-button {
+      left: 0;
+      border-top-right-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
+    
+    .next-button {
+      right: 0;
+      border-top-left-radius: 6px;
+      border-bottom-left-radius: 6px;
+    }
+    
+    .previous-button:hover,
+    .next-button:hover {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+    
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.2s;
+    }
+    
+    @keyframes fade {
+      from {
+        opacity: 0.8;
+      }
+      
+      to {
+        opacity: 1;
+      }
+    } 
+    .slides [data-active] {
+      opacity: 1;
+      transition: opacity 0.5s ease-in-out; /* Adicione uma transição suave de 0.5 segundos (ajuste conforme necessário) */
+    }
+    
+    .slides [data-active].fade-out {
+      opacity: 0;
+    }
+    /*Perguntas Frequentes */
+    .perguntas{
+        width: 100%;
+        height: 550px;
+        background-color: #0fc2ff;
+    }
+    
+    h1{
+        color: white;
+        text-align: center;
+        font-size: 60px;
+        font-family: Helvetica;
+        margin-bottom: 20px;
+    }
+    
+    p{
+        font-size: 35px;
+    }
+    
+    button img{
+        border: 0;
+    }
+    
+    .card {
+        display: flex;
+        width: 100%;
+    }
+    
+    .card::before{
+        content: '';
+        top: 0;
+        right: 0;
+        border: 20px  transparent;
+    }
+    
+    /** Content **/
+    .content {
+        height: 78px;
+        overflow: hidden;
+        position: relative;
+        padding: 0;
+    }
+    
+    .content::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10px;
+    }
+    
+    .content h3 {
+        font-family: Helvetica;
+        margin-bottom: 0px;
+        font-size: 35px;
+        margin-left: 80px;
+        color: white;
+    }
+    
+    .content h3::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 40px;
+        bottom: 4px;
+        border-radius: 100px;
+    }
+    
+    .content p {
+        color: white;
+        font-size: 25px;
+        width: 95%;
+        margin-left: 80px;
+        text-align: justify;
+        margin-top: 2px;
+        font-family: Helvetica;
+    }
+    
+    .spik{
+        margin-top: -30px;
+    }
+    
+    #read_button {
+        border: none;
+        padding: 20px;
+        border-radius: 2px;
+        margin-top: 15px;
+        color: #313131;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
+        background-color: transparent;
+    }
+    
+    #read_button:hover {
+        background-color: transparent;
+        color: #000000;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    /** Active **/
+    .card.active .content {
+        height: auto;
+    }
+    
+    .card.active .content::before {
+        visibility: hidden;
+    }
+    
+    .card-2 {
+        display: flex;
+        width: 100%;
+    }
+    
+    .card-2::before{
+        content: '';
+        top: 0;
+        right: 0;
+        border: 20px solid transparent;
+    }
+    
+    /** Content **/
+    .content-2 {
+        height: 78px;
+        overflow: hidden;
+        position: relative;
+        padding: 0;
+    }
+    
+    .content-2::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 10px;
+    }
+    
+    .content-2 h3 {
+        font-family: Helvetica;
+        color: white;
+        margin-bottom: 0px;
+        font-size: 35px;
+        margin-left: 40px;
+     
+    }
+    
+    .content-2 h3::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 40px;
+        bottom: 4px;
+        border-radius: 100px;
+    }
+    
+    .content-2 p {
+        color: white;
+        font-size: 25px;
+        width: 97%;
+        margin-left: 40px;
+        margin-top: 2px;
+        text-align: justify;
+        font-family: Helvetica;
+    }
+    
+    .spik{
+       margin-top: -20px;
+    }
+    
+    #read_button-2 {
+        border: none;
+        padding: 20px;
+        border-radius: 2px;
+        margin-top: 15px;
+        color: #313131;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 16px;
+        transition: all 0.2s ease-in-out;
+        background-color: transparent;
+    }
+    
+    #read_button-2:hover {
+        background-color: transparent;
+        color: #000000;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    /** Active **/
+    .card-2.active .content-2 {
+        height: auto;
+    }
+    
+    .card-2.active .content-2::before {
+        visibility: hidden;
+    }
+    
+    /* Rodapé */
+    .rodape{
+        width: 100%;
+        height: 100%;
+        background-image: url(/img/aviao-nuverm.jpg);
+    }
+    
+    .contato{
+        font-family: Helvetica;
+        margin-left: 70px;
+        color: #ffffff;
+        padding: 25px; 
+        font-size: 40px;
+    }
+    
+    .gmail{
+        font-family: Helvetica;
+        margin-left: 90px;
+        margin-top: -40px;
+        color: #ffffff;
+        font-size: 22px;
+    }
+    
+    .whats{
+        font-family: Helvetica;
+        margin-left: 90px;
+        margin-top: -55px;
+        color: #ffffff;
+        font-size: 22px;
+    }
+    
+    .posic{
+        margin-left: 20px;
+    }
+    
+    .posic-2{
+        margin-left: 10px;
+    }
+    
+    .rodeer .rod{
+        font-family: Helvetica;
+        margin-left: 1450px;
+        margin-top: -20px;
+        margin-bottom: -50px;
+        font-size: 17px;
+        color: #ffffff;
+    }
+    
+    .rod-pe{
+        margin-left: 1650px;
+        margin-top: -100px;
+    }
+    
+    /* Responsividade para 320px á 600px obs: celular */
+    @media (min-width: 320px) and (max-width: 600px) {
+      .menu {
+          height: auto;
+          padding: 10px;
+          width: 100%;
+        }
+    
+        .menu img {
+          margin-top: -150px;
+          margin-left: 0px;
+        }
+        
+        ul li {
+          display: block;
+          float: none;
+          padding-right: 0;
+          margin-top: 10px;
+          margin-right: 0;
+          text-align: center;
+          margin-left: 210px;
+          font-size: 20px;
+        }
+        
+        .conteudo {
+          height: 500px;
+          background-size: cover;
+          background-position: center;
+        }
+        
+        .tema .texto-1 {
+          padding-top: 10px;
+          margin-left: 0px;
+          margin-right: 2px;
+          margin-bottom: 0;
+        }
+        .conteudo .tema .texto-1 {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+        
+        .conteudo .tema .botao {
+          margin-left: 20%;
+          margin-right: 20%;
+        }
+    
+        .tema p {
+          font-size: 40px;
+          margin-left: 0;
+        }
+    
+        .tema .botao {
+          margin-left: 200px;
+          margin-top: 40px;
+        }
+    
+        .slideshow-container {
+          width: 100%;
+          height: 300px;
+          margin-bottom: 0px;
+          margin-left: 0px;
+        }
+        .slideshow-container img {
+          width: 100%;
+          height: 50%;
+          margin-left: -420px;
+          object-fit: cover;
+          object-position: center;
+        }
+        .previous-button,
+        .next-button {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 56px;
+          height: 56px;
+          font-size: 32px;
+          font-weight: bold;
+          color: #fff;
+          background-color: transparent;
+          border: 0;
+          margin-left: 0;
+          margin-right: 0;
+        }
+        .nossos-temas {
+          height: 1600px;
+        }
+        .nossos-temas h1{
+          font-size: 25px;
+          margin-top: -15px;
+        }
+        .nossos-temas .tipos-2 p{
+          width: 100%;
+          margin-left: -0px;
+        }
+        .nossos-temas .tipos-3 p{
+          width: 100%;
+          margin-left: -0px;
+        }
+        .nossos-temas .tipos-4 p{
+          width: 100%;
+          margin-left: -0px;
+        }
+        .nossos-temas .tipos p{
+          width: 100%;
+          margin-left: -0px;
+        }
+    
+        .nossos-temas .tipos,
+        .nossos-temas .tipos-2,
+        .nossos-temas .tipos-3,
+        .nossos-temas .tipos-4 {
+            width: 80%;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 20px;
+            height: 320px;
+        }
+        .perguntas {
+          height: 620px;
+          width: 100%;
+        }
+        h1 {
+          font-size: 30px;
+        }
+        .card .content h3{
+            font-size: 20px;
+        }
+        
+        p {
+          padding-top: 13px;
+          font-size: 15px;
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+        
+        .card::before {
+          border: none;
+        }
+        
+        .content h3 {
+          font-size: 25px;
+          margin-left: 2px;
+        }
+        
+        .content p {
+          margin-top: 5px;
+          font-size: 15px;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        
+        #read_button {
+          padding: 10px;
+          font-size: 14px;
+        }
+        
+        .card-2::before {
+          border: none;
+        }
+        
+        .content-2 h3 {
+          font-size: 20px;
+          margin-left: 2px;
+        }
+        
+        .content-2 p {
+          margin-top: 5px;
+          font-size: 15px;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        
+        #read_button-2 {
+          padding: 10px;
+          font-size: 14px;
+        }
+        
+        .rodape {
+          height: 563px;
+        }
+        
+        .contato {
+          margin-left: 60px;
+          font-size: 30px;
+        }
+        .posic{
+            margin-left: 70px;
+            padding-top: 10px;
+        }
+        .posic-2{
+            margin-left: 57px;
+            padding-top: 10px;
+            padding: -2px;
+        }
+        .gmail{
+            margin-left: 140px;
+            margin-top: -45px;
+            font-size: 16px;
+        }
+        .whats {
+            margin-left: 140px;
+            margin-top: -50px;
+            font-size: 16px;
+            margin-bottom: 15px
+        }
+        
+        .rodeer .rod {
+          padding: -10px;
+          margin-left: 260px;
+          padding-top: 20px;
+          margin-top: -5px;
+          margin-bottom: 0px;
+          padding-bottom: 0px;
+          font-size: 14px;
+        }
+        
+        .rod-pe {
+          margin-left: 40px;
+          margin-top: -150px;
+          margin-bottom: 30px;
+          width: 160px;
+          height: 160px;
+        }
+      }
+    /* Responsividade de 1000px á 1200px obr: Tablet*/
+    @media (min-width: 1000px) and (max-width: 1200px){
+        .menu{
+          width: 100%;
+          height: 160px;
+          margin-bottom: auto;
+        }
+        
+        .menu img {
+          margin-top: -10px;
+          margin-left: 20px;
+        }
+        
+        ul li {
+          display: inline;
+          float: right;
+          padding-right: 3rem;
+          margin-top: 60px;
+          margin-right: 10px;
+        }
+        
+        .conteudo {
+          height: 1000px;
+          background-size: cover;
+          background-position: center;
+        }
+        
+        .tema .texto-1 {
+          padding-top: 20px;
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+        .conteudo{
+          height: 400px;
+        }
+    
+        .conteudo .tema .texto-1{
+          margin-left: 200px;
+          margin-right: 200px;
+        }
+        .conteudo .tema .botao {
+          margin-right: 40% ;
+        }
+        
+        .tema p {
+          font-size: 40px;
+          margin-left: 0;
+        }
+    
+        .botao {
+          margin-left: 420px;
+        }
+        
+        .nossos-temas .tipos,
+        .nossos-temas .tipos-2,
+        .nossos-temas .tipos-3,
+        .nossos-temas .tipos-4 {
+            width: 80%;
+            height: 200px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 20px;
+        }
+        .nossos-temas{
+          height: 1200px;
+          width: 100%;
+        }
+    
+        .slideshow-container{
+          height: 780px;
+          width: 100%;
+        }
+    
+        .slide {
+          height: 450px;
+          width: 100%;
+        }
+    
+        .slideshow-container img {
+          width: 100%;
+          height: 50%;
+          object-fit: cover;
+          object-position: center;
+        }
+    
+        .slide img {
+          width: 1500px;
+          height: 520px;
+          object-position: center;
+          margin-left: -130px
+        }
+    
+        .perguntas {
+          height: 570px;
+          width: 100%;
+        }
+        
+        h1 {
+          font-size: 35px;
+        }
+        .card .content h3{
+            font-size: 20px;
+        }
+        
+        p {
+          padding-top: 13px;
+          font-size: 15px;
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+        
+        .card::before {
+          border: none;
+        }
+        
+        .card .content h3 {
+          font-size: 25px;
+          margin-left: 2px;
+        }
+        
+        .content p {
+          margin-top: 5px;
+          font-size: 20px;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        
+        #read_button {
+          padding: 10px;
+          font-size: 14px;
+        }
+        
+        .card-2::before {
+          border: none;
+        }
+        
+        .card-2 .content-2 h3 {
+          font-size: 25px;
+          margin-left: 2px;
+        }
+        
+        .content-2 p {
+          margin-top: 5px;
+          font-size: 20px;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        
+        #read_button-2 {
+          padding: 10px;
+          font-size: 14px;
+        }
+        
+        .rodape {
+          height: 230px;
+          background-image: url(aviao-nuverm.jpg);
+        }
+        
+        .contato {
+          margin-left: 320px;
+          font-size: 40px;
+        }
+        .posic{
+            margin-left: 230px;
+            padding-top: 10px;
+        }
+        .posic-2{
+            margin-left: 217px;
+            padding-top: 10px;
+            padding: -2px;
+        }
+        .gmail{
+            margin-left: 300px;
+            margin-top: -50px;
+            font-size: 25px;
+        }
+        .whats {
+            margin-left: 300px;
+            margin-top: -60px;
+            font-size: 25px;
+            margin-bottom: 15px
+        }
+        
+        .rodeer .rod {
+          padding: -10px;
+          margin-left: 750px;
+          padding-top: 0px;
+          margin-top: -20px;
+          margin-bottom: -70px;
+          font-size: 21px;
+        }
+        
+      .rod-pe {
+          margin-left: 0px;
+          margin-top: -2000px;
+          margin-bottom: -100px;
+          width: 220px;
+          height: 220px;
+          float: none;
+        }
+    }
+    /* Responsividade de 700 á 900 obs: IPads*/
+    @media (min-width: 700px) and (max-width: 900px){
+      .menu{
+          width: 100%;
+          height: 160px;
+          margin-bottom: auto;
+          margin-bottom: -70px;
+        }
+        
+        .menu img {
+          margin-top: -10px;
+          margin-left: 20px;
+          width: 170px;
+          height: 170px;
+        }
+        
+        ul li {
+          display: inline;
+          float: right;
+          padding-right: 3rem;
+          margin-top: 60px;
+          margin-right: 1px;
+          font-size: 25px;
+        }
+        
+        .conteudo {
+          height: 1000px;
+          background-size: cover;
+          background-position: center;
+        }
+        
+        .tema .texto-1 {
+          padding-top: 20px;
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+        .conteudo{
+          height: 350px;
+        }
+    
+        .conteudo .tema .texto-1{
+          margin-left: 200px;
+          margin-right: 200px;
+        }
+        .conteudo .tema .botao {
+          margin-top: 50px;
+          margin-right: 35% ;
+        }
+        
+        .tema p {
+          font-size: 40px;
+          margin-left: 0;
+        }
+    
+        .botao {
+          margin-left: 420px;
+        }
+        .nossos-temas .tipos,
+        .nossos-temas .tipos-2,
+        .nossos-temas .tipos-3,
+        .nossos-temas .tipos-4 {
+            width: 80%;
+            height: 200px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 20px;
+        }
+        .nossos-temas{
+          height: 1200px;
+          width: 100%;
+        }
+        .slideshow-container{
+          height: 780px;
+          width: 100%;
+        }
+        .slide {
+          height: 450px;
+          width: 100%;
+        }
+        .slideshow-container img {
+          width: 100%;
+          height: 50%;
+          object-fit: cover;
+          object-position: center;
+        }
+        .slide img {
+          width: 1100px;
+          height: 520px;
+          object-position: center;
+          margin-left: -130px
+        }
+    
+        .perguntas {
+          height: 580px;
+          width: 100%;
+        }
+        
+        h1 {
+          font-size: 35px;
+        }
+        .card .content h3{
+            font-size: 20px;
+        }
+        
+        p {
+          padding-top: 13px;
+          font-size: 15px;
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+        
+        .card::before {
+          border: none;
+        }
+        
+        .card .content h3 {
+          font-size: 25px;
+          margin-left: 2px;
+        }
+        
+        .content p {
+          margin-top: 5px;
+          font-size: 20px;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        
+        #read_button {
+          padding: 10px;
+          font-size: 14px;
+        }
+        
+        .card-2::before {
+          border: none;
+        }
+        
+        .card-2 .content-2 h3 {
+          font-size: 25px;
+          margin-left: 2px;
+        }
+        
+        .content-2 p {
+          margin-top: 5px;
+          font-size: 20px;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        
+        #read_button-2 {
+          padding: 10px;
+          font-size: 14px;
+        }
+        
+        .rodape {
+          height: 410px;
+        }
+        
+        .contato {
+          margin-left: 220px;
+          font-size: 40px;
+        }
+        .posic{
+            margin-left: 230px;
+            padding-top: 10px;
+        }
+        .posic-2{
+            margin-left: 217px;
+            padding-top: 10px;
+            padding: -2px;
+        }
+        .gmail{
+            margin-left: 300px;
+            margin-top: -50px;
+            font-size: 20px;
+        }
+        .whats {
+            margin-left: 300px;
+            margin-top: -60px;
+            font-size: 20px;
+            margin-bottom: 15px
+        }
+        
+        .rodeer .rod {
+          padding: -10px;
+          margin-left: 650px;
+          margin-right: -2px;
+          padding-top: 0px;
+          margin-top: -100px;
+          margin-bottom: 110px;
+          font-size: 17px;
+        }
+        
+      .rod-pe {
+          margin-left: 0px;
+          margin-top: -1200px;
+          margin-bottom: 120px;
+          width: 200px;
+          height: 200px;
+          float: none;
+        }
+    }
+     /* Responsividade de 1250px á 1400px obr: Tablet*/
+     @media (min-width: 1250px) and (max-width: 1400px){
+        .menu{
+          width: 100%;
+          height: 160px;
+          margin-bottom: auto;
+        }
+        
+        .menu img {
+          margin-top: -10px;
+          margin-left: 20px;
+        }
+        
+        ul li {
+          display: inline;
+          float: right;
+          padding-right: 3rem;
+          margin-top: 65px;
+          margin-right: 10px;
+        }
+        
+        .conteudo {
+          height: 1000px;
+          background-size: cover;
+          background-position: center;
+        }
+        
+        .tema .texto-1 {
+          padding-top: 20px;
+          margin-left: 0;
+          margin-right: 0;
+          margin-bottom: 0;
+        }
+        .conteudo{
+          height: 400px;
+        }
+    
+        .conteudo .tema .texto-1{
+          margin-left: 200px;
+          margin-right: 200px;
+        }
+        .conteudo .tema .botao {
+          margin-right: 40% ;
+        }
+        
+        .tema p {
+          font-size: 40px;
+          margin-left: 0;
+        }
+    
+        .botao {
+          margin-left: 420px;
+        }
+        
+        .nossos-temas .tipos,
+        .nossos-temas .tipos-2,
+        .nossos-temas .tipos-3,
+        .nossos-temas .tipos-4 {
+            width: 80%;
+            height: 200px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 20px;
+        }
+        .nossos-temas{
+          height: 1200px;
+          width: 100%;
+        }
+        
+        .slides {
+        height: 500px;
+        }
+        .slideshow-container{
+          height: 814px;
+        }
+        .slideshow-container img{
+          width: 100%;
+        }
+        .slide {
+          height: 550px;
+        }
+    
+        .slide img {
+          width: 1500px;
+          height: 100%;
+        }
+    
+        .perguntas {
+          height: 550px;
+          width: 100%;
+        }
+        
+        h1 {
+          font-size: 35px;
+        }
+        .card .content h3{
+            font-size: 20px;
+        }
+        
+        p {
+          padding-top: 13px;
+          font-size: 15px;
+          margin-left: 50px;
+          margin-right: 50px;
+        }
+        
+        .card::before {
+          border: none;
+        }
+        
+        .card .content h3 {
+          font-size: 25px;
+          margin-left: 2px;
+        }
+        
+        .content p {
+          margin-top: 5px;
+          font-size: 20px;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        
+        #read_button {
+          padding: 10px;
+          font-size: 14px;
+        }
+        
+        .card-2::before {
+          border: none;
+        }
+        
+        .card-2 .content-2 h3 {
+          font-size: 25px;
+          margin-left: 2px;
+        }
+        
+        .content-2 p {
+          margin-top: 5px;
+          font-size: 20px;
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        
+        #read_button-2 {
+          padding: 10px;
+          font-size: 14px;
+        }
+        
+        .rodape {
+          height: 230px;
+        }
+        
+        .contato {
+          margin-left: 470px;
+          font-size: 40px;
+        }
+        .posic{
+            margin-left: 350px;
+            padding-top: 10px;
+        }
+        .posic-2{
+            margin-left: 337px;
+            padding-top: 10px;
+            padding: -2px;
+        }
+        .gmail{
+            margin-left: 430px;
+            margin-top: -50px;
+            font-size: 25px;
+        }
+        .whats {
+            margin-left: 430px;
+            margin-top: -60px;
+            font-size: 25px;
+            margin-bottom: 15px
+        }
+        
+        .rodeer .rod {
+          padding: -10px;
+          text-align: right;
+          margin-left: 1000px;
+          padding-top: 0px;
+          margin-top: -20px;
+          margin-bottom: -70px;
+          font-size: 21px;
+        }
+        
+      .rod-pe {
+          margin-left: 50px;
+          margin-top: -2000px;
+          margin-bottom: -100px;
+          width: 220px;
+          height: 220px;
+          float: none;
+        }
+    }

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Projeto 02/css/temperatura.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Projeto 02/image/logo.png">
+  <title>Learning Math</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="/Projeto 02/image/logo.png">
+      <nav>
+        <a href="/Projeto 02/html/home.html">Home</a>
+        <a href="/Projeto 02/html/pitagoras.html">Pitágoras</a>
+        <a href="/Projeto 02/html/area.html">Área</a>
+        <a href="/Projeto 02/html/temperatura.html">Temperatura</a>
+        <a href="/Projeto 02/html/conversao.html">Conversão</a>
+        <a href="/Projeto 02/html/velocidade.html">Velocidade</a>
+      </nav>
+      <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="container row-reverse">
+      <img src="/Projeto 02/image/pitagoras_pq.png" alt="imagem principal">
+        <div>
+          <h1 class="mt-2 title">Converta <span class="text-primary decoration">escalas</span> termométricas</h1>
+          <p class="mt-2 mb-2">As escalas termométricas são compostas por valores arbitrários selecionados com base nos pontos de fusão e ebulição da água. Elas são usadas para medir o grau de agitação molecular de um sistema, ou seja, para estabelecer valores de temperatura.</p>
+          <a href="#" class="button">Veja nosso insta!</a>
+        </div>
+      </div>
+    </section>
+    <section class="courses-section">
+      <div class="cards">
+        <article class="card">
+          <strong>Escala Fahrenheit</strong>
+          <p>Fahrenheit é uma escala de temperatura proposta por Daniel Gabriel Fahrenheit em 1724. Sua unidade é o grau Fahrenheit. Nesta escala, o ponto de fusão da água é de 32 °F e o ponto de ebulição é de 212 °F. Uma diferença de 1,8 °F é igual a uma diferença de 1 °.</p>
+          <a href="https://pt.wikipedia.org/wiki/Grau_Fahrenheit">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        <article class="card">
+          <strong>Escala Kelvin</strong>
+          <p>O kelvin é a unidade de base do Sistema Internacional de Unidades para a grandeza temperatura termodinâmica. O kelvin é a fração 1/273,16 da temperatura termodinâmica do ponto triplo da água, ou seja, é definido de tal modo que o ponto triplo da água é exatamente 273,16 K.</p>
+          <a href="https://pt.wikipedia.org/wiki/Kelvin">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        </article>
+        <article class="card">
+          <strong>Escala Celsius</strong>
+          <p>A escala Celsius, também conhecida como a escala centígrada, é uma escala termométrica do sistema métrico usada na maioria dos países do mundo. Teve origem a partir do modelo proposto pelo astrônomo sueco Anders Celsius.</p>
+          <a href="https://pt.wikipedia.org/wiki/Grau_Celsius">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        <article class="card">
+          <strong>Converter</strong>
+          <p>A conversão de escalas pode ser feita de forma rápida utilizando as formulas fisicas corretas. Para converter Celsius para Fahrenheit, considera-se Tc/5 = Tf-32/9. A conversão também pode ser feita entre as escalas Kelvin e Fahrenheit, assim como dessas escalas para graus Celsius</p> <br>
+          <main>
+            <section>
+                <select class="form-select" name="select" id="from">
+                    <option value="" disabled selected>Converter de</option>
+                    <option value="celsius">Celsius</option>
+                    <option value="kelvin">Kelvin</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                </select>
+                <input class="form-control" type="number" id="value1" placeholder="Digite um valor">
+                <select class="form-select" name="select" id="to">
+                    <option value="" disabled selected>Converter para</option>
+                    <option value="°c">Celsius</option>
+                    <option value="k">Kelvin</option>
+                    <option value="°F">Fahrenheit</option>
+                </select>
+                <input class="form-control mb-0" type="text" id="value2" disabled>
+                <button id="convert">Converter</button>
+            </section>
+        </main>
+        </article>
+      </div>
+      <h2 class="text-center">Conheça <span class="text-primary">varias</span> outras ferramentas!</h2>
+      <a href="#" class="button mt-2 mx-auto">Conhecer as outras</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="about-column">
+        <img src="/Projeto 02/image/logo.png" class="mt-1 mb-1">
+        <p class="mb-2">Todos os materiais disponíveis foram elaborados por especialistas e professores experientes. Além disso, o site está disponível gratuitamente para qualquer pessoa que queira utilizá-lo, tornando-o uma opção acessível e de qualidade para melhorar suas habilidades em matemática.</p>
+      </div>
+      <nav class="mb-2">
+        <a href="/Projeto 02/html/home.html">Home</a>
+        <a href="/Projeto 02/html/pitagoras.html">Pitágoras</a>
+        <a href="/Projeto 02/html/area.html">Área</a>
+        <a href="/Projeto 02/html/temperatura.html">Temperatura</a>
+        <a href="/Projeto 02/html/conversao.html">Conversão</a>
+        <a href="/Projeto 02/html/velocidade.html">Velocidade</a>
+      </nav>
+      <form class="newsletter-form">
+        <label for="email" class="mb-1">Receba notificações de conteudo pelo seu email</label>
+        <input type="email" name="email" id="email" class="mb-1" placeholder="Digite seu email"> 
+        <button class="button mb-2">Aceitar receber</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="/Projeto 02/java_script/conversao.js"></script>
+</body>
+</html>

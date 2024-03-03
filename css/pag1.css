@@ -11,6 +11,11 @@ body {
     overflow-y: scroll;
 }
 
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
 body::-webkit-scrollbar {
     width: 6px;
     background-color: transparent;
@@ -72,6 +77,26 @@ header {
     padding: 20px;
 }
 
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transform-origin: left; 
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
 .login-button button {
     border: none;
     padding: 10px 15px;
@@ -118,6 +143,7 @@ header {
     margin-left: 230px;
     margin-top: 100px;
     transition: 0.3s;
+    animation: go-up 2s;
 }
 
 .img-other:hover {
@@ -127,16 +153,38 @@ header {
 
 .p-other {
     margin-top: -530px;
+    animation: go-back 2s;
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateX(1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes go-up {
+    0% {
+        transform: translateX(-1000px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .posic-ul {
     color: #53b9c7;
     margin-left: 1100px;
     margin-top: 30px;
+    font-family: "Open Sans";
+    animation: go-back 2s;
 }
 
 .other-p {
     margin-top: 30px;
+    animation: go-back 2s;
 }
 
 .img {
@@ -146,6 +194,7 @@ header {
     margin-left: 230px;
     margin-top: 70px;
     transition: 0.3s;
+    animation: go-up 2s;
 }
 
 .img:hover {
@@ -159,6 +208,11 @@ h1 {
     text-align: center;
     color: #00FF08;
     font-weight: 800;
+    font-family: "Orbitron";
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    animation: slideIn 2s ease forwards;
 }
 
 h3 {
@@ -168,6 +222,7 @@ h3 {
     color: #77ffc0;
     font-size: 25px;
     font-weight: 200;
+    animation: go-back 2s;
 }
 
 p {
@@ -176,8 +231,10 @@ p {
     text-align: justify;
     font-size: 20px;
     margin-top: -340px;
-    color: #53b9c7;
+    color: #ffffff;
     font-weight: 200;
+    font-family: "Open Sans";
+    animation: go-back 2s;
 }
 
 .line {
@@ -242,6 +299,7 @@ p {
     margin-left: 1000px;
     margin-top: 250px;
     transition: 0.3s;
+    animation: go-up 2s;
 }
 
 .img-right:hover {
@@ -255,8 +313,9 @@ p {
     text-align: justify;
     font-size: 20px;
     margin-top: -350px;
-    color: #53b9c7;
+    color: #ffffff;
     font-weight: 200;
+    font-family: "Open Sans";
 }
 
 .p-left span {
@@ -294,6 +353,7 @@ P .sem-p {
     position: relative;
     margin-left: 1200px;
     margin-top: 40px;
+    animation: go-back 2s;
 }
 
 .btn-one span {
@@ -465,6 +525,18 @@ h1 span {
     color: #ffffff;
     font-size: 50px;
     font-weight: 800;
+    font-family: "Orbitron";
+    display: inline-block;
+    position: relative;
+}
+
+@keyframes slideIn {
+    from {
+        left: -100%; 
+    }
+    to {
+        left: 0; 
+    }
 }
 
 .sem-p {

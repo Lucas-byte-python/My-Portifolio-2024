@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Projeto 02/css/pitagoras.css">
+  <script src="/Projeto 02/java_script/pitagoras.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Projeto 02/image/logo.png">
+  <title>Learning Math</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="/Projeto 02/image/logo.png">
+      <nav>
+        <a href="/Projeto 02/html/home.html">Home</a>
+        <a href="/Projeto 02/html/pitagoras.html">Pitágoras</a>
+        <a href="/Projeto 02/html/area.html">Área</a>
+        <a href="/Projeto 02/html/converter.html">Temperatura</a>
+        <a href="/Projeto 02/html/conversao.html">Conversão</a>
+        <a href="/Projeto 02/html/velocidade.html">Velocidade</a>
+      </nav>
+      <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="container row-reverse">
+      <img src="/Projeto 02/image/principal-pitagoras.png" alt="imagem principal">
+        <div>
+          <h1 class="mt-2 title">Aprenda <span class="text-primary decoration">sobre</span> Pitágoras</h1>
+          <p class="mt-2 mb-2">"O teorema de Pitágoras é uma relação entre as medidas dos lados de um triângulo retângulo. De acordo com esse teorema, o quadrado da medida da hipotenusa é igual à soma dos quadrados das medidas dos catetos. Ou seja, se os catetos medem a e b e a hipotenusa mede c, então c2=a2+b2.Podemos utilizar essa relação para obter a medida de um dos lados do triângulo retângulo, supondo que os outros dois sejam conhecidos. Ainda que tal aplicação seja simples, o teorema de Pitágoras é um recurso fundamental em diversos campos da Matemática, sendo amplamente estudado durante séculos."</p>
+          <a href="https://www.instagram.com/learning_math_company/" class="button">Veja nosso insta!</a>
+        </div>
+      </div>
+    </section>
+    <section class="courses-section">
+      <div class="cards">
+        <article class="card">
+          <strong>Resumo sobre o Teorema de Pitágoras</strong>
+          <p>"Em um triângulo retângulo, se a e b são as medidas dos catetos e c é a medida da hipotenusa, então, pelo teorema de Pitágoras, c2=a2+b2. "O teorema de Pitágoras é útil em muitas situações, inclusive para demonstrar outros resultados matemáticos."A aplicação imediata desse teorema ocorre pela substituição das medidas de dois lados conhecidos em um triângulo retângulo para obter a medida do terceiro."Devido à sua importância, existem centenas de demonstrações para o teorema de Pitágoras."</p>
+          <a href="https://pt.wikipedia.org/wiki/Grau_Fahrenheit">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        <article class="card">
+          <strong>Pitágoras Filósofo</strong>
+          <p>"Pitágoras foi um filósofo, matemático, astrônomo e músico grego pré-socrático. Nasceu na ilha de Samos no ano aproximado de 570 a.C. e morreu, provavelmente, em 496 a.C.. Passou boa parte de sua vida na antiga região da Magna Grécia (atual território italiano) e lá fundou a sua escola filosófica. Pouco se sabe sobre a vida do pensador pré-socrático devido à distância histórica que o separa de nós. O que se sabe, em geral, advém de antigos historiadores e filósofos, como Heródoto, Xenófanes e Aristóteles. Pitágoras ficou bastante conhecido por ter fundido os seus conhecimentos de Filosofia, Astronomia, Geometria e Música em uma seita, angariando seguidores fiéis de sua doutrina, o pitagorismo."</p>
+          <a href="https://pt.wikipedia.org/wiki/Kelvin">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        </article>
+        <article class="card">
+          <strong>Triângulo Pitagórico</strong>
+          <p>"Os múltiplos dessas medidas também formam triângulos pitagóricos. Por exemplo, é possível construir um triângulo retângulo com catetos de medida 6 e 8 e hipotenusa de medida 10. "As sequências que formam os lados desses triângulos são chamadas de triplas pitagóricas (ou ternos pitagóricos), como (3, 4, 5). Outros exemplos de triplas pitagóricas são (5, 12, 13) e (7, 24, 25). Ainda que seja interessante conhecer as triplas pitagóricas, não é necessário decorá-las, uma vez que todas são obtidas com a aplicação do teorema de Pitágoras."</p>
+          <a href="https://pt.wikipedia.org/wiki/Grau_Celsius">
+            <img src="/Projeto 02/image/arrow-right.svg" alt="">
+          </a>
+        </article>
+        <article class="card">
+          <strong>Resolver</strong>
+          <p>"Em um triângulo retângulo, os catetos são os lados que formam o ângulo reto e hipotenusa é o lado oposto ao ângulo reto. Considere um triângulo retângulo em que os catetos medem a e b e a hipotenusa mede c. O teorema de Pitágoras determina que o quadrado da medida da hipotenusa (c²) é igual à soma dos quadrados das medidas dos catetos (a² + b²). Portanto, a fórmula do teorema de Pitágoras é c² = a² + b².</p> <br>
+        <main>
+            <label for="cateto1">Cateto 1:</label>
+            <input type="number" id="cateto1" name="cateto1">
+            <label for="cateto2">Cateto 2:</label>
+            <input type="number" id="cateto2" name="cateto2"><br><br>
+            <button type="button" onclick="calcular()">Calcular</button><br><br>
+            <z class="valor" id="resultado"></z>
+            <br>
+            <label for="c1">Cateto:</label>
+            <input type="number" id="c1">
+            <label for="h">Hipotenusa:</label>
+            <input type="number" id="h"><br><br>
+            <button onclick="calculate()">Calcular</button><br><br>
+            <z class="valor" id="result"></z>
+        </main>
+        </article>
+      </div>
+      <h2 class="text-center">Conheça <span class="text-primary">varias</span> outras ferramentas!</h2>
+      <a href="#" class="button mt-2 mx-auto">Conhecer as outras</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="about-column">
+        <img src="/Projeto 02/image/logo.png" class="mt-1 mb-1">
+        <p class="mb-2">Todos os materiais disponíveis foram elaborados por especialistas e professores experientes. Além disso, o site está disponível gratuitamente para qualquer pessoa que queira utilizá-lo, tornando-o uma opção acessível e de qualidade para melhorar suas habilidades em matemática.</p>
+      </div>
+      <nav class="mb-2">
+        <a href="/Projeto 02/html/home.html">Home</a>
+        <a href="/Projeto 02/html/pitagoras.html">Pitágoras</a>
+        <a href="/Projeto 02/html/area.html">Área</a>
+        <a href="/Projeto 02/html/converter.html">Temperatura</a>
+        <a href="/Projeto 02/html/conversao.html">Conversão</a>
+        <a href="/Projeto 02/html/velocidade.html">Velocidade</a>
+      </nav>
+      <form class="newsletter-form">
+        <label for="email" class="mb-1">Receba notificações de conteudo pelo seu email</label>
+        <input type="email" name="email" id="email" class="mb-1" placeholder="Digite seu email"> 
+        <button class="button mb-2">Aceitar receber</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="/Projeto 02/java_script/pitagoras.js"></script>
+</body>
+</html>

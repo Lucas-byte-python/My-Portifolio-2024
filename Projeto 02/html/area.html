@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/Projeto 02/css/area.css">
+  <script src="/Projeto 02/java_script/area.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Projeto 02/image/logo.png">
+  <title>Learning Math</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="/Projeto 02/image/logo.png">
+      <nav>
+        <a href="/Projeto 02/html/home.html">Home</a>
+        <a href="/Projeto 02/html/pitagoras.html">Pitágoras</a>
+        <a href="/Projeto 02/html/area.html">Área</a>
+        <a href="/Projeto 02/html/converter.html">Temperatura</a>
+        <a href="/Projeto 02/html/conversao.html">Conversão</a>
+        <a href="/Projeto 02/html/velocidade.html">Velocidade</a>
+      </nav>
+      <a href="#" class="button mt-1 mb-1 mx-auto">Se inscreva</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="container row-reverse">
+      <img src="/Projeto 02/image/principal-area.png" alt="imagem principal">
+        <div>
+          <h1 class="mt-2 title">Como começar <span class="text-primary decoration">cálculo</span> de área</h1>
+          <p class="mt-2 mb-2">A área é a medida da região ocupada por um polígono em um plano. Embora a fórmula exata para calcular a área possa variar dependendo do tipo de polígono, há algumas estratégias gerais que podem ser aplicadas.</p>
+          <a href="https://www.instagram.com/learning_math_company/" class="button">Veja nosso insta!</a>
+        </div>
+      </div>
+    </section>
+    <section class="courses-section">
+      <div class="cards">
+        <article class="card">
+          <strong>Área de um quadrilatero</strong>
+          <p>A área de um quadrilatero (quadrados e retângulos) pode ser calculada multiplicando a base pela altura. Nesse caso, podemos considerar que a área de um quadrado ou retângulo é igual a B*A (base * altura). No caso de quadrados, como todos os lados são iguais o cálculo também pode ser feito usando a a formula A = L*L ou L².</p>
+          <div class="calc-retangulo">
+            <p>Digite o valor da base:</p>
+            <input type="number" id="lado-r1">
+            <p>Digite o valor da altura</p>
+            <input type="number" id="lado-r2">
+            <button onclick="calcularRetangulo()">Calcular</button>
+            <p id="resultado-r"></p>
+          </div>
+        </article>
+        <article class="card">
+          <strong>Área de um círculo</strong>
+          <p>A área de um círculo pode ser calculada por meio do produto entre a constante π (PI) e a medida do raio ao quadrado, lembrando sempre que na ordem de prioridade da matemática, a potência antece a multiplicação. Sendo assim, temos a seguinte formula: A = π*r², sendo π aproximadamente igual a 3,14.</p>
+          <div class="calc-circulo">
+            <p>Digite o valor do raio</p>
+            <input type="number" id="raio">
+            <button onclick="calcularCirculo()">Calcular</button>
+            <p id="resultado-c"></p>
+          </div>
+        </article>
+        <article class="card">
+          <strong>Área de um trapézio</strong>
+          <p>Diferentemente de outros quadrilateros, o trapézio possui duas bases, uma maior e outra menor. Para calcular a área de um trapézio basta somar a base maior com a base menor, multiplicar pela altura e depois, dividir o resultado por dois.</p>
+          <div class="calc-trapezio">
+            <p>Digite o valor da diagonal maior</p>
+            <input type="number" id="d-maior">
+            <p>Digite o valor da diagonal menor</p>
+            <input type="number" id="d-menor">
+            <p>Digite o valor da altura</p>
+            <input type="number" id="altura">
+            <button onclick="calcularTrapezio()">Calcular</button>
+            <p id="resultado-t"></p>
+           </div>
+        </article>
+        <article class="card">
+          <strong>Área de um triângulo</strong>
+          <p>A área do triângulo é igual à medida da sua superfície. Para calcular área de um triângulo qualquer, o método mais comum é multiplicar o comprimento da base e da altura e dividir por dois. Portanto, pode-se resumir o cálculo de área do triângulo com a fórmula A = (b * a)/2, sendo A = área, b = base do triângulo e a = altura do triângulo, com tudo isso sendo dividido por 2.</p>
+          <div class="calc-triangulo">
+            <p>Digite o valor da base</p>
+            <input type="number" id="base-tr">
+            <p>Digite o valor da altura</p>
+            <input type="number" id="altura-tr">
+            <button onclick="calcularTriangulo()">Calcular</button>
+            <p id="resultado-tr"></p>
+          </div>
+        </article>
+      </div>
+      <h2 class="text-center">Conheça <span class="text-primary">varias</span> outras ferramentas!</h2>
+      <a href="#" class="button mt-2 mx-auto">Conhecer as outras</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="about-column">
+        <img src="/Projeto 02/image/logo.png" class="mt-1 mb-1">
+        <p class="mb-2">Todos os materiais disponíveis foram elaborados por especialistas e professores experientes. Além disso, o site está disponível gratuitamente para qualquer pessoa que queira utilizá-lo, tornando-o uma opção acessível e de qualidade para melhorar suas habilidades em matemática.</p>
+      </div>
+      <nav class="mb-2">
+        <a href="/Projeto 02/html/home.html">Home</a>
+        <a href="/Projeto 02/html/pitagoras.html">Pitágoras</a>
+        <a href="/Projeto 02/html/area.html">Área</a>
+        <a href="/Projeto 02/html/converter.html">Temperatura</a>
+        <a href="/Projeto 02/html/conversao.html">Conversão</a>
+        <a href="/Projeto 02/html/velocidade.html">Velocidade</a>
+      </nav>
+      <form class="newsletter-form">
+        <label for="email" class="mb-1">Receba notificações de conteudo pelo seu email</label>
+        <input type="email" name="email" id="email" class="mb-1" placeholder="Digite seu email"> 
+        <button class="button mb-2">Aceitar receber</button>
+      </form>
+    </div>
+  </footer>
+
+  <script src="/Projeto 02/java_script/area.js"></script>
+</body>
+</html>
