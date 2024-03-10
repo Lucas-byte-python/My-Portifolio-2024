@@ -16,6 +16,171 @@ html {
     margin: 0 auto;
 }
 
+.dark header {
+    background-color: #8a2be2;
+    position: fixed;
+    margin-left: 0px;
+    z-index: 1000;
+    height: 120px;
+    width: 100%;
+}
+
+.dark .primeira h1 {
+    color: black ;
+}
+
+.dark .primeira span {
+    color: #2600ff;
+}
+
+.dark .primeira p {
+    color: #000000;
+}
+
+.dark .primeira button {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dark .especialidades {
+    background-color: #8a2be2;
+}
+
+.dark .especialidades span {
+    color: #00f7ff;
+}
+
+.dark .especialidades .especialidades-box {
+    color: #00f7ff;
+}
+
+.dark .especialidades .especialidades-box i {
+    color: #00f7ff;
+}
+
+.dark .sobre {
+    background-color: #ffffff;
+}
+
+.dark .sobre h2 {
+    color: #2600ff;
+}
+
+.dark .sobre .txt-sobre span {
+    color: #000000;
+}
+
+.dark .sobre .txt-sobre p {
+    color: #000000;
+}
+
+.dark .sobre .txt-sobre button {
+    background-color: #000000;
+}
+
+.dark .sobre .txt-sobre i {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.dark .progresso {
+    background-color: #8a2be2;
+}
+
+.dark .progresso .titulo span {
+    color: #00f7ff;
+}
+
+.dark .progresso  h3 {
+    color: #00f7ff;
+}
+
+.dark .progresso .especialidades-box  i {
+    color: #00f7ff;
+}
+
+.dark .portifolio h2 {
+    color: #000000;
+}
+
+.dark .portifolio span {
+    color: #0004ff;
+}
+
+.dark .formulario span {
+    color: #0004ff;
+}
+
+.dark .formulario h2 {
+    color: #000000;
+}
+
+.dark .formulario input {
+    background-color: #0004ff;
+}
+
+.dark .formulario textarea {
+    background-color: #0004ff;
+}
+
+.dark .formulario .btn-enviar input {
+    background-color: #0004ff;
+    color: white;
+}
+
+.dark footer {
+    background-color: #8a2be2;
+    color: white;
+}
+
+.dark footer button{
+    background-color: #000000;
+    color: white;
+}
+
+.dark footer .line-footer{
+    padding: 20px 0;
+}
+
+.dark footer .line-footer p {
+    color: #ffffff;
+}
+
+.dark .borda {
+    margin-top: -70px;
+    border-top: 2px solid #ffffff;
+}
+
+.dark main {
+    background-color: white;
+}
+
+.dark .nav-link {
+    color: #ffffff;
+}
+
+.dark .dark-mode-button button i {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.dark .transparent {
+    background-color: transparent !important;
+    border: 2px solid #ffffff !important; 
+    border-radius: 50px !important;
+}
+
+.transparent {
+    background-color: transparent !important;
+    border: 2px solid #ffffff !important; 
+    border-radius: 50px !important;
+}
+
+.dark-mode-button button i {
+    color: white;
+    font-size: 20px;
+}
+
 body {
     background: #201b2c;
     overflow-x: hidden;
@@ -39,6 +204,7 @@ header {
     position: relative;
     float: left;
     border-right: 1px solid #201b2c;
+    border: none;
 }
 
 .nav-bar {
@@ -265,13 +431,12 @@ a {
     text-decoration: none;
 }
 /* Desenvolvimento */
-
 h1 {
     margin-top: -350px;
     color: #fff;
     text-transform: uppercase;
-    margin-left: 100px;
-    margin-right: 1000px;
+    margin-left: -80px;
+    margin-right: 500px;
     font-weight: 800;
     font-size: 40px;
     animation: go-up 2s;
@@ -284,9 +449,10 @@ h1 {
 
 p.paragrafo {
     color: #fff;
-    margin-left: 100px;
-    margin-right: 800px;
+    margin-left: -80px;
+    margin-right: 600px;
     text-align: justify;
+    font-size: 16px;
     margin-bottom: 40px;
     animation: go-up 2s;
 }
@@ -300,7 +466,7 @@ p.paragrafo {
     color: rgb(0, 0, 0);
     font-weight: 600;
     background-color: #77ffc0;
-    margin-left: -2px;
+    margin-left: -180px;
     margin-top: -6px;
     cursor: pointer;
     transition: .2s;
@@ -316,7 +482,7 @@ p.paragrafo {
     width: 500px;
     height: 400px;
     border-radius: 20px;
-    margin-left: 1200px;
+    margin-left: 900px;
     margin-top: 50px;
     opacity: 0.5;
 }
@@ -334,6 +500,7 @@ img.yo {
         top: 30px;
     }
 }
+
 /* Section 2*/
 section.especialidades {
     padding: 40px 4%;
@@ -359,6 +526,15 @@ h2.titulo span {
     display: flex;
 }
 
+.progresso .especialidades-box {
+    color: #FFF;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: justify;
+    transition: .2s;
+    margin-left: -20px;
+}
+
 .especialidades .especialidades-box {
     color: #FFF;
     padding: 40px;
@@ -367,14 +543,29 @@ h2.titulo span {
     transition: .2s;
 }
 
+.progresso .especialidades-box i {
+    font-size: 70px;
+    color: #00FF08;
+}
+
 .especialidades .especialidades-box i {
     font-size: 70px;
     color: #00FF08;
 }
 
+.progresso .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
 .especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
+}
+
+.progresso .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #ffffff78;
 }
 
 .especialidades .especialidades-box:hover {
@@ -444,9 +635,14 @@ section.sobre .flex{
     box-shadow: 0 0 10px #ffffff78;
 }
 
+section.comeco {
+    margin-top: 120px;
+    margin-bottom: 400px;
+}
 
 section.portifolio {
     margin-top: 160px;
+    margin-bottom: 400px;
 }
 
 section.portifolio .flex {
@@ -496,6 +692,7 @@ section.portifolio .flex {
 section.formulario {
     padding: 80px 4%;
     margin-top: 100px;
+    margin-bottom: 400px;
 }
 
 form {
@@ -587,18 +784,23 @@ footer .line-footer p a{
 }
 
 section.progresso {
-    margin-top: 100px;
-    margin-bottom: 440px;
+    padding: 40px 4%;
+    margin-top: 250px;
+}
+
+section.progresso.flex {
+    gap: 60px;
 }
 
 .box {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 2300px;
+    margin-top: 200px;
     border-radius: 5px;
     padding: 15px;
+    margin-right: -200px;
 }
 
 .box-circle svg{
@@ -610,14 +812,15 @@ section.progresso {
 }
 
 .box-2 {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 2300px;
+    margin-top: 200px;
     border-radius: 5px;
     padding: 15px;
     margin-left: -400px;
+    margin-right: 400px;
 }
 
 .box-circle-2 svg{
@@ -629,14 +832,14 @@ section.progresso {
 }
 
 .box-3 {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 2300px;
+    margin-top: 200px;
     border-radius: 5px;
     padding: 15px;
-    margin-left: 400px;
+    margin-left: 100px;
 }
 
 .box-circle-3 svg{

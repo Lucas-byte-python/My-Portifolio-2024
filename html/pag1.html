@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="/js/white.js"></script>
 </head>
 <body>
 <header>
@@ -30,8 +31,10 @@
             </ul>
         </div>
         <div class="login-button">
-            <div class="btn btn-other">
-                <a href="home.html"><span class="btn-login">Fale Comigo</span></a>
+            <div class="dark-mode-button">
+                <button id="darkModeButton" class="transparent" onclick="toggleDarkMode()">
+                    <i id="darkModeIcon" class="bi bi-moon"></i>
+                </button>
             </div>
         </div>
 
@@ -53,177 +56,207 @@
     </div>
 </header>
     <!-- Desenvolvimento -->
-<br><br>
-<div>
-    <h1 id="info-basic">Informática <span>Básica</span></h1>
-    <h3>Atalhos</h3>
-    <img class="img-other" src="https://traine.com.br/wp-content/plugins/phastpress/phast.php/c2VydmljZT/1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGdHJhaW5lLmNvbS5iciUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyMSUyRjA3JTJGY3Vyc28tZGUtaW5mb3JtYXRpY2EtNS1tb3Rpdm9zLXBhcmEtdm9jZS1zZS1tYXRyaWN1bGFyLmpwZyZjYWNoZU1hcmtlcj0xNjcyMTAyMDg3LTM4MzAxJnRva2VuPWM2MmM2ZmE0NGU3ZTJlYWQ.q.jpg" alt="Informática Básica">
-    <p class="p-other">
-        Quando começamos a utilizar o teclado, especialmente em computadores, é útil aprender alguns atalhos que podem facilitar a navegação e a execução de tarefas. Aqui estão alguns atalhos comuns que podem ser úteis para usuários iniciantes:
-    </p>
-    <ul class="posic-ul">
-        <li> Ctrl + C / Ctrl + X / Ctrl + V:
-            <ul>
-                <li>Copiar o texto ou elemento selecionado.</li>
-                <li>Cortar o texto ou elemento selecionado.</li>
-                <li>Colar o texto ou elemento copiado ou cortado.</li>
-            </ul>
-        </li>
-    </ul>
-    <ul class="posic-ul">
-        <li> Ctrl + Z / Ctrl + Y:
-            <ul>
-                <li>Desfazer a última ação.</li>
-                <li>Refazer a última ação desfeita.</li>
-            </ul>
-        </li>
-    </ul>
-    <ul class="posic-ul">
-        <li> Ctrl + Shift + N / Ctrl + Shift + Esc / Alt + Tab:
-            <ul>
-                <li>Criar uma nova pasta.</li>
-                <li>Abrir diretamente o Gerenciador de Tarefas no Windows.</li>
-                <li>Alternar entre aplicativos ou janelas abertas.</li>
-            </ul>
-        </li>
-    </ul>
-    <p class="other-p">
-        Estes são apenas alguns exemplos de atalhos básicos e comuns. A utilização desses atalhos pode economizar tempo e melhorar a eficiência ao realizar tarefas cotidianas no computador. À medida que você se familiariza com o uso do teclado, pode explorar mais atalhos específicos para os aplicativos que utiliza regularmente.
-    </p>
-</div>
-<br><br><br><br><br>
-<div>
-    <h1 id="front">Desenvolvimento <span>Front-End</span></h1>
-    <h3>HTML e CSS</h3>
-    <img class="img" src="https://hermes.dio.me/articles/cover/4cb46a28-34fb-4c72-9588-b5ed52b9470f.jpg" alt="HTML e CSS">
-    <p>Imagine uma página web, como essa mesmo que você esta lendo agora. É possível perceber que existem diversos elementos separados, como cabeçalho, título, parágrafos, imagens e muitos outros. Toda a organização desses elementos é feita pelo HTML. Ele é utilizado para criar toda a estrutura da página e, para isso, utiliza as famosas tags (etiquetas) para sinalizar onde cada tipo de elemento será implementado. <br><br> Cascading Style Sheet, mais conhecido como CSS, é uma linguagem de estilos que, assim como o HTML, também não é considerada uma linguagem de programação. Ela é responsável por separar a parte estrutural da aplicação (que ficará nas mãos do HTML) da parte estética.</p>
-</div>
-<br><br><br><br><br>
-<!-- Home Proj 1 -->
-<div>
-    <h3 class="position" id="proj-01">Projeto 01 (HTML e CSS)</h3>
-    <p class="position-p">
-       <span>Como é um desenvolvimento de site?</span><br><br> Desenvolver um projeto utilizando HTML e CSS pode se revelar uma jornada desafiadora, mas igualmente recompensadora. A aparente simplicidade dessas linguagens muitas vezes esconde a complexidade envolvida na criação de um design coeso e funcional.
-        No início, a familiarização com as tags HTML e as propriedades CSS pode parecer simples, mas à medida que se avança, surgem desafios inesperados. A luta para alinhar elementos, garantir a responsividade em diferentes dispositivos e lidar com as nuances de navegadores diversos pode se transformar em um verdadeiro quebra-cabeça.
-        A cascata de estilos do CSS, embora poderosa, pode se tornar um desafio gerenciável. <br><br>  As especificidades e hierarquias muitas vezes exigem paciência e atenção aos detalhes. A tentativa de criar layouts elegantes pode ser uma experiência de tentativa e erro, ajustando constantemente margens, paddings e tamanhos de fonte para atingir o equilíbrio desejado.
-        Entretanto, à medida que se superam esses obstáculos, a sensação de conquista é inigualável. Ver o projeto ganhando vida no navegador, com um design atraente e funcionalidade desejada, faz todo o esforço valer a pena. A capacidade de traduzir conceitos visuais em código, com precisão e eficiência, destaca a importância da prática contínua e do aprendizado constante.
-        Assim, a dificuldade inicial de criar um projeto com HTML e CSS não apenas testa habilidades técnicas, mas também a perseverança e a criatividade do desenvolvedor. Cada desafio superado é um passo em direção ao aprimoramento das habilidades e à construção de projetos cada vez mais impressionantes.
-    </p>
-    <img class="position-exc" src="/img/Captura de tela 2024-01-29 162047.png" alt="Primeiro Projeto - Fitlife">
-    <br>
-    <p class="position2-p">
-       <span>Sobre a primeira página (Home):</span><br><br>
-        Esta é a tela inicial, onde encontramos um menu estrategicamente posicionado na parte superior da interface. Abaixo, uma imagem ampla adiciona um toque visual envolvente. Uma mensagem dinâmica percorre de uma extremidade à outra em um loop, proporcionando uma experiência interativa e cativante para o usuário. Dois botões essenciais, um destinado ao cadastro e outro para acessar o calendário, oferecem funcionalidades intuitivas.
-        No centro da tela, uma tabela meticulosamente organizada exibe os dias da semana, garantindo uma navegação eficiente e clara. Com essa abordagem funcional, os usuários podem facilmente visualizar e interagir com as informações relacionadas ao calendário.
-        Para enriquecer ainda mais a experiência do usuário, uma imagem adjacente exibe frases inspiradoras, adicionando um toque motivacional à interface. Essa combinação de elementos visuais e funcionais cria uma tela inicial completa e atraente, proporcionando aos usuários uma entrada agradável e eficiente ao sistema.
-    </p>
-</div>
-<!-- Cadastro Proj 1 -->
-<div>
-    <img class="position-exc" src="/img/Captura de tela 2024-01-29 173542.png" alt="Cadastro">
-    <p class="position2-p">
-        <span>Sobre a página de (cadastro):</span><br><br>
-        Esta é a tela inicial, meticulosamente projetada para proporcionar uma experiência visualmente atraente e intuitiva. O menu, estrategicamente posicionado no topo da interface, oferece uma navegação eficiente e fácil acesso às diferentes funcionalidades do sistema. O fundo, composto por um gradiente envolvente nas tonalidades vibrantes de vermelho, roxo e azul, adiciona um toque de modernidade e sofisticação.
-        Ao centro da tela, um formulário cuidadosamente disposto aguarda as informações de cadastro do usuário. <br><br> Com campos para Nome, Email e Senha, a disposição clara e organizada facilita o preenchimento dos dados necessários. Um botão em gradiente, harmonizando com o fundo, destaca-se como o ponto focal para a submissão das informações, proporcionando uma transição suave para o próximo passo.
-        Adicionalmente, dois botões estrategicamente posicionados na parte inferior do formulário oferecem opções de direcionamento ao usuário. O primeiro, com o link "Já tem conta", permite que usuários existentes acessem facilmente suas informações. O segundo, com a opção "Ir para Login", oferece uma alternativa rápida para aqueles que desejam prosseguir diretamente para o processo de login. O título do formulário, elegantemente situado no topo, fornece uma referência clara do propósito do componente, garantindo uma experiência de usuário coesa e fácil compreensão.
-    </p>
-</div>
-<div>
-    <img class="position-exc" src="/img/Captura de tela 2024-01-29 173704.png" alt="Calendário">
-    <p class="position2-p">
-        <span>Sobre a página de (calendário):</span><br><br>
-        Esta é a tela inicial, meticulosamente concebida para oferecer uma experiência visualmente atraente e intuitiva. O menu, estrategicamente posicionado no topo da interface, não apenas proporciona uma navegação eficiente, mas também garante fácil acesso às diversas funcionalidades do sistema. A página é enriquecida com a presença de imagens ilustrativas, cuidadosamente selecionadas para complementar o design e transmitir uma mensagem visual envolvente.
-        Destacando a inovação, a tela incorpora parágrafos dinâmicos, oferecendo informações de forma envolvente e cativante. A presença de gradientes com efeitos, implementados através de JavaScript, introduz uma camada adicional de modernidade e interatividade à experiência do usuário. Esses gradientes não apenas aprimoram o apelo visual, mas também proporcionam uma sensação de dinamismo à interface, conferindo uma experiência única e contemporânea.
-        A combinação de elementos visuais, como imagens e gradientes animados, torna essa tela inicial não apenas funcional, mas também esteticamente agradável. Essa abordagem inovadora demonstra um compromisso com a excelência no design, proporcionando aos usuários uma introdução impactante e memorável ao sistema.
-    </p>
-</div>
-<div>
-    <img class="position-exc" src="/img/Captura de tela 2024-01-29 173740.png" alt="Planos">
-    <p class="position2-p">
-        <span>Sobre a página de (Planos):</span><br><br>
-        Esta é a tela inicial, meticulosamente concebida para oferecer uma experiência visualmente atraente e intuitiva, capturando a atenção do usuário desde o primeiro momento. O menu, estrategicamente posicionado no topo da interface, não se limita apenas a uma estética elegante, mas também oferece uma navegação eficiente, proporcionando fácil acesso às diversas funcionalidades do sistema.
-        Uma característica notável desta tela inicial é a presença de uma tabela que detalhadamente apresenta os benefícios associados a cada plano disponível, apresentando uma distinção clara entre o que é oferecido com um marcador de "certo" e o que não está incluído marcado como "não". Esta abordagem visa fornecer aos usuários uma compreensão instantânea das vantagens específicas de cada plano, facilitando a tomada de decisões informadas.
-        Além disso, um botão estrategicamente colocado na parte inferior da tabela convida os usuários a fazerem sua escolha de plano, proporcionando uma interação intuitiva e direta. Essa disposição cuidadosa de elementos na tela inicial visa não apenas otimizar a usabilidade, mas também garantir uma experiência de usuário fluida e envolvente desde o primeiro contato com o sistema.
-    </p>
-</div>
-<div>
-    <img class="position-exc" src="/img/Captura de tela 2024-01-29 173815.png" alt="Sobre Nós">
-    <p class="position2-p"> 
-        <span>Sobre a página (Sobre Nós):</span><br><br>
-        A tela inicial foi meticulosamente concebida com o objetivo primordial de proporcionar uma experiência visualmente cativante e intuitiva, visando prender a atenção do usuário desde o momento inicial. O menu, estrategicamente posicionado no topo da interface, vai além de uma simples busca por estética elegante, oferecendo uma navegação eficiente que garante acesso descomplicado às diversas funcionalidades do sistema.
-        Destacando-se nessa página, além da disposição cuidadosa do menu e da interface, estão as funcionalidades de vídeo que enriquecem a experiência do usuário. <br><br> Com uma combinação harmoniosa de título, imagem e textos, a página se torna um ponto focal de interação, proporcionando não apenas informações relevantes, mas também uma estética visualmente atrativa.
-        A presença de recursos de vídeo eleva a experiência do usuário, possibilitando uma forma dinâmica de apresentar informações e tornando a interação mais envolvente. A combinação de elementos visuais e conteúdo textual trabalha em conjunto para criar uma atmosfera informativa e esteticamente agradável na tela inicial, promovendo assim uma experiência completa e impactante para o usuário desde o primeiro contato com o sistema.
-    </p>
-</div>
-<!-- Parte Back -->
-<div>
-    <br><br><br><br><br><br><br><br><br>
-    <h1 id="back">Desenvolvimento <span>Back-End</span></h1>
-    <h3 class="h3-2">Python e Lógica de Programação</h3>
-    <img class="img" src="https://images.datacamp.com/image/upload/f_auto,q_auto:best/v1603718736/Why_Your_Company_Needs_Python_for_Business_Analytics_xzzles.png" alt="Python">
-    <p>
-        Python é uma linguagem de programação versátil, de alto nível e interpretada, criada por Guido van Rossum. Destaca-se por sua sintaxe simples, código legível e uma extensa biblioteca padrão. Essas características tornam o Python popular entre iniciantes e desenvolvedores experientes, sendo aplicado em diversos campos, como desenvolvimento web, científico, automação de tarefas e inteligência artificial.
-        O estudo da lógica de programação é essencial para qualquer pessoa interessada em programação, independentemente da linguagem escolhida. Ele envolve o desenvolvimento de habilidades para resolver problemas de maneira estruturada, dividindo-os em partes menores e criando algoritmos para resolvê-los.
-    </p>
-    <div class="box-1">
-        <div class="btn btn-one">
-            <a href="func-python.html"><span>Exemplo Python 1!</span></a>
+<main>
+    <section>
+        <br><br><br><br><br><br><br><br>
+        <div class="interface">
+            <div>
+                <h1 id="info-basic">Informática <span>Básica</span></h1>
+                <h3>Atalhos</h3>
+                <img class="img-other" src="https://traine.com.br/wp-content/plugins/phastpress/phast.php/c2VydmljZT/1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGdHJhaW5lLmNvbS5iciUyRndwLWNvbnRlbnQlMkZ1cGxvYWRzJTJGMjAyMSUyRjA3JTJGY3Vyc28tZGUtaW5mb3JtYXRpY2EtNS1tb3Rpdm9zLXBhcmEtdm9jZS1zZS1tYXRyaWN1bGFyLmpwZyZjYWNoZU1hcmtlcj0xNjcyMTAyMDg3LTM4MzAxJnRva2VuPWM2MmM2ZmE0NGU3ZTJlYWQ.q.jpg" alt="Informática Básica">
+                <p class="p-other">
+                    Quando começamos a utilizar o teclado, especialmente em computadores, é útil aprender alguns atalhos que podem facilitar a navegação e a execução de tarefas. Aqui estão alguns atalhos comuns que podem ser úteis para usuários iniciantes:
+                </p>
+                <ul class="posic-ul">
+                    <li> Ctrl + C / Ctrl + X / Ctrl + V:
+                        <ul>
+                            <li>Copiar o texto ou elemento selecionado.</li>
+                            <li>Cortar o texto ou elemento selecionado.</li>
+                            <li>Colar o texto ou elemento copiado ou cortado.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="posic-ul">
+                    <li> Ctrl + Z / Ctrl + Y:
+                        <ul>
+                            <li>Desfazer a última ação.</li>
+                            <li>Refazer a última ação desfeita.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="posic-ul">
+                    <li> Ctrl + Shift + N / Ctrl + Shift + Esc / Alt + Tab:
+                        <ul>
+                            <li>Criar uma nova pasta.</li>
+                            <li>Abrir diretamente o Gerenciador de Tarefas no Windows.</li>
+                            <li>Alternar entre aplicativos ou janelas abertas.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p class="other-p">
+                    Estes são apenas alguns exemplos de atalhos básicos e comuns. A utilização desses atalhos pode economizar tempo e melhorar a eficiência ao realizar tarefas cotidianas no computador.
+                </p>
+            </div>
         </div>
-    </div>
-    <br><br><br><br><br><br><br>
-    <img class="img-right" src="https://m.media-amazon.com/images/I/71MIG6Z3F2L._AC_UF1000,1000_QL80_.jpg" alt="Lógica de Programação">
-    <p class="p-left">
-       <span>Lógica de Programação:</span><br><br>
-        A lógica de programação ensina a pensar de maneira algorítmica, elaborando passos sequenciais para a resolução de problemas. Isso é fundamental para o desenvolvimento de software eficiente. Ao estudar lógica de programação, os aprendizes se familiarizam com conceitos como estruturas de controle, estruturas de dados e métodos para decompor problemas complexos em tarefas mais simples.
-        Python é uma escolha popular para ensinar lógica de programação devido à sua sintaxe clara e intuitiva. Recursos online, cursos e tutoriais dedicados facilitam o aprendizado de Python e lógica de programação, tornando esses temas acessíveis a estudantes de diversos níveis, desde iniciantes até aqueles que desejam aprimorar suas habilidades de programação. 
-    </p>
-    <div class="box-2">
-        <div class="btn btn-one">
-            <span><a href="#">Exemplo Python 2!</a></span>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section class="dev">
+        <div class="interface">
+            <br>
+            <div>
+                <h1 id="front">Desenvolvimento <span>Front-End</span></h1>
+                <h3>HTML e CSS</h3>
+                <img class="img" src="https://hermes.dio.me/articles/cover/4cb46a28-34fb-4c72-9588-b5ed52b9470f.jpg" alt="HTML e CSS">
+                <p>Imagine uma página web, como essa mesmo que você esta lendo agora. É possível perceber que existem diversos elementos separados, como cabeçalho, título, parágrafos, imagens e muitos outros. Toda a organização desses elementos é feita pelo HTML. Ele é utilizado para criar toda a estrutura da página e, para isso, utiliza as famosas tags (etiquetas) para sinalizar onde cada tipo de elemento será implementado. <br><br> Cascading Style Sheet, mais conhecido como CSS, é uma linguagem de estilos que, assim como o HTML, também não é considerada uma linguagem de programação. Ela é responsável por separar a parte estrutural da aplicação (que ficará nas mãos do HTML) da parte estética.</p>
+            </div>
         </div>
-    </div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <h3>APIs Utilizadas</h3>
-    <img class="img" src="https://img-c.udemycdn.com/course/750x422/2579724_2eb4.jpg" alt="Colab">
-    <p>
-        <span class="sem-p">Google Colab:</span><br><br>
-        O Google Colab é uma plataforma baseada na nuvem amplamente adotada por desenvolvedores Python, cientistas de dados e pesquisadores. Essa ferramenta oferece uma experiência de programação flexível e acessível, permitindo que os usuários escrevam e executem código Python diretamente em seus navegadores, sem a necessidade de instalações locais. Sua integração direta com o Google Drive facilita o compartilhamento e a colaboração, com notebooks armazenados e sincronizados automaticamente.
-        Além disso, o Colab proporciona acesso gratuito a recursos computacionais, incluindo CPU, GPU e TPU, tornando-se uma escolha valiosa para tarefas que demandam poder computacional, como treinamento de modelos de aprendizado de máquina. O ambiente já vem equipado com bibliotecas populares para ciência de dados e aprendizado de máquina, como NumPy, pandas e TensorFlow, agilizando o processo de desenvolvimento.
-    </p>
-    <br><br><br><br><br>
-    <img class="img-right" src="https://gluo.be/wp-content/uploads/2023/03/625012c9c0dbf1887c4bf7c7_623d8b3bd384c356fff4d0c8_memgraph-jupyter-notebook-cover.png" alt="Jupyter">
-    <p class="p-left">
-       <span>Jupyter Anaconda:</span><br><br>
-        A lógica de programação ensina a pensar de maneira algorítmica, elaborando passos sequenciais para a resolução de problemas. Isso é fundamental para o desenvolvimento de software eficiente. Ao estudar lógica de programação, os aprendizes se familiarizam com conceitos como estruturas de controle, estruturas de dados e métodos para decompor problemas complexos em tarefas mais simples.
-        Python é uma escolha popular para ensinar lógica de programação devido à sua sintaxe clara e intuitiva. Recursos online, cursos e tutoriais dedicados facilitam o aprendizado de Python e lógica de programação, tornando esses temas acessíveis a estudantes de diversos níveis, desde iniciantes até aqueles que desejam aprimorar suas habilidades de programação. 
-    </p>
-    <div class="box-2">
-        <div class="btn btn-one">
-            <span><a href="#">Exemplo Python 3!</a></span>
+    </section>
+    <br><br><br>
+    <!-- Home Proj 1 -->
+    <section>
+        <div class="interface">
+            <div>
+                <h3 class="position" id="proj-01">Projeto 01 (HTML e CSS)</h3>
+                <p class="position-p">
+                <span>Como é um desenvolvimento de site?</span><br><br> Desenvolver um projeto utilizando HTML e CSS pode se revelar uma jornada desafiadora, mas igualmente recompensadora. A aparente simplicidade dessas linguagens muitas vezes esconde a complexidade envolvida na criação de um design coeso e funcional.
+                    No início, a familiarização com as tags HTML e as propriedades CSS pode parecer simples, mas à medida que se avança, surgem desafios inesperados. A luta para alinhar elementos, garantir a responsividade em diferentes dispositivos e lidar com as nuances de navegadores diversos pode se transformar em um verdadeiro quebra-cabeça.
+                    A cascata de estilos do CSS, embora poderosa, pode se tornar um desafio gerenciável. <br><br>  As especificidades e hierarquias muitas vezes exigem paciência e atenção aos detalhes. A tentativa de criar layouts elegantes pode ser uma experiência de tentativa e erro, ajustando constantemente margens, paddings e tamanhos de fonte para atingir o equilíbrio desejado.
+                    Entretanto, à medida que se superam esses obstáculos, a sensação de conquista é inigualável. Ver o projeto ganhando vida no navegador, com um design atraente e funcionalidade desejada, faz todo o esforço valer a pena. A capacidade de traduzir conceitos visuais em código, com precisão e eficiência, destaca a importância da prática contínua e do aprendizado constante.
+                    Assim, a dificuldade inicial de criar um projeto com HTML e CSS não apenas testa habilidades técnicas, mas também a perseverança e a criatividade do desenvolvedor. Cada desafio superado é um passo em direção ao aprimoramento das habilidades e à construção de projetos cada vez mais impressionantes.
+                </p>
+            <br><br><br><br><br><br><br><br><br><br><br>
+                <img class="position-exc" src="/img/Captura de tela 2024-01-29 162047.png" alt="Primeiro Projeto - Fitlife">
+                <p class="position2-p">
+                <span>Sobre a primeira página (Home):</span><br><br>
+                    Esta é a tela inicial, onde encontramos um menu estrategicamente posicionado na parte superior da interface. Abaixo, uma imagem ampla adiciona um toque visual envolvente. Uma mensagem dinâmica percorre de uma extremidade à outra em um loop, proporcionando uma experiência interativa e cativante para o usuário. Dois botões essenciais, um destinado ao cadastro e outro para acessar o calendário, oferecem funcionalidades intuitivas.
+                    No centro da tela, uma tabela meticulosamente organizada exibe os dias da semana, garantindo uma navegação eficiente e clara. Com essa abordagem funcional, os usuários podem facilmente visualizar e interagir com as informações relacionadas ao calendário.
+                    Para enriquecer ainda mais a experiência do usuário, uma imagem adjacente exibe frases inspiradoras, adicionando um toque motivacional à interface. Essa combinação de elementos visuais e funcionais cria uma tela inicial completa e atraente, proporcionando aos usuários uma entrada agradável e eficiente ao sistema.
+                </p>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-01-29 173542.png" alt="Cadastro">
+                <p class="position2-p">
+                    <span>Sobre a página de (cadastro):</span><br><br>
+                    Esta é a tela inicial, meticulosamente projetada para proporcionar uma experiência visualmente atraente e intuitiva. O menu, estrategicamente posicionado no topo da interface, oferece uma navegação eficiente e fácil acesso às diferentes funcionalidades do sistema. O fundo, composto por um gradiente envolvente nas tonalidades vibrantes de vermelho, roxo e azul, adiciona um toque de modernidade e sofisticação.
+                    Ao centro da tela, um formulário cuidadosamente disposto aguarda as informações de cadastro do usuário. <br><br> Com campos para Nome, Email e Senha, a disposição clara e organizada facilita o preenchimento dos dados necessários. Um botão em gradiente, harmonizando com o fundo, destaca-se como o ponto focal para a submissão das informações, proporcionando uma transição suave para o próximo passo.
+                    Adicionalmente, dois botões estrategicamente posicionados na parte inferior do formulário oferecem opções de direcionamento ao usuário. O primeiro, com o link "Já tem conta", permite que usuários existentes acessem facilmente suas informações. O segundo, com a opção "Ir para Login", oferece uma alternativa rápida para aqueles que desejam prosseguir diretamente para o processo de login. O título do formulário, elegantemente situado no topo, fornece uma referência clara do propósito do componente, garantindo uma experiência de usuário coesa e fácil compreensão.
+                </p>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-01-29 173704.png" alt="Calendário">
+                <p class="position2-p">
+                    <span>Sobre a página de (calendário):</span><br><br>
+                    Esta é a tela inicial, meticulosamente concebida para oferecer uma experiência visualmente atraente e intuitiva. O menu, estrategicamente posicionado no topo da interface, não apenas proporciona uma navegação eficiente, mas também garante fácil acesso às diversas funcionalidades do sistema. A página é enriquecida com a presença de imagens ilustrativas, cuidadosamente selecionadas para complementar o design e transmitir uma mensagem visual envolvente.
+                    Destacando a inovação, a tela incorpora parágrafos dinâmicos, oferecendo informações de forma envolvente e cativante. A presença de gradientes com efeitos, implementados através de JavaScript, introduz uma camada adicional de modernidade e interatividade à experiência do usuário. Esses gradientes não apenas aprimoram o apelo visual, mas também proporcionam uma sensação de dinamismo à interface, conferindo uma experiência única e contemporânea.
+                    A combinação de elementos visuais, como imagens e gradientes animados, torna essa tela inicial não apenas funcional, mas também esteticamente agradável. Essa abordagem inovadora demonstra um compromisso com a excelência no design, proporcionando aos usuários uma introdução impactante e memorável ao sistema.
+                </p>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-01-29 173740.png" alt="Planos">
+                <p class="position2-p">
+                    <span>Sobre a página de (Planos):</span><br><br>
+                    Esta é a tela inicial, meticulosamente concebida para oferecer uma experiência visualmente atraente e intuitiva, capturando a atenção do usuário desde o primeiro momento. O menu, estrategicamente posicionado no topo da interface, não se limita apenas a uma estética elegante, mas também oferece uma navegação eficiente, proporcionando fácil acesso às diversas funcionalidades do sistema.
+                    Uma característica notável desta tela inicial é a presença de uma tabela que detalhadamente apresenta os benefícios associados a cada plano disponível, apresentando uma distinção clara entre o que é oferecido com um marcador de "certo" e o que não está incluído marcado como "não". Esta abordagem visa fornecer aos usuários uma compreensão instantânea das vantagens específicas de cada plano, facilitando a tomada de decisões informadas.
+                    Além disso, um botão estrategicamente colocado na parte inferior da tabela convida os usuários a fazerem sua escolha de plano, proporcionando uma interação intuitiva e direta. Essa disposição cuidadosa de elementos na tela inicial visa não apenas otimizar a usabilidade, mas também garantir uma experiência de usuário fluida e envolvente desde o primeiro contato com o sistema.
+                </p>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-01-29 173815.png" alt="Sobre Nós">
+                <p class="position2-p"> 
+                    <span>Sobre a página (Sobre Nós):</span><br><br>
+                    A tela inicial foi meticulosamente concebida com o objetivo primordial de proporcionar uma experiência visualmente cativante e intuitiva, visando prender a atenção do usuário desde o momento inicial. O menu, estrategicamente posicionado no topo da interface, vai além de uma simples busca por estética elegante, oferecendo uma navegação eficiente que garante acesso descomplicado às diversas funcionalidades do sistema.
+                    Destacando-se nessa página, além da disposição cuidadosa do menu e da interface, estão as funcionalidades de vídeo que enriquecem a experiência do usuário. <br><br> Com uma combinação harmoniosa de título, imagem e textos, a página se torna um ponto focal de interação, proporcionando não apenas informações relevantes, mas também uma estética visualmente atrativa.
+                    A presença de recursos de vídeo eleva a experiência do usuário, possibilitando uma forma dinâmica de apresentar informações e tornando a interação mais envolvente. A combinação de elementos visuais e conteúdo textual trabalha em conjunto para criar uma atmosfera informativa e esteticamente agradável na tela inicial, promovendo assim uma experiência completa e impactante para o usuário desde o primeiro contato com o sistema.
+                </p>
+            </div>
         </div>
-    </div>
-</div>
-<br><br><br><br><br>
-<!-- Parte Hardware e Software -->
-<div>
-    <br><br><br><br><br>
-    <h1 id="hard-sof">Manipulando <span>Hardware e Sofware</span></h1>
-    <h3 class="h3-3">Periféricos e Aplicativos</h3>
-    <img class="img" src="https://tm.ibxk.com.br/2021/12/22/22114306286189.jpg?ims=1200x675" alt="Hardware">
-    <p>
-       <span class="sem-p">O que é o Hardware:</span><br><br>
-        Hardware refere-se aos componentes físicos de um sistema computacional, como processador (por exemplo, Intel Core i7), memória RAM (8 GB DDR4), placa-mãe (por exemplo, ASUS ROG Strix B550), dispositivos de armazenamento (como SSD Samsung 970 EVO) e placas gráficas (por exemplo, NVIDIA GeForce RTX 3080). Esses elementos essenciais, combinados com dispositivos de entrada, como teclado mecânico Logitech e mouse sem fio Logitech MX Master, formam o conjunto de hardware responsável por impulsionar a funcionalidade de um sistema computacional.
-        <br><br><br><br><br>
-</div>
-<div>
-    <br><br><br><br><br>
-    <img class="img-right" src="https://audcontcontabilidade.com.br/wp-content/uploads/Como-Abrir-uma-Empresa-de-Software.jpg" alt="Software">
-    <p class="p-left">
-       <span>O que são os Sofware:</span><br><br>
-        Software refere-se aos programas, aplicativos e instruções lógicas que possibilitam o funcionamento de um sistema computacional. Diferentemente do hardware, que são os componentes físicos, o software é a parte intangível e programável que executa tarefas específicas. Isso inclui sistemas operacionais, softwares de aplicação, jogos e algoritmos. Exemplos comuns de software são o Windows, o Microsoft Office, o navegador Google Chrome e o Photoshop. O software desempenha um papel crucial na interação e na gestão de recursos do hardware, proporcionando uma variedade de funcionalidades que atendem às necessidades dos usuários em diversos contextos.
-        <br><br><br><br><br><br><br><br><br><br>
-    </p>
-</div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section class="dev-2">
+    <!-- Parte Back -->
+        <div class="interface">
+            <br>
+            <div>
+                <h1 id="back">Desenvolvimento <span>Back-End</span></h1>
+                <h3 class="h3-2">Python e Lógica de Programação</h3>
+                <img class="img" src="https://images.datacamp.com/image/upload/f_auto,q_auto:best/v1603718736/Why_Your_Company_Needs_Python_for_Business_Analytics_xzzles.png" alt="Python">
+                <p>
+                    Python é uma linguagem de programação versátil, de alto nível e interpretada, criada por Guido van Rossum. Destaca-se por sua sintaxe simples, código legível e uma extensa biblioteca padrão. Essas características tornam o Python popular entre iniciantes e desenvolvedores experientes, sendo aplicado em diversos campos, como desenvolvimento web, científico, automação de tarefas e inteligência artificial.
+                    O estudo da lógica de programação é essencial para qualquer pessoa interessada em programação, independentemente da linguagem escolhida. Ele envolve o desenvolvimento de habilidades para resolver problemas de maneira estruturada, dividindo-os em partes menores e criando algoritmos para resolvê-los.
+                </p>
+                <div class="box-1">
+                    <div class="btn btn-one">
+                        <a href="func-python.html"><span>Exemplo Python 1!</span></a>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <img class="img-right" src="https://m.media-amazon.com/images/I/71MIG6Z3F2L._AC_UF1000,1000_QL80_.jpg" alt="Lógica de Programação">
+                <p class="p-left">
+                <span>Lógica de Programação:</span><br><br>
+                    A lógica de programação ensina a pensar de maneira algorítmica, elaborando passos sequenciais para a resolução de problemas. Isso é fundamental para o desenvolvimento de software eficiente. Ao estudar lógica de programação, os aprendizes se familiarizam com conceitos como estruturas de controle, estruturas de dados e métodos para decompor problemas complexos em tarefas mais simples.
+                    Python é uma escolha popular para ensinar lógica de programação devido à sua sintaxe clara e intuitiva. Recursos online, cursos e tutoriais dedicados facilitam o aprendizado de Python e lógica de programação, tornando esses temas acessíveis a estudantes de diversos níveis, desde iniciantes até aqueles que desejam aprimorar suas habilidades de programação. 
+                </p>
+                <div class="box-2">
+                    <div class="btn btn-one">
+                        <span><a href="#">Exemplo Python 2!</a></span>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <h3>APIs Utilizadas</h3>
+                <img class="img" src="https://img-c.udemycdn.com/course/750x422/2579724_2eb4.jpg" alt="Colab">
+                <p>
+                    <span class="sem-p">Google Colab:</span><br><br>
+                    O Google Colab é uma plataforma baseada na nuvem amplamente adotada por desenvolvedores Python, cientistas de dados e pesquisadores. Essa ferramenta oferece uma experiência de programação flexível e acessível, permitindo que os usuários escrevam e executem código Python diretamente em seus navegadores, sem a necessidade de instalações locais. Sua integração direta com o Google Drive facilita o compartilhamento e a colaboração, com notebooks armazenados e sincronizados automaticamente.
+                    
+                </p>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <img class="img-right" src="https://gluo.be/wp-content/uploads/2023/03/625012c9c0dbf1887c4bf7c7_623d8b3bd384c356fff4d0c8_memgraph-jupyter-notebook-cover.png" alt="Jupyter">
+                <p class="p-left">
+                <span>Jupyter Anaconda:</span><br><br>
+                    A lógica de programação ensina a pensar de maneira algorítmica, elaborando passos sequenciais para a resolução de problemas. Isso é fundamental para o desenvolvimento de software eficiente. Ao estudar lógica de programação, os aprendizes se familiarizam com conceitos como estruturas de controle, estruturas de dados e métodos para decompor problemas complexos em tarefas mais simples.
+                    Python é uma escolha popular para ensinar lógica de programação devido à sua sintaxe clara e intuitiva. Recursos online, cursos e tutoriais dedicados facilitam o aprendizado de Python e lógica de programação, tornando esses temas acessíveis a estudantes de diversos níveis, desde iniciantes até aqueles que desejam aprimorar suas habilidades de programação. 
+                </p>
+                <div class="box-2">
+                    <div class="btn btn-one">
+                        <span><a href="#">Exemplo Python 3!</a></span>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br>
+        </div>
+    </section>
+    <br><br><br><br>
+    <!-- Parte Hardware e Software -->
+    <section>
+        <div class="interface">
+            <div>
+                <br><br><br><br><br>
+                <h1 id="hard-sof">Manipulando <span>Hardware e Sofware</span></h1>
+                <h3 class="h3-3">Periféricos e Aplicativos</h3>
+                <img class="img" src="https://tm.ibxk.com.br/2021/12/22/22114306286189.jpg?ims=1200x675" alt="Hardware">
+                <p>
+                <span class="sem-p">O que é o Hardware:</span><br><br>
+                    Hardware refere-se aos componentes físicos de um sistema computacional, como processador (por exemplo, Intel Core i7), memória RAM (8 GB DDR4), placa-mãe (por exemplo, ASUS ROG Strix B550), dispositivos de armazenamento (como SSD Samsung 970 EVO) e placas gráficas (por exemplo, NVIDIA GeForce RTX 3080). Esses elementos essenciais, combinados com dispositivos de entrada, como teclado mecânico Logitech e mouse sem fio Logitech MX Master, formam o conjunto de hardware responsável por impulsionar a funcionalidade de um sistema computacional.
+            </div>
+        </div> 
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="img-right" src="https://audcontcontabilidade.com.br/wp-content/uploads/Como-Abrir-uma-Empresa-de-Software.jpg" alt="Software">
+                <p class="p-left">
+                <span>O que são os Sofware:</span><br><br>
+                    Software refere-se aos programas, aplicativos e instruções lógicas que possibilitam o funcionamento de um sistema computacional. Diferentemente do hardware, que são os componentes físicos, o software é a parte intangível e programável que executa tarefas específicas. Isso inclui sistemas operacionais, softwares de aplicação, jogos e algoritmos. Exemplos comuns de software são o Windows, o Microsoft Office, o navegador Google Chrome e o Photoshop. O software desempenha um papel crucial na interação e na gestão de recursos do hardware, proporcionando uma variedade de funcionalidades que atendem às necessidades dos usuários em diversos contextos.
+                </p>
+            </div>
+        </div>
+    </section>
+<br><br><br><br><br><br><br><br><br><br><br>
 <footer>
     <div class="interface">
         <div class="line-footer">
@@ -244,6 +277,7 @@
         </div>
     </div>
 </footer>
+</main>
 <div  class="container">
     <nav class="menu-2">
         <input type="checkbox" name="menucircular" id="menucircular" class="menucircular">

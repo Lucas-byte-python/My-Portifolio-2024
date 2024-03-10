@@ -10,6 +10,113 @@ html {
     scroll-behavior: smooth;
 }
 
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.dark .dark-mode-button button i {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.dark .transparent {
+    background-color: transparent !important;
+    border: 2px solid #ffffff !important; 
+    border-radius: 50px !important;
+}
+
+.transparent {
+    background-color: transparent !important;
+    border: 2px solid #ffffff !important; 
+    border-radius: 50px !important;
+}
+
+.dark-mode-button button i {
+    color: white;
+    font-size: 20px;
+}
+
+.dark .nav-link {
+    color: #ffffff;
+}
+
+.dark main {
+    background-color: white;
+}
+
+.dark footer {
+    background-color: #8a2be2;
+    color: white;
+}
+
+.dark footer button{
+    background-color: #000000;
+    color: white;
+}
+
+.dark footer .line-footer{
+    padding: 20px 0;
+}
+
+.dark footer .line-footer p {
+    color: #ffffff;
+}
+
+.dark .borda {
+    margin-top: -70px;
+    border-top: 2px solid #ffffff;
+}
+
+.dark header {
+    background-color: #8a2be2;
+    position: fixed;
+    margin-left: 0px;
+    z-index: 1000;
+    height: 120px;
+    width: 100%;
+}
+
+.dark h1 {
+    color: #0340d0;
+}
+
+.dark h3 {
+    color: #000000;
+}
+
+.dark p {
+    color: #000000;
+}
+
+.dark .posic-ul {
+    color: #ff00f2;
+}
+
+.dark h1 span{
+    color: #000000;
+}
+
+.dark .p-left span {
+    color: #8a2be2;
+}
+
+.dark .sem-p {
+    color: #8a2be2;
+}
+
+.dark .position-p span {
+    color: #8a2be2;
+}
+
+.dark .position-p .list-poo {
+    color: #000000;
+}
+
+.dark .position2-p span {
+    color: #8a2be2;
+}
+
 body {
     background: #201b2c;
     overflow-x: hidden;
@@ -34,6 +141,7 @@ header {
     position: relative;
     float: left;
     border-right: 1px solid #201b2c;
+    border: none;
 }
 
 .nav-bar {
@@ -140,8 +248,8 @@ header {
     width: 650px;
     height: 500px;
     border-radius: 20px;
-    margin-left: 230px;
-    margin-top: 30px;
+    margin-left: -100px;
+    margin-top: 50px;
     transition: 0.3s;
     animation: go-up 2s;
 }
@@ -172,11 +280,14 @@ header {
 .p-other {
     margin-top: -470px;
     animation: go-back 2s;
+    margin-left: 700px;
+    margin-right: -150px;
 }
 
 .posic-ul {
     color: #53b9c7;
-    margin-left: 1100px;
+    margin-left: 850px;
+    margin-right: -300px;
     margin-top: 30px;
     animation: go-back 2s;
 }
@@ -189,7 +300,7 @@ header {
     width: 650px;
     height: 350px;
     border-radius: 20px;
-    margin-left: 230px;
+    margin-left: -100px;
     margin-top: 70px;
     transition: 0.3s;
     animation: go-up 2s;
@@ -201,7 +312,7 @@ header {
 }
 
 h1 {
-    margin-top: 100px;
+    margin-top: 0px;
     font-size: 50px;
     text-align: center;
     color: #00FF08;
@@ -220,7 +331,7 @@ h1 {
 h3 {
     margin-top: 100px;
     margin-bottom: -20px;
-    margin-left: 1200px;
+    margin-left: 910px;
     color: #77ffc0;
     font-size: 25px;
     font-weight: 200;
@@ -230,7 +341,7 @@ h3 {
 .rob {
     margin-top: 100px;
     margin-bottom: -20px;
-    margin-left: 1150px;
+    margin-left: 900px;
     color: #77ffc0;
     font-size: 25px;
     font-weight: 200;
@@ -242,8 +353,8 @@ h3 {
     border-radius: 5px;
     margin: 20px;
     overflow-x: auto;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: -10px;
+    margin-right: 5px;
 }
 
 .code-box {
@@ -331,8 +442,8 @@ spa.list-poo {
 }
 
 p {
-    margin-left: 1000px;
-    margin-right: 200px;
+    margin-left: 700px;
+    margin-right: -150px;
     text-align: justify;
     font-size: 20px;
     margin-top: -340px;
@@ -351,14 +462,14 @@ p {
 
 .position {
     margin-top: 200px;
-    margin-left: 750px;
+    margin-left: 500px;
     font-weight: 200;
     font-size: 40px;
 }
 
 .position-p {
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 80px;
     font-weight: 200;
 }
@@ -372,7 +483,7 @@ p {
 .position-exc {
     margin-top: 120px;
     border-radius: 20px;
-    margin-left: 400px;
+    margin-left: 120px;
     width: 1000px;
     height: 500px;
     transition: 0.3s;
@@ -386,8 +497,8 @@ p {
 
 .position2-p {
     margin-top: 120px;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 0px;
+    margin-right: 0px;
     font-weight: 200;
     font-size: 20px;
 }
@@ -402,7 +513,7 @@ p {
     width: 650px;
     height: 350px;
     border-radius: 20px;
-    margin-left: 1000px;
+    margin-left: 740px;
     margin-top: 250px;
     transition: 0.3s;
     animation: go-back 2s;
@@ -414,8 +525,8 @@ p {
 }
 
 .p-left {
-    margin-left: 230px;
-    margin-right: 960px;
+    margin-left: -100px;
+    margin-right: 700px;
     text-align: justify;
     font-size: 20px;
     margin-top: -350px;
@@ -456,7 +567,7 @@ P .sem-p {
     color: #FFF;
     transition: all 0.3s;
     position: relative;
-    margin-left: 770px;
+    margin-left: 510px;
     margin-top: 50px;
 }
 

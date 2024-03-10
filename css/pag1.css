@@ -5,10 +5,54 @@
     font-family: 'Inter', sans-serif;
 }
 
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 body {
     background: #201b2c;
     overflow-x: hidden;
     overflow-y: scroll;
+}
+
+.dark .dark-mode-button button i {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+.dark .transparent {
+    background-color: transparent !important;
+    border: 2px solid #ffffff !important; 
+    border-radius: 50px !important;
+}
+
+.transparent {
+    background-color: transparent !important;
+    border: 2px solid #ffffff !important; 
+    border-radius: 50px !important;
+}
+
+.dark-mode-button button i {
+    color: white;
+    font-size: 20px;
+}
+
+.dark .nav-link {
+    color: #ffffff;
+}
+
+.dark main {
+    background-color: white;
+}
+
+.dark header {
+    background-color: #8a2be2;
+    position: fixed;
+    margin-left: 0px;
+    z-index: 1000;
+    height: 120px;
+    width: 100%;
 }
 
 html {
@@ -19,6 +63,58 @@ html {
 body::-webkit-scrollbar {
     width: 6px;
     background-color: transparent;
+}
+
+.dark .dev {
+    background-color: #8a2be2;
+}
+
+.dark .dev-2 {
+    background-color: #8a2be2;
+}
+
+.dark .dev-2 h1 {
+    color: #00f7ff;
+}
+
+.dark .dev-2 span {
+    color: white;
+}
+
+.dark .dev-2 p {
+    color: white;
+}
+
+.dark .dev-2 .h3-2 {
+    color: white;
+}
+
+.dark .dev-2 .p-left span {
+    color: #00f7ff;
+}
+
+.dark .dev-2 h3 {
+    color: #00f7ff;
+}
+
+.dark .dev h1 {
+    color: #00f7ff;
+}
+
+.dark .dev span {
+    color: #fff;
+}
+
+.dark .dev p {
+    color: #fff;
+}
+
+.dark .dev h3 {
+    color: #fff;
+}
+
+section.dev {
+    height: 900px;
 }
 
 header {
@@ -34,6 +130,7 @@ header {
     position: relative;
     float: left;
     border-right: 1px solid #201b2c;
+    border: none;
 }
 
 .nav-bar {
@@ -140,8 +237,8 @@ header {
     width: 650px;
     height: 500px;
     border-radius: 20px;
-    margin-left: 230px;
-    margin-top: 100px;
+    margin-left: -100px;
+    margin-top: 50px;
     transition: 0.3s;
     animation: go-up 2s;
 }
@@ -152,8 +249,10 @@ header {
 }
 
 .p-other {
-    margin-top: -530px;
+    margin-top: -500px;
     animation: go-back 2s;
+    margin-left: 650px;
+    margin-right: -50px;
 }
 
 @keyframes go-back {
@@ -176,7 +275,7 @@ header {
 
 .posic-ul {
     color: #53b9c7;
-    margin-left: 1100px;
+    margin-left: 850px;
     margin-top: 30px;
     font-family: "Open Sans";
     animation: go-back 2s;
@@ -185,13 +284,15 @@ header {
 .other-p {
     margin-top: 30px;
     animation: go-back 2s;
+    margin-left: 670px;
+    margin-right: -50px;
 }
 
 .img {
     width: 650px;
     height: 350px;
     border-radius: 20px;
-    margin-left: 230px;
+    margin-left: -100px;
     margin-top: 70px;
     transition: 0.3s;
     animation: go-up 2s;
@@ -202,8 +303,75 @@ header {
     opacity: 0.8;
 }
 
+.dark h1 {
+    color: #0340d0;
+}
+
+.dark  h1 span {
+    color: #000000;
+}
+
+.dark  h3  {
+    color: #000000;
+}
+
+.dark .p-other{
+    color: #000000;
+}
+
+.dark .posic-ul {
+    color: #ff00f2;
+}
+
+.dark .other-p {
+    color: #000000;
+}
+
+.dark p {
+    color: #000000;
+}
+
+.dark .position-p span {
+    color: #8a2be2;
+}
+
+.dark .position2-p span {
+    color: #8a2be2;
+}
+
+.dark .p-left span {
+    color: #8a2be2;
+}
+
+.dark .sem-p{
+    color: #8a2be2;
+}
+
+.dark footer {
+    background-color: #8a2be2;
+    color: white;
+}
+
+.dark footer button{
+    background-color: #000000;
+    color: white;
+}
+
+.dark footer .line-footer{
+    padding: 20px 0;
+}
+
+.dark footer .line-footer p {
+    color: #ffffff;
+}
+
+.dark .borda {
+    margin-top: -70px;
+    border-top: 2px solid #ffffff;
+}
+
 h1 {
-    margin-top: 100px;
+    margin-top: 0px;
     font-size: 50px;
     text-align: center;
     color: #00FF08;
@@ -216,9 +384,9 @@ h1 {
 }
 
 h3 {
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: -20px;
-    margin-left: 1250px;
+    margin-left: 980px;
     color: #77ffc0;
     font-size: 25px;
     font-weight: 200;
@@ -226,8 +394,8 @@ h3 {
 }
 
 p {
-    margin-left: 1000px;
-    margin-right: 200px;
+    margin-left: 700px;
+    margin-right: -100px;
     text-align: justify;
     font-size: 20px;
     margin-top: -340px;
@@ -246,14 +414,14 @@ p {
 
 .position {
     margin-top: 200px;
-    margin-left: 750px;
+    margin-left: 400px;
     font-weight: 200;
     font-size: 40px;
 }
 
 .position-p {
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 20px;
+    margin-right: -20px;
     margin-top: 80px;
     font-weight: 200;
 }
@@ -267,7 +435,7 @@ p {
 .position-exc {
     margin-top: 120px;
     border-radius: 20px;
-    margin-left: 400px;
+    margin-left: 150px;
     width: 1000px;
     height: 500px;
     transition: 0.3s;
@@ -280,8 +448,8 @@ p {
 
 .position2-p {
     margin-top: 120px;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 20px;
+    margin-right: -20px;
     font-weight: 200;
     font-size: 20px;
 }
@@ -296,7 +464,7 @@ p {
     width: 650px;
     height: 350px;
     border-radius: 20px;
-    margin-left: 1000px;
+    margin-left: 750px;
     margin-top: 250px;
     transition: 0.3s;
     animation: go-up 2s;
@@ -308,8 +476,8 @@ p {
 }
 
 .p-left {
-    margin-left: 230px;
-    margin-right: 960px;
+    margin-left: -100px;
+    margin-right: 700px;
     text-align: justify;
     font-size: 20px;
     margin-top: -350px;
@@ -333,7 +501,7 @@ P .sem-p {
 .h3-2 {
     margin-top: 100px;
     margin-bottom: -20px;
-    margin-left: 1150px;
+    margin-left: 850px;
     color: #77ffc0;
     font-size: 25px;
     font-weight: 200;
@@ -351,7 +519,7 @@ P .sem-p {
     color: #FFF;
     transition: all 0.3s;
     position: relative;
-    margin-left: 1200px;
+    margin-left: 870px;
     margin-top: 40px;
     animation: go-back 2s;
 }
@@ -417,7 +585,7 @@ P .sem-p {
 }
 
 .h3-3 {
-    margin-left: 1200px;
+    margin-left: 920px;
 }
 
 .btn-other {

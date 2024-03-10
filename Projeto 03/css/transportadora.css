@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(/img/banner-armazenagem.webp);
+    background-image: url(/Projeto\ 03/img/banner-armazenagem.webp);
     background-position: cover;
     background-repeat: no-repeat;
 }
@@ -249,7 +249,7 @@ button {
 .rodape{
     width: 100%;
     height: auto;
-    background-image: url(/img/banner-armazenagem.webp);
+    background-image: url(/Projeto\ 03/img/banner-armazenagem.webp);
     background-position: cover;
     background-repeat: no-repeat;
 }
@@ -538,7 +538,7 @@ button {
     }
     .rodape{
         height: 477px;
-        background-image: url(banner-armazenagem.webp);
+        background-image: url(/Projeto\ 03/img/banner-armazenagem.webp);
     }   
     .contato{
         margin-left: 20px;

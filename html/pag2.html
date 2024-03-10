@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <script src="/js/white.js"></script>
 </head>
 <body>
 <header>
@@ -30,8 +31,10 @@
             </ul>
         </div>
         <div class="login-button">
-            <div class="btn btn-other">
-                <a href="home.html"><span class="btn-login">Fale Comigo</span></a>
+            <div class="dark-mode-button">
+                <button id="darkModeButton" class="transparent" onclick="toggleDarkMode()">
+                    <i id="darkModeIcon" class="bi bi-moon"></i>
+                </button>
             </div>
         </div>
 
@@ -52,377 +55,676 @@
         </div>
     </div>
 </header>
+<br><br>
+<main>
+    <section>
+        <br><br><br><br><br>
     <!-- Desenvolvimento -->
-<br><br><br>
-<div>
-    <h1 id="startup">Gestão<span> de Startup I</span></h1>
-    <h3>O que é Gestão de Startup?</h3>
-    <img class="img-other" src="https://hinova.com.br/wp-content/uploads/2018/11/gestaofinanceirastartups-1-1024x876-1024x585.jpeg" alt="Gestão de Startup">
-    <p class="p-other">
-        A gestão de uma startup envolve a administração estratégica e operacional de uma empresa em estágio inicial, com foco na rápida inovação e crescimento sustentável. Isso inclui a definição de metas claras, alocação eficiente de recursos, recrutamento e retenção de talentos, desenvolvimento de produtos ou serviços diferenciados, e a busca constante por feedback do mercado. A agilidade, flexibilidade e capacidade de adaptação são fundamentais, já que as startups enfrentam ambientes altamente dinâmicos e incertos. O sucesso da gestão de uma startup muitas vezes depende da habilidade dos fundadores e da equipe em identificar oportunidades, resolver problemas rapidamente e aprender com os erros. Veja abaixo as principais habilidades esperadas:
-    </p>
-    <ul class="posic-ul">
-        <li> 
-            <ul>
-                <li class="startup">Agilidade: Startups devem adaptar-se rapidamente às mudanças do mercado e feedback dos clientes, ajustando estratégias conforme necessário.</li>
-                <li class="startup">Foco no Cliente: O sucesso depende de compreender e atender às necessidades dos clientes através de feedback constante e priorização de suas necessidades em decisões empresariais.</li>
-                <li class="startup">Inovação Constante: A inovação é crucial para o crescimento, abrangendo a criação de produtos/serviços diferenciados e soluções criativas para desafios, incentivando uma cultura inovadora em toda a empresa.</li>
-            </ul>
-        </li>
-    </ul>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div>
-    <h1 id="robotica">Noções<span> de Robótica</span></h1>
-    <h3 class="rob">O que aprendemos na Robótica?</h3>
-    <img class="img" src="https://1.bp.blogspot.com/-1d-6h7CzYe4/UofxnrvkENI/AAAAAAAADqk/TEkpS_MPZTY/s1600/wall--e----rubiks--cube.jpg" alt="Robótica">
-    <p>A robótica é uma área fascinante que transcende os limites tradicionais entre ciência, engenharia e tecnologia. Além de ser aplicada em ambientes industriais para aumentar a eficiência e precisão, a robótica também tem um impacto significativo em campos como medicina, exploração espacial, agricultura e entretenimento. A integração de tecnologias emergentes, como inteligência artificial, machine learning e Internet das Coisas (IoT), está impulsionando ainda mais a evolução da robótica, tornando os robôs mais autônomos, adaptáveis e inteligentes. À medida que a robótica continua a avançar, seu potencial para transformar e melhorar a vida humana é cada vez mais evidente, prometendo soluções inovadoras para desafios complexos em diversos setores.</p>
-</div>
-<div>
-    <br><br><br><br><br>
-    <img class="img-right" src="https://0.academia-photos.com/attachment_thumbnails/39024137/mini_magick20190223-22450-16lcx9h.png?1550958862" alt="Livro Arduino">
-    <p class="p-left">
-       <span>Sobre o Livro de Estudo:</span><br><br>
-       A apostila "Arduino Básico" é um recurso educacional que oferece uma introdução acessível e prática ao mundo da plataforma de prototipagem eletrônica Arduino. Ela geralmente aborda os fundamentos da eletrônica, como resistores, LEDs, botões, motores, sensores, entre outros componentes, além de ensinar conceitos básicos de programação utilizando a linguagem Arduino, baseada em C/C++. A apostila costuma incluir tutoriais passo a passo para projetos práticos, como piscar LEDs, acionar motores, ler sinais de sensores e criar interfaces simples com o usuário. Ao fornecer uma base sólida em eletrônica e programação, a apostila Arduino Básico capacita os iniciantes a explorarem sua criatividade e desenvolverem projetos eletrônicos simples, preparando-os para avançar para desafios mais complexos na área da tecnologia.
-        <br><br><br><br><br><br>
-    </p>
-</div>
-<div>
-    <br><br><br><br><br>
-    <h3 class="rob">Equipamentos que utilizamos</h3>
-    <img class="img" src="/img/arduino.png" alt="Ardunio">
-    <p>
-        <span class="sem-p">O que é o Arduino?</span><br><br>
-        O Arduino é uma plataforma de prototipagem eletrônica de código aberto, projetada para facilitar a criação de projetos interativos e controlados por computador. Consiste em uma placa de circuito com um microcontrolador programável e uma interface de desenvolvimento integrada, permitindo aos usuários escreverem e carregarem código para controlar dispositivos eletrônicos, como sensores e atuadores. É amplamente utilizado em projetos de robótica, automação residencial, arte interativa, wearables e muitas outras aplicações. Sua simplicidade e versatilidade tornam o Arduino uma escolha popular entre entusiastas, educadores e profissionais de tecnologia.</p>
-</div>
-<div>
-    <br><br><br><br><br>
-    <img class="img-right" src="https://i0.wp.com/portal.vidadesilicio.com.br/wp-content/uploads/2018/03/Protoboard.jpg?resize=431%2C324&ssl=1" alt="Protoboard">
-    <p class="p-left">
-       <span>O que é a Protoboard?</span><br><br>      
-        Uma protoboard, também conhecida como placa de ensaio ou breadboard, é uma ferramenta fundamental na eletrônica. Ela oferece uma plataforma para prototipagem rápida e sem solda de circuitos eletrônicos. Consiste em uma placa de plástico com orifícios nos quais os componentes eletrônicos podem ser inseridos e conectados por meio de trilhas condutoras internas. Isso permite que os circuitos sejam montados temporariamente, facilitando testes e experimentação antes de uma montagem definitiva. As protoboards são amplamente utilizadas em projetos de eletrônica, desde iniciantes até profissionais, devido à sua praticidade, versatilidade e reutilização.
-        <br><br><br><br><br><br>
-    </p>
-</div>
-<div>
-    <br><br><br><br><br>
-    <img class="img" src="https://acdn.mitiendanube.com/stores/001/930/347/products/kit_de_leds_de_alto_brilho_cores_2-453eeb8c5cd68d495216366501789815-1024-1024.jpg" alt="LED">
-    <p>
-        <span class="sem-p">O que é os LED´s?</span><br><br>
-        Os LEDs, ou Diodos Emissores de Luz, são uma forma de tecnologia de iluminação altamente eficiente e versátil. Eles funcionam convertendo energia elétrica diretamente em luz visível, por meio de um processo chamado de emissão eletroluminescente. Essa característica os torna uma escolha popular em uma ampla gama de aplicações, desde dispositivos eletrônicos portáteis até iluminação residencial e comercial.
-        Além de sua eficiência energética e longa vida útil, os LEDs estão disponíveis em uma variedade de cores e intensidades, o que os torna altamente adaptáveis para diferentes necessidades de iluminação e sinalização. Eles também são mais duráveis e resistentes a choques e vibrações do que as fontes de luz tradicionais, como lâmpadas incandescentes ou fluorescentes.
-    </p>
-</div>
-<div>
-    <br><br><br><br><br>
-    <img class="img-right" src="https://laelectronica.com.gt/image/cache/catalog/Productos/Conexiones/Jumper-MxF-Producto-1200x1200.jpg" alt="Jumper">
-    <p class="p-left">
-       <span>O que é um Jumper?</span><br><br>      
-        Os jumpers na robótica são pequenos fios condutores que são utilizados para estabelecer conexões elétricas temporárias em placas de circuito, protoboards ou até mesmo em placas de controle de robôs. Eles são essenciais para criar conexões entre os diversos componentes eletrônicos, como sensores, atuadores, microcontroladores e outros dispositivos. Os jumpers permitem uma prototipagem rápida e flexível, facilitando a montagem e teste de circuitos durante o processo de desenvolvimento de um robô. Além disso, eles possibilitam a reconfiguração rápida das conexões elétricas conforme necessário para ajustar ou modificar o funcionamento do robô. Os jumpers estão disponíveis em diferentes tamanhos, cores e comprimentos para atender às necessidades específicas de cada projeto de robótica.
-        <br><br><br><br><br><br>
-    </p>
-</div>
-<div>
-    <br><br><br><br><br>
-    <img class="img" src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/resistores-sao-componentes-circuitos-eletricos-utilizados-para-transformar-energia-eletrica-em-calor-58764093071f6.jpg" alt="Resistores">
-    <p>
-        <span class="sem-p">O que são os Resistores?</span><br><br>
-       Os resistores são componentes eletrônicos passivos que têm a função de limitar o fluxo de corrente elétrica em um circuito. Eles são amplamente utilizados em eletrônica para controlar a quantidade de corrente que flui através de um componente ou circuito, ajustar a voltagem em um ponto específico do circuito, e proteger outros componentes sensíveis. Os resistores têm uma resistência elétrica específica, medida em ohms (Ω), que determina a quantidade de corrente que pode passar por eles para uma dada voltagem aplicada. Existem resistores de diferentes valores de resistência e potências, permitindo uma ampla variedade de aplicações em circuitos eletrônicos. Eles são identificados por código de cores ou valores impressos em sua superfície.
-    </p>
-</div>
-<div>
-    <br><br><br><br><br>
-    <img class="img-right" src="https://http2.mlstatic.com/D_NQ_NP_672793-MLB72030711204_102023-O.webp" alt="Sensores">
-    <p class="p-left">
-       <span>O que são os Sensores?</span><br><br>      
-       Sensores na robótica são dispositivos que detectam ou medem mudanças no ambiente ao redor do robô e convertem essas informações em sinais elétricos. Esses sinais são então processados pelo sistema de controle do robô para tomar decisões e realizar ações adequadas. Os sensores desempenham um papel crucial em várias tarefas robóticas, desde a detecção de obstáculos e a navegação em ambientes desconhecidos até a interação com objetos e seres humanos.
-       Existem muitos tipos diferentes de sensores utilizados na robótica, incluindo sensores de proximidade (como ultrassônicos e infravermelhos), sensores de visão (como câmeras e sensores de imagem), sensores de toque, sensores de temperatura, sensores de giroscópio e acelerômetro, entre outros. Cada tipo de sensor tem suas próprias características e aplicações específicas.
-        <br><br><br><br><br><br>
-    </p>
-</div>
-<div>
-    <h3 class="position" id="proj-01">Arduino Day 2023</h3>
-    <p class="position-p">
-       <span>O que foi o Arduino Day?</span><br><br> 
-        O Arduino Day é um evento anual celebrado em diferentes partes do mundo para comemorar o aniversário do Arduino, uma plataforma de prototipagem eletrônica de código aberto. O evento geralmente ocorre em março e é uma oportunidade para entusiastas, desenvolvedores, educadores e comunidades locais se reunirem para compartilhar conhecimento, aprender sobre projetos e tecnologias relacionadas ao Arduino, e participar de oficinas e atividades práticas.
-        <br><br>
-        Durante o Arduino Day, são realizadas diversas atividades, como palestras, workshops, demonstrações de projetos, competições, exposições e muito mais. É uma ocasião para celebrar a criatividade, inovação e colaboração na comunidade Arduino, além de incentivar novos interessados a explorarem o mundo da eletrônica e da programação.
-        <br><br>
-        Os eventos do Arduino Day são organizados por grupos locais, hackerspaces, makerspaces, universidades e outros centros de educação e pesquisa em todo o mundo, reunindo pessoas de diferentes idades e backgrounds para compartilhar experiências e inspirar uns aos outros. O Arduino Day desempenha um papel importante na promoção da educação em ciência, tecnologia, engenharia e matemática (STEM), bem como na disseminação do movimento maker e da cultura DIY (Do It Yourself).
-        <br><br>
-        O Arduino Day de 2023, teve a famosa competição de robô seguidor de linha que é um robô  que tem que seguir uma linha e finalizar o percuso. Além da Palestra sobre o Arduino os projetos mostrados pelos alunos de escolas com diferentes objetivos, e isso tudo sendo mostrado na Universidade IFCE (Instituição Federal do Estado do Ceará). Foi muito divertido e uma experiência nova para todos os aluno e professores.
-    </p>
-    <img class="position-exc" src="https://blog.arduino.cc/wp-content/uploads/2023/02/Arduino_DAY2020_Logotype-1024x475.png" alt="Arduino Day">
-    <br>
-</div>
-<br><br><br><br><br>
-<div>
-    <h1 id="poo">Programação Orientado<span> a Objeto</span></h1>
-    <p class="position-p">
-       <span>O que é POO?</span><br><br> 
-        POO em Python refere-se à Programação Orientada a Objetos em Python. É um paradigma de programação que se baseia na ideia de "objetos", os quais podem conter dados (também conhecidos como atributos) e código (métodos) que operam nesses dados. A POO é uma abordagem eficaz para organizar e estruturar programas complexos, permitindo a reutilização de código e a criação de sistemas modulares e flexíveis.
-        Em Python, a POO é suportada nativamente, o que significa que você pode criar classes e objetos diretamente no código. Aqui está um exemplo simples de uma classe em Python:
-    </p>
-    <div class="code-box">
-        <pre id="code-content">
-            <code class="python">
-                <span class="blue">class</span><span class="red"> Pessoa:</span>
-                   <span class="blue">def </span><span class="red">__init__</span>(self, nome, idade):
-                        self.nome = nome
-                        self.idade = idade
-
-                    <span class="blue">def</span><span class="red"> apresentar</span>(self):
-                        <span class="orange">print</span>(<span class="green">f"Olá, meu nome é {self.nome} e eu tenho {self.idade} anos."</span>)
-
-                <span class="gray"># Criando um objeto da classe Pessoa</span>
-                pessoa1 = Pessoa(<span class="green">"João"</span>, <span class="purple">30</span>)
-
-                <span class="gray"># Chamando o método apresentar() do objeto</span>
-                pessoa1.apresentar()
-            </code>
-        </pre>
-        <button id="copy-button"><i class="bi bi-clipboard-check"></i>Copy Code</button>
-    </div>
-    <br><br><br><br><br><br><br>
-    <div>
-        <p class="position-p">
-           <span>POO em Python o que aprendi?</span><br><br>
-            Ao utilizar a Programação Orientada a Objetos (POO) em Python, você aprendeu uma série de conceitos e técnicas fundamentais para desenvolver programas robustos e escaláveis. Aqui está um resumo do que foi aprendido:
-            <br><br>
-            <spa class="list-poo">1º - Classes e Objetos: A criação de classes para representar objetos do mundo real ou abstrações, e a instanciação dessas classes para criar objetos.</spa>
-            <br><br>
-            <spa class="list-poo">2º - Encapsulamento: A capacidade de agrupar dados (atributos) e os métodos que operam nesses dados dentro de uma única unidade (a classe), promovendo a segurança e a organização do código.</spa>
-            <br><br>
-            <spa class="list-poo">3º - Abstração: Utilizando a abstração para focar nos aspectos essenciais de um objeto e ocultar detalhes desnecessários da implementação, tornando o código mais fácil de entender e manter.</spa>
-            <br><br>
-            <spa class="list-poo">4º - Herança: A capacidade de uma classe herdar atributos e métodos de outra classe, permitindo a reutilização de código e a criação de hierarquias de classes para representar relacionamentos entre objetos.</spa>
-            <br><br>
-            <spa class="list-poo">5º - Polimorfismo: Compreendendo como diferentes classes podem fornecer métodos com a mesma assinatura, mas com comportamentos específicos para cada classe, permitindo que diferentes objetos sejam tratados de maneira uniforme.</spa>
-            <br><br>
-            <spa class="list-poo">6º - Métodos especiais: A utilização de métodos especiais em Python, como __init__ para inicialização de objetos, __str__ para representação de string de objetos e __len__ para determinar o tamanho de objetos, para personalizar o comportamento das classes.</spa>
-            <br><br>
-            <spa class="list-poo">7º - Composição: A construção de objetos complexos combinando outros objetos como parte de sua estrutura, promovendo a reutilização de código e a modularidade.</spa>
-            <br><br>
-            <spa class="list-poo">8º - Módulos e Pacotes: A organização de classes e objetos em módulos e pacotes para promover a modularidade e a reutilização de código, facilitando a manutenção e o desenvolvimento de grandes projetos.</spa>
-            <br><br>
-            Dominar esses conceitos proporciona uma base sólida para o desenvolvimento de software em Python, permitindo criar programas mais eficientes, flexíveis e fáceis de manter.
-        </p>
-        <img class="position-exc" src="https://www.alura.com.br/assets/api/share/curso-python-entendendo-orientacao-objetos.png" alt="POO Alura">
-        <div class="box-1">
-            <div class="btn btn-one">
-                <a href="/html/poo-python.html"><span>Exemplos de Python POO</span></a>
+        <div class="interface">
+            <div>
+                <h1 id="startup">Gestão<span> de Startup I, II e III</span></h1>
+                <h3>O que é Gestão de Startup?</h3>
+                <img class="img-other" src="https://hinova.com.br/wp-content/uploads/2018/11/gestaofinanceirastartups-1-1024x876-1024x585.jpeg" alt="Gestão de Startup">
+                <p class="p-other">
+                    A gestão de uma startup envolve a administração estratégica e operacional de uma empresa em estágio inicial, com foco na rápida inovação e crescimento sustentável. Isso inclui a definição de metas claras, alocação eficiente de recursos, recrutamento e retenção de talentos, desenvolvimento de produtos ou serviços diferenciados, e a busca constante por feedback do mercado. A agilidade, flexibilidade e capacidade de adaptação são fundamentais, já que as startups enfrentam ambientes altamente dinâmicos e incertos. O sucesso da gestão de uma startup muitas vezes depende da habilidade dos fundadores e da equipe em identificar oportunidades, resolver problemas rapidamente e aprender com os erros. Veja abaixo as principais habilidades esperadas:
+                </p>
+                <ul class="posic-ul">
+                    <li> 
+                        <ul>
+                            <li class="startup">Agilidade: Startups devem adaptar-se rapidamente às mudanças do mercado e feedback dos clientes, ajustando estratégias conforme necessário.</li>
+                            <li class="startup">Foco no Cliente: O sucesso depende de compreender e atender às necessidades dos clientes através de feedback constante e priorização de suas necessidades em decisões empresariais.</li>
+                            <li class="startup">Inovação Constante: A inovação é crucial para o crescimento, abrangendo a criação de produtos/serviços diferenciados e soluções criativas para desafios, incentivando uma cultura inovadora em toda a empresa.</li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
-        <br>
-    </div>
-    <br><br>
-    <p class="position2-p">
-       <span>Projeto do Primeiro Semestre:</span><br><br>
-       Esse é o nosso primeiro projeto, onde nele criamos classes e objetos e acrescentamos valores para mostrar. A classe "Carro" tem qualidades como "ano", "cor", "marca" e "velocidade", onde o usuário  irá acrescentar valores nesses espaços, e isso irá aparecer na tela. Onde o objeto "Carro" faz parte da classe "Automóvel" que entraria em Herança que é um estudo de POO.
-    </p>
-    <div class="code-box">
-        <pre id="code-content">
-            <code class="python">
-                <span class="blue">class</span><span class="red"> Carro:</span>
-                   <span class="blue">def </span><span class="red">__init__</span>(self, cor, marca, ano, velocidade):
-                        self.cor = cor
-                        self.marca = marca
-                        self.ano = ano
-                        self.velocidade = velocidade
-                
-                meu_carro = Carro(<span class="green">"Roxo"</span>, <span class="green">"Onix"</span>, <span class="purple">2020</span>, <span class="purple">180</span>)
-                
-                <span class="orange">print</span>(<span class="red">"A cor do meu carro é:"</span><span class="green"> ,meu_carro.cor</span>)
-                <span class="orange">print</span>(<span class="red">"A marca do meu carro é:"</span><span class="green"> ,meu_carro.marca</span>)
-                <span class="orange">print</span>(<span class="red">"O ano do meu carro é:"</span><span class="green"> ,meu_carro.ano</span>)
-                <span class="orange">print</span>(<span class="red">"A velocidade máxima do meu carro é:"</span><span class="green"> ,meu_carro.velocidade</span>)
-            </code>
-        </pre>
-        <button id="copy-button"><i class="bi bi-clipboard-check"></i>Copy Code</button>
-    </div>
-</div>
-<br><br><br><br><br>
-<div>
-    <p class="position2-p">
-        <span>Projeto de conectar um SQL em Python:</span><br><br>
-        Um projeto em Python para conectar a um banco de dados SQL pode ser desenvolvido utilizando a biblioteca SQLAlchemy. SQLAlchemy é uma ferramenta SQL em Python que facilita a interação com diferentes bancos de dados SQL, como MySQL, PostgreSQL, SQLite, entre outros. Aqui está um exemplo básico de como você pode criar e conectar-se a um banco de dados MySQL:
-    </p>
-    <div class="code-box">
-        <pre id="code-content">
-            <code class="python">
-                <span class="blue">class</span><span class="red"> ConexaoBD():</span>
-                   <span class="blue">def </span><span class="red">__init__</span>(self, host = "localhost", user = "root", pwd = "sua_senha_bd", db = "nome_do_bd"):
-                        self.host = host
-                        self.user = user
-                        self.pwd = pwd
-                        self.db = db
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <br><br><br>
+        <div class="interface">
+            <div>
+                <h1 id="robotica">Noções<span> de Robótica</span></h1>
+                <h3 class="rob">O que aprendemos na Robótica?</h3>
+                <img class="img" src="https://1.bp.blogspot.com/-1d-6h7CzYe4/UofxnrvkENI/AAAAAAAADqk/TEkpS_MPZTY/s1600/wall--e----rubiks--cube.jpg" alt="Robótica">
+                <p>A robótica é uma área fascinante que transcende os limites tradicionais entre ciência, engenharia e tecnologia. Além de ser aplicada em ambientes industriais para aumentar a eficiência e precisão, a robótica também tem um impacto significativo em campos como medicina, exploração espacial, agricultura e entretenimento. A integração de tecnologias emergentes, como inteligência artificial, machine learning e Internet das Coisas (IoT), está impulsionando ainda mais a evolução da robótica, tornando os robôs mais autônomos, adaptáveis e inteligentes. À medida que a robótica continua a avançar, seu potencial para transformar e melhorar a vida humana é cada vez mais evidente, prometendo soluções inovadoras para desafios complexos em diversos setores.</p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="img-right" src="https://0.academia-photos.com/attachment_thumbnails/39024137/mini_magick20190223-22450-16lcx9h.png?1550958862" alt="Livro Arduino">
+                <p class="p-left">
+                <span>Sobre o Livro de Estudo:</span><br><br>
+                A apostila "Arduino Básico" é um recurso educacional que oferece uma introdução acessível e prática ao mundo da plataforma de prototipagem eletrônica Arduino. Ela geralmente aborda os fundamentos da eletrônica, como resistores, LEDs, botões, motores, sensores, entre outros componentes, além de ensinar conceitos básicos de programação utilizando a linguagem Arduino, baseada em C/C++. A apostila costuma incluir tutoriais passo a passo para projetos práticos, como piscar LEDs, acionar motores, ler sinais de sensores e criar interfaces simples com o usuário. Ao fornecer uma base sólida em eletrônica e programação, a apostila Arduino Básico capacita os iniciantes a explorarem sua criatividade e desenvolverem projetos eletrônicos simples, preparando-os para avançar para desafios mais complexos na área da tecnologia.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section class="dev-2">
+        <br><br>
+        <div class="interface">
+            <div>
+                <h3 class="rob">Equipamentos que utilizamos</h3>
+                <img class="img" src="/img/arduino.png" alt="Ardunio">
+                <p>
+                    <span class="sem-p">O que é o Arduino?</span><br><br>
+                    O Arduino é uma plataforma de prototipagem eletrônica de código aberto, projetada para facilitar a criação de projetos interativos e controlados por computador. Consiste em uma placa de circuito com um microcontrolador programável e uma interface de desenvolvimento integrada, permitindo aos usuários escreverem e carregarem código para controlar dispositivos eletrônicos, como sensores e atuadores. É amplamente utilizado em projetos de robótica, automação residencial, arte interativa, wearables e muitas outras aplicações. Sua simplicidade e versatilidade tornam o Arduino uma escolha popular entre entusiastas, educadores e profissionais de tecnologia.</p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="img-right" src="https://i0.wp.com/portal.vidadesilicio.com.br/wp-content/uploads/2018/03/Protoboard.jpg?resize=431%2C324&ssl=1" alt="Protoboard">
+                <p class="p-left">
+                <span>O que é a Protoboard?</span><br><br>      
+                    Uma protoboard, também conhecida como placa de ensaio ou breadboard, é uma ferramenta fundamental na eletrônica. Ela oferece uma plataforma para prototipagem rápida e sem solda de circuitos eletrônicos. Consiste em uma placa de plástico com orifícios nos quais os componentes eletrônicos podem ser inseridos e conectados por meio de trilhas condutoras internas. Isso permite que os circuitos sejam montados temporariamente, facilitando testes e experimentação antes de uma montagem definitiva. As protoboards são amplamente utilizadas em projetos de eletrônica, desde iniciantes até profissionais, devido à sua praticidade, versatilidade e reutilização.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="dev-2">
+        <br><br><br><br><br>
+        <div class="interface">
+            <div>
+                <img class="img" src="https://acdn.mitiendanube.com/stores/001/930/347/products/kit_de_leds_de_alto_brilho_cores_2-453eeb8c5cd68d495216366501789815-1024-1024.jpg" alt="LED">
+                <p>
+                    <span class="sem-p">O que é os LED´s?</span><br><br>
+                    Os LEDs, ou Diodos Emissores de Luz, são uma forma de tecnologia de iluminação altamente eficiente e versátil. Eles funcionam convertendo energia elétrica diretamente em luz visível, por meio de um processo chamado de emissão eletroluminescente. Essa característica os torna uma escolha popular em uma ampla gama de aplicações, desde dispositivos eletrônicos portáteis até iluminação residencial e comercial.
+                    Além de sua eficiência energética e longa vida útil, os LEDs estão disponíveis em uma variedade de cores e intensidades, o que os torna altamente adaptáveis para diferentes necessidades de iluminação e sinalização. Eles também são mais duráveis e resistentes a choques e vibrações do que as fontes de luz tradicionais, como lâmpadas incandescentes ou fluorescentes.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="img-right" src="https://laelectronica.com.gt/image/cache/catalog/Productos/Conexiones/Jumper-MxF-Producto-1200x1200.jpg" alt="Jumper">
+                <p class="p-left">
+                <span>O que é um Jumper?</span><br><br>      
+                    Os jumpers na robótica são pequenos fios condutores que são utilizados para estabelecer conexões elétricas temporárias em placas de circuito, protoboards ou até mesmo em placas de controle de robôs. Eles são essenciais para criar conexões entre os diversos componentes eletrônicos, como sensores, atuadores, microcontroladores e outros dispositivos. Os jumpers permitem uma prototipagem rápida e flexível, facilitando a montagem e teste de circuitos durante o processo de desenvolvimento de um robô. Além disso, eles possibilitam a reconfiguração rápida das conexões elétricas conforme necessário para ajustar ou modificar o funcionamento do robô. Os jumpers estão disponíveis em diferentes tamanhos, cores e comprimentos para atender às necessidades específicas de cada projeto de robótica.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <br><br><br><br><br><br>
+        <div class="interface">
+            <div>
+                <img class="img" src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/resistores-sao-componentes-circuitos-eletricos-utilizados-para-transformar-energia-eletrica-em-calor-58764093071f6.jpg" alt="Resistores">
+                <p>
+                    <span class="sem-p">O que são os Resistores?</span><br><br>
+                Os resistores são componentes eletrônicos passivos que têm a função de limitar o fluxo de corrente elétrica em um circuito. Eles são amplamente utilizados em eletrônica para controlar a quantidade de corrente que flui através de um componente ou circuito, ajustar a voltagem em um ponto específico do circuito, e proteger outros componentes sensíveis. Os resistores têm uma resistência elétrica específica, medida em ohms (Ω), que determina a quantidade de corrente que pode passar por eles para uma dada voltagem aplicada. Existem resistores de diferentes valores de resistência e potências, permitindo uma ampla variedade de aplicações em circuitos eletrônicos. Eles são identificados por código de cores ou valores impressos em sua superfície.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="img-right" src="https://http2.mlstatic.com/D_NQ_NP_672793-MLB72030711204_102023-O.webp" alt="Sensores">
+                <p class="p-left">
+                <span>O que são os Sensores?</span><br><br>      
+                Sensores na robótica são dispositivos que detectam ou medem mudanças no ambiente ao redor do robô e convertem essas informações em sinais elétricos. Esses sinais são então processados pelo sistema de controle do robô para tomar decisões e realizar ações adequadas. Os sensores desempenham um papel crucial em várias tarefas robóticas, desde a detecção de obstáculos e a navegação em ambientes desconhecidos até a interação com objetos e seres humanos.
+                Existem muitos tipos diferentes de sensores utilizados na robótica, incluindo sensores de proximidade (como ultrassônicos e infravermelhos), sensores de visão (como câmeras e sensores de imagem), sensores de toque, sensores de temperatura, sensores de giroscópio e acelerômetro, entre outros. Cada tipo de sensor tem suas próprias características e aplicações específicas.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <h3 class="position" id="proj-01">Arduino Day 2023</h3>
+                <p class="position-p">
+                <span>O que foi o Arduino Day?</span><br><br> 
+                    O Arduino Day é um evento anual celebrado em diferentes partes do mundo para comemorar o aniversário do Arduino, uma plataforma de prototipagem eletrônica de código aberto. O evento geralmente ocorre em março e é uma oportunidade para entusiastas, desenvolvedores, educadores e comunidades locais se reunirem para compartilhar conhecimento, aprender sobre projetos e tecnologias relacionadas ao Arduino, e participar de oficinas e atividades práticas.
+                    <br><br>
+                    Durante o Arduino Day, são realizadas diversas atividades, como palestras, workshops, demonstrações de projetos, competições, exposições e muito mais. É uma ocasião para celebrar a criatividade, inovação e colaboração na comunidade Arduino, além de incentivar novos interessados a explorarem o mundo da eletrônica e da programação.
+                    <br><br>
+                    Os eventos do Arduino Day são organizados por grupos locais, hackerspaces, makerspaces, universidades e outros centros de educação e pesquisa em todo o mundo, reunindo pessoas de diferentes idades e backgrounds para compartilhar experiências e inspirar uns aos outros. O Arduino Day desempenha um papel importante na promoção da educação em ciência, tecnologia, engenharia e matemática (STEM), bem como na disseminação do movimento maker e da cultura DIY (Do It Yourself).
+                    <br><br>
+                    O Arduino Day de 2023, teve a famosa competição de robô seguidor de linha que é um robô  que tem que seguir uma linha e finalizar o percuso. Além da Palestra sobre o Arduino os projetos mostrados pelos alunos de escolas com diferentes objetivos, e isso tudo sendo mostrado na Universidade IFCE (Instituição Federal do Estado do Ceará). Foi muito divertido e uma experiência nova para todos os aluno e professores.
+                </p>
+                <img class="position-exc" src="https://blog.arduino.cc/wp-content/uploads/2023/02/Arduino_DAY2020_Logotype-1024x475.png" alt="Arduino Day">
+                <br>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <h1 id="poo">Programação Orientado<span> a Objeto</span></h1>
+                <br><br>
+                <p class="position-p">
+                <span>O que é POO?</span><br><br> 
+                    POO em Python refere-se à Programação Orientada a Objetos em Python. É um paradigma de programação que se baseia na ideia de "objetos", os quais podem conter dados (também conhecidos como atributos) e código (métodos) que operam nesses dados. A POO é uma abordagem eficaz para organizar e estruturar programas complexos, permitindo a reutilização de código e a criação de sistemas modulares e flexíveis.
+                    Em Python, a POO é suportada nativamente, o que significa que você pode criar classes e objetos diretamente no código. Aqui está um exemplo simples de uma classe em Python:
+                </p>
+                <div class="code-box">
+                    <pre id="code-content">
+                        <code class="python">
+                            <span class="blue">class</span><span class="red"> Pessoa:</span>
+                            <span class="blue">def </span><span class="red">__init__</span>(self, nome, idade):
+                                    self.nome = nome
+                                    self.idade = idade
 
-                    <span class="blue">def </span><span class="red">conecta</span>(self):
-                        self.con = mysql.connector.connect(host = self.host, 
-                                                           user = self.user, 
-                                                           password = self.pwd, 
-                                                           database = self.db )
-                        self.cur = self.con.cursor()
-                               
-                    <span class="blue">def </span><span class="red">desconecta</span>(self):
-                        self.con.close()
-                    <span class="blue">def </span><span class="red">executa_DQL</span>(self, sql):
-                        self.conecta()
-                        self.cur.execute(sql)
-                        res = self.cur.fetchall()
-                        self.desconecta()
-                        return res
-                    <span class="blue">def </span><span class="red">executa_DML</span>(self, sql):
-                        self.conecta()
-                        self.cur.execute(sql)
-                        self.con.commit()
-                        self.desconecta()
-                    
-                    mydb = mysql.conector.connect(<span class="green">host = "localhost"</span>,
-                                                  <span class="green">user = "root"</span>,
-                                                  <span class="purple">password = "sua_senha"</span>,
-                                                  <span class="purple">database = "nome_do_database"</span>)
-                    if mydb.is_connected():
-                        <span class="orange">print</span>(<span class="red">"Conectado ao Banco de Dados com sucesso!"</span>)
-                        db_info = mydb.get_server_info()
-                        <span class="orange">print</span>(<span class="red">"Conectado ao servidor MySQL versão: ",<span class="purple"> db_info</span></span>)
-                        curso = mydb.cursor()
-                        curso.execute("select database();")
-            </code>
-        </pre>
-        <button id="copy-button"><i class="bi bi-clipboard-check"></i>Copy Code</button>
-    </div>
-</div>
-<br><br><br><br><br>
-<div>
-    <p class="position2-p">
-        <span>Como foi criar uma primeira conexão em SQL?</span><br><br>
-        Criar uma primeira conexão em SQL envolve alguns passos básicos, independentemente do banco de dados que você esteja usando. Vou fornecer um exemplo de como criar uma primeira conexão em SQL usando Python e o banco de dados SQLite, que é um banco de dados leve e amplamente utilizado para fins de aprendizado e prototipagem.
-    </p>
-    <div class="code-box">
-        <pre id="code-content">
-            <code class="python">
-                <span class="blue">CREATE</span><span class="red"> TABLE</span> usuario (
-                    id <span class="purple">int</span> not null <span class="blue">auto_increment</span>,
-                    senha <span class="red">varchar(20)</span>,
-                    nome <span class="red">varchar(20)</span>,
-                    idade <span class="purple">int</span> not null,
-                    <span class="purple">PRIMARY KEY</span>(id)
-                )
+                                <span class="blue">def</span><span class="red"> apresentar</span>(self):
+                                    <span class="orange">print</span>(<span class="green">f"Olá, meu nome é {self.nome} e eu tenho {self.idade} anos."</span>)
 
-                <span class="purple">SELECT </span><span class="red">* FROM</span> usuario;
+                            <span class="gray"># Criando um objeto da classe Pessoa</span>
+                            pessoa1 = Pessoa(<span class="green">"João"</span>, <span class="purple">30</span>)
 
-                <span class="blue">INSERT </span><span class="purple">INTO </span>usuario (<span class="red">id, senha, nome, idade</span>)
+                            <span class="gray"># Chamando o método apresentar() do objeto</span>
+                            pessoa1.apresentar()
+                        </code>
+                    </pre>
+                    <button id="copy-button"><i class="bi bi-clipboard-check"></i>Copy Code</button>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <div>
+                    <p class="position-p">
+                    <span>POO em Python o que aprendi?</span><br><br>
+                        Ao utilizar a Programação Orientada a Objetos (POO) em Python, você aprendeu uma série de conceitos e técnicas fundamentais para desenvolver programas robustos e escaláveis. Aqui está um resumo do que foi aprendido:
+                        <br><br>
+                        <spa class="list-poo">1º - Classes e Objetos: A criação de classes para representar objetos do mundo real ou abstrações, e a instanciação dessas classes para criar objetos.</spa>
+                        <br><br>
+                        <spa class="list-poo">2º - Encapsulamento: A capacidade de agrupar dados (atributos) e os métodos que operam nesses dados dentro de uma única unidade (a classe), promovendo a segurança e a organização do código.</spa>
+                        <br><br>
+                        <spa class="list-poo">3º - Abstração: Utilizando a abstração para focar nos aspectos essenciais de um objeto e ocultar detalhes desnecessários da implementação, tornando o código mais fácil de entender e manter.</spa>
+                        <br><br>
+                        <spa class="list-poo">4º - Herança: A capacidade de uma classe herdar atributos e métodos de outra classe, permitindo a reutilização de código e a criação de hierarquias de classes para representar relacionamentos entre objetos.</spa>
+                        <br><br>
+                        <spa class="list-poo">5º - Polimorfismo: Compreendendo como diferentes classes podem fornecer métodos com a mesma assinatura, mas com comportamentos específicos para cada classe, permitindo que diferentes objetos sejam tratados de maneira uniforme.</spa>
+                        <br><br>
+                        <spa class="list-poo">6º - Métodos especiais: A utilização de métodos especiais em Python, como __init__ para inicialização de objetos, __str__ para representação de string de objetos e __len__ para determinar o tamanho de objetos, para personalizar o comportamento das classes.</spa>
+                        <br><br>
+                        <spa class="list-poo">7º - Composição: A construção de objetos complexos combinando outros objetos como parte de sua estrutura, promovendo a reutilização de código e a modularidade.</spa>
+                        <br><br>
+                        <spa class="list-poo">8º - Módulos e Pacotes: A organização de classes e objetos em módulos e pacotes para promover a modularidade e a reutilização de código, facilitando a manutenção e o desenvolvimento de grandes projetos.</spa>
+                        <br><br>
+                        Dominar esses conceitos proporciona uma base sólida para o desenvolvimento de software em Python, permitindo criar programas mais eficientes, flexíveis e fáceis de manter.
+                    </p>
+                    <br><br><br><br><br>
+                    <img class="position-exc" src="https://www.alura.com.br/assets/api/share/curso-python-entendendo-orientacao-objetos.png" alt="POO Alura">
+                    <div class="box-1">
+                        <div class="btn btn-one">
+                            <a href="/html/poo-python.html"><span>Exemplos de Python POO</span></a>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <p class="position2-p">
+                <span>Projeto do Primeiro Semestre:</span><br><br>
+                Esse é o nosso primeiro projeto, onde nele criamos classes e objetos e acrescentamos valores para mostrar. A classe "Carro" tem qualidades como "ano", "cor", "marca" e "velocidade", onde o usuário  irá acrescentar valores nesses espaços, e isso irá aparecer na tela. Onde o objeto "Carro" faz parte da classe "Automóvel" que entraria em Herança que é um estudo de POO.
+                </p>
+                <div class="code-box">
+                    <pre id="code-content">
+                        <code class="python">
+                            <span class="blue">class</span><span class="red"> Carro:</span>
+                            <span class="blue">def </span><span class="red">__init__</span>(self, cor, marca, ano, velocidade):
+                                    self.cor = cor
+                                    self.marca = marca
+                                    self.ano = ano
+                                    self.velocidade = velocidade
+                            
+                            meu_carro = Carro(<span class="green">"Roxo"</span>, <span class="green">"Onix"</span>, <span class="purple">2020</span>, <span class="purple">180</span>)
+                            
+                            <span class="orange">print</span>(<span class="red">"A cor do meu carro é:"</span><span class="green"> ,meu_carro.cor</span>)
+                            <span class="orange">print</span>(<span class="red">"A marca do meu carro é:"</span><span class="green"> ,meu_carro.marca</span>)
+                            <span class="orange">print</span>(<span class="red">"O ano do meu carro é:"</span><span class="green"> ,meu_carro.ano</span>)
+                            <span class="orange">print</span>(<span class="red">"A velocidade máxima do meu carro é:"</span><span class="green"> ,meu_carro.velocidade</span>)
+                        </code>
+                    </pre>
+                    <button id="copy-button"><i class="bi bi-clipboard-check"></i>Copy Code</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <p class="position2-p">
+                    <span>Projeto de conectar um SQL em Python:</span><br><br>
+                    Um projeto em Python para conectar a um banco de dados SQL pode ser desenvolvido utilizando a biblioteca SQLAlchemy. SQLAlchemy é uma ferramenta SQL em Python que facilita a interação com diferentes bancos de dados SQL, como MySQL, PostgreSQL, SQLite, entre outros. Aqui está um exemplo básico de como você pode criar e conectar-se a um banco de dados MySQL:
+                </p>
+                <div class="code-box">
+                    <pre id="code-content">
+                        <code class="python">
+                            <span class="blue">class</span><span class="red"> ConexaoBD():</span>
+                            <span class="blue">def </span><span class="red">__init__</span>(self, host = "localhost", user = "root", pwd = "sua_senha_bd", db = "nome_do_bd"):
+                                    self.host = host
+                                    self.user = user
+                                    self.pwd = pwd
+                                    self.db = db
 
-                <span class="blue">VALUES</span>(<span class="red">3, "Lindo", "Lucas", 15</span>)
-            </code>
-        </pre>
-        <button id="copy-button"><i class="bi bi-clipboard-check"></i>Copy Code</button>
-    </div>
-</div>
-<br><br><br><br><br>
-<div>
-    <h1 id="so">Sistemas <span>Operacionais</span></h1>
-    <h3>O que um S.O?</h3>
-    <img class="img-other" src="https://blog.winco.com.br/wp-content/uploads/2018/02/sistemas-operacionais.jpg" alt="S.O">
-    <p class="p-other">
-        O sistema operacional (SO) é como o cérebro do seu dispositivo eletrônico. Ele coordena todas as atividades e recursos, garantindo que tudo funcione perfeitamente. Assim como o cérebro controla o corpo, o SO controla o hardware e o software do seu dispositivo.
-    </p>
-    <ul class="posic-ul">
-        <li> 
-            <ul>
-                <li class="startup">Microsoft Windows: É como um assistente confiável que muitos de nós conhecemos bem. Ele mantém nossos computadores rodando, organiza nossos arquivos e nos ajuda a executar nossos programas favoritos. É como uma espécie de gerente de escritório, mantendo tudo organizado e funcionando sem problemas.</li>
-                <li class="startup">Linux: É como um espírito livre e versátil. Existem muitas variações dele, cada uma com sua própria personalidade e conjunto de habilidades. Ele é amado por sua flexibilidade e capacidade de se adaptar a diferentes necessidades, como um amigo confiável que sempre tem uma solução para qualquer problema.</li>
-                <li class="startup">macOS: Imagine que é o designer elegante e criativo da família. Ele é sofisticado e projetado para trabalhar perfeitamente com outros produtos da Apple. É como se fosse o assistente pessoal que torna a vida digital mais bonita e eficiente.</li>
-            </ul>
-        </li>
-    </ul>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div>
-    <h1 id="progweb">Programação<span> WEB</span></h1>
-    <h3 class="rob">O que aprendemos com o JS?</h3>
-    <img class="img" src="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg" alt="JS">
-    <p>JavaScript é como a cola que une a web. É uma linguagem de programação versátil que permite aos desenvolvedores criar interatividade e dinamismo em páginas da web. Pense nisso como a magia por trás dos botões que você pode clicar, dos formulários que você pode preencher e das animações que você vê em muitos sites modernos. Interatividade: JavaScript permite que os desenvolvedores criem sites e aplicativos web que respondam às ações dos usuários. Por exemplo, quando você clica em um botão para abrir um menu ou preenche um formulário online, é provável que o JavaScript esteja trabalhando nos bastidores para tornar isso possível. <br></p>
-</div>
-<br><br><br><br><br>
-<!-- Home Proj 1 -->
-<div>
-    <h3 class="position" id="proj-01">Projeto 01 Meio-Semestre</h3>
-    <p class="position-p">
-       <span>Relembrando sobre desenvolver um site?</span><br><br> Desenvolver um projeto usando HTML e CSS pode ser uma jornada desafiadora, mas extremamente gratificante. À primeira vista, essas linguagens parecem simples, mas conforme você mergulha mais fundo, descobre a complexidade por trás da criação de um design coeso e funcional. Você se depara com desafios inesperados, desde alinhar elementos até garantir a responsividade em diferentes dispositivos e lidar com as peculiaridades de diferentes navegadores.
-       A batalha para fazer com que tudo se encaixe pode se transformar em um verdadeiro quebra-cabeça. Você está constantemente ajustando margens, paddings e tamanhos de fonte, tentando encontrar o equilíbrio perfeito. Às vezes, parece que você está preso em um ciclo interminável de tentativa e erro. <br><br>
-       Mas então, algo mágico acontece. Você vê o projeto ganhando vida no navegador. Seu design está atraente e todas as funcionalidades estão no lugar certo. A sensação de realização é indescritível. Todo o esforço investido parece valer a pena.
-       A capacidade de transformar conceitos visuais em código é uma habilidade incrível, que requer prática constante e aprendizado contínuo. Cada desafio superado não apenas testa suas habilidades técnicas, mas também sua paciência, perseverança e criatividade. E à medida que você cresce como desenvolvedor, seus projetos se tornam cada vez mais impressionantes.
-    </p>
-    <img class="position-exc" src="/img/Captura de tela 2024-03-03 164741.png" alt="Primeiro Projeto - Matemáticas">
-    <br>
-    <p class="position2-p">
-       <span>Sobre a primeira página (Home):</span><br><br>
-       A primeira coisa que você vê ao carregar a página é um menu de navegação elegante, talvez com transições suaves ao passar o mouse sobre cada opção. Este menu não só direciona os visitantes para diferentes partes do site, mas também é um elemento visualmente atraente que cria uma primeira impressão positiva.
-       Logo abaixo do menu, imagens impressionantes capturam a atenção do usuário. Essas imagens podem ser carrosséis ou banners dinâmicos que destacam os principais produtos, serviços ou mensagens que o site deseja transmitir. Cada imagem é escolhida com cuidado para transmitir uma mensagem específica e atrair o interesse do visitante.
-       <br><br>
-       À medida que você rola para baixo, encontra um footer acolhedor que completa a experiência. Aqui, há uma caixa de texto convidativa, incentivando os visitantes a inscreverem-se para receber atualizações por e-mail. Esta caixa de texto é simples, mas eficaz, com um design limpo que se integra perfeitamente ao restante do layout do site.
-    </p>
-</div>
-<!-- Cadastro Proj 1 -->
-<div>
-    <img class="position-exc" src="/img/Captura de tela 2024-03-03 164847.png" alt="Pitágoras">
-    <p class="position2-p">
-        <span>Sobre a página de (Pitágoras):</span><br><br>
-        Ao abrir a página, somos recebidos por um menu bonito e temático que nos guia pela jornada matemática inspiradora de Pitágoras. As opções do menu podem incluir seções como "Quem foi Pitágoras?", "Teorema de Pitágoras" e "Exemplos Práticos".
-No centro da página, encontramos uma área dedicada à exploração do teorema de Pitágoras. Aqui, os visitantes podem inserir os comprimentos dos lados de um triângulo retângulo em campos de entrada. Ao clicar em um botão "Calcular", uma função JavaScript entra em ação para resolver a fórmula de Pitágoras e exibir o comprimento da hipotenusa.
-<br><br>
-A experiência é interativa e educativa. Os visitantes podem experimentar diferentes valores para os lados do triângulo e ver instantaneamente como o teorema de Pitágoras se aplica. É uma maneira envolvente de aprender e explorar conceitos matemáticos complexos.
-Por fim, no rodapé da página, encontramos um footer elegante com informações adicionais sobre Pitágoras, links úteis e talvez até mesmo uma caixa de texto para os visitantes deixarem seus comentários ou dúvidas. É uma forma de encerrar a experiência com um toque final informativo e convidativo.
-    </p>
-</div>
-<div>
-    <img class="position-exc" src="/img/Captura de tela 2024-03-03 164901.png" alt="Área">
-    <p class="position2-p">
-        <span>Sobre a página de (Área):</span><br><br>
-        Ao acessar a página com tema de "Área", somos recebidos por um menu bonito e intuitivo, que nos orienta por diferentes seções relacionadas aos cálculos de área. As opções do menu podem incluir categorias como "Área de Figuras Planas", "Área de Superfícies" e "Exemplos Práticos".
-Na seção principal da página, há uma área interativa onde os visitantes podem resolver fórmulas de cálculo de áreas. Por exemplo, podem inserir as dimensões de um retângulo, um triângulo ou um círculo em campos de entrada. Ao clicar em um botão "Calcular", uma função JavaScript entra em ação para resolver a fórmula correspondente e exibir o resultado da área.
-<br><br>
-A experiência é educativa e envolvente. Os visitantes podem experimentar diferentes valores para as dimensões das figuras e ver instantaneamente como as fórmulas de cálculo de áreas funcionam na prática. É uma forma interativa de aprender e explorar conceitos matemáticos.
-No rodapé da página, encontramos um footer informativo que fornece links úteis para recursos adicionais relacionados ao cálculo de áreas. Talvez inclua também uma caixa de texto para os visitantes deixarem suas opiniões, sugestões ou dúvidas. É uma maneira de encerrar a experiência com um toque final útil e convidativo.
-    </p>
-</div>
-<div>
-    <img class="position-exc" src="/img/Captura de tela 2024-03-03 165024.png" alt="Temperatura">
-    <p class="position2-p">
-        <span>Sobre a página de (Temperatura):</span><br><br>
-        Ao acessar a página com tema de "Temperatura", somos recebidos por um menu bonito e intuitivo que nos guia por diferentes seções relacionadas à temperatura. As opções do menu podem incluir categorias como "Conversor de Temperatura", "Clima e Previsão" e "Curiosidades sobre Temperatura".
-Na seção principal da página, há um conversor de temperatura interativo. Os visitantes podem inserir um valor em uma unidade de temperatura, como Celsius, Fahrenheit ou Kelvin, e selecionar a unidade para a qual desejam converter. Ao clicar em um botão "Converter", uma função JavaScript entra em ação para realizar a conversão e exibir o resultado.
-<br><br>
-A página oferece uma experiência educativa e prática. Os visitantes podem explorar diferentes valores e unidades de temperatura, testando conversões instantâneas. Isso proporciona uma maneira interativa de entender as diversas escalas de temperatura e como elas se relacionam.
-No footer da página, há uma seção informativa, oferecendo links úteis para recursos adicionais sobre temperatura, como sites de previsão do tempo ou artigos sobre ciência climática. Além disso, uma caixa de texto convida os visitantes a deixarem seus comentários, perguntas ou sugestões, criando um encerramento acolhedor e propício à interação.
-    </p>
-</div>
-<div>
-    <img class="position-exc" src="/img/Captura de tela 2024-03-03 165038.png" alt="Medidas ">
-    <p class="position2-p"> 
-        <span>Sobre a página (Conversor de Medidas):</span><br><br>
-        Ao acessar a página do "Conversor de Medidas", somos recebidos por um menu bonito e intuitivo, que nos orienta por diferentes seções relacionadas à conversão de unidades de medida. As opções do menu podem incluir categorias como "Comprimento", "Peso", "Volume" e "Temperatura".
-Na seção principal da página, há um conversor de medidas interativo. Os visitantes podem inserir um valor em uma unidade de medida, como metros, quilogramas, litros ou Celsius, e selecionar a unidade para a qual desejam converter. Ao clicar em um botão "Converter", uma função JavaScript entra em ação para realizar a conversão e exibir o resultado.
-<br><br>
-A experiência é prática e útil. Os visitantes podem experimentar diferentes valores e unidades de medida, obtendo resultados instantâneos. Isso proporciona uma maneira interativa de entender e comparar diferentes sistemas de medida.
-No rodapé da página, encontramos um footer informativo que fornece links úteis para recursos adicionais relacionados à conversão de medidas, como tabelas de conversão ou ferramentas de cálculo online. Também pode incluir uma caixa de texto para os visitantes deixarem seus comentários, perguntas ou sugestões, criando um encerramento acolhedor e propício à interação.
-    </p>
-</div>
-<div>
-    <img class="position-exc" src="/img/Captura de tela 2024-03-03 165051.png" alt="Conversor de Velocidade">
-    <p class="position2-p"> 
-        <span>Sobre a página (Conversor de Velocidade):</span><br><br>
-        Ao entrar na página do "Conversor de Velocidade", somos recebidos por um menu bonito e intuitivo, projetado para orientar os visitantes por diferentes seções relacionadas à conversão de velocidade. As opções do menu podem incluir categorias como "Conversão de Velocidade Linear", "Conversão de Velocidade Angular", "Velocidade em diferentes unidades" e "Exemplos Práticos".
-Na seção principal da página, há um conversor de velocidade interativo. Os visitantes podem inserir um valor em uma unidade de velocidade, como quilômetros por hora, metros por segundo ou milhas por hora, e selecionar a unidade para a qual desejam converter. Ao clicar em um botão "Converter", uma função JavaScript entra em ação para realizar a conversão e exibir o resultado.
-<br><br>
-A experiência é prática e educativa. Os visitantes podem experimentar diferentes valores e unidades de velocidade, obtendo resultados instantâneos. Isso oferece uma maneira interativa de entender e comparar diferentes sistemas de medição de velocidade.
-<br><br>
-No rodapé da página, encontramos um footer informativo que fornece links úteis para recursos adicionais relacionados à conversão de velocidade, como informações sobre velocidade média, cálculos de tempo e distância, ou artigos sobre conceitos de física relacionados à velocidade. Além disso, uma caixa de texto convida os visitantes a deixarem seus comentários, perguntas ou sugestões, criando um encerramento acolhedor e propício à interação.
-Essa página combina elementos visuais atraentes, funcionalidade interativa e conteúdo informativo para criar uma experiência completa e prática para os visitantes que desejam realizar conversões de velocidade.
-    </p>
-</div>
+                                <span class="blue">def </span><span class="red">conecta</span>(self):
+                                    self.con = mysql.connector.connect(host = self.host, 
+                                                                    user = self.user, 
+                                                                    password = self.pwd, 
+                                                                    database = self.db )
+                                    self.cur = self.con.cursor()
+                                        
+                                <span class="blue">def </span><span class="red">desconecta</span>(self):
+                                    self.con.close()
+                                <span class="blue">def </span><span class="red">executa_DQL</span>(self, sql):
+                                    self.conecta()
+                                    self.cur.execute(sql)
+                                    res = self.cur.fetchall()
+                                    self.desconecta()
+                                    return res
+                                <span class="blue">def </span><span class="red">executa_DML</span>(self, sql):
+                                    self.conecta()
+                                    self.cur.execute(sql)
+                                    self.con.commit()
+                                    self.desconecta()
+                                
+                                mydb = mysql.conector.connect(<span class="green">host = "localhost"</span>,
+                                                            <span class="green">user = "root"</span>,
+                                                            <span class="purple">password = "sua_senha"</span>,
+                                                            <span class="purple">database = "nome_do_database"</span>)
+                                if mydb.is_connected():
+                                    <span class="orange">print</span>(<span class="red">"Conectado ao Banco de Dados com sucesso!"</span>)
+                                    db_info = mydb.get_server_info()
+                                    <span class="orange">print</span>(<span class="red">"Conectado ao servidor MySQL versão: ",<span class="purple"> db_info</span></span>)
+                                    curso = mydb.cursor()
+                                    curso.execute("select database();")
+                        </code>
+                    </pre>
+                    <button id="copy-button"><i class="bi bi-clipboard-check"></i>Copy Code</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <p class="position2-p">
+                    <span>Como foi criar uma primeira conexão em SQL?</span><br><br>
+                    Criar uma primeira conexão em SQL envolve alguns passos básicos, independentemente do banco de dados que você esteja usando. Vou fornecer um exemplo de como criar uma primeira conexão em SQL usando Python e o banco de dados SQLite, que é um banco de dados leve e amplamente utilizado para fins de aprendizado e prototipagem.
+                </p>
+                <div class="code-box">
+                    <pre id="code-content">
+                        <code class="python">
+                            <span class="blue">CREATE</span><span class="red"> TABLE</span> usuario (
+                                id <span class="purple">int</span> not null <span class="blue">auto_increment</span>,
+                                senha <span class="red">varchar(20)</span>,
+                                nome <span class="red">varchar(20)</span>,
+                                idade <span class="purple">int</span> not null,
+                                <span class="purple">PRIMARY KEY</span>(id)
+                            )
+
+                            <span class="purple">SELECT </span><span class="red">* FROM</span> usuario;
+
+                            <span class="blue">INSERT </span><span class="purple">INTO </span>usuario (<span class="red">id, senha, nome, idade</span>)
+
+                            <span class="blue">VALUES</span>(<span class="red">3, "Lindo", "Lucas", 15</span>)
+                        </code>
+                    </pre>
+                    <button id="copy-button"><i class="bi bi-clipboard-check"></i>Copy Code</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <h1 id="so">Sistemas <span>Operacionais</span></h1>
+                <h3>O que um S.O?</h3>
+                <img class="img-other" src="https://blog.winco.com.br/wp-content/uploads/2018/02/sistemas-operacionais.jpg" alt="S.O">
+                <p class="p-other">
+                    O sistema operacional (SO) é como o cérebro do seu dispositivo eletrônico. Ele coordena todas as atividades e recursos, garantindo que tudo funcione perfeitamente. Assim como o cérebro controla o corpo, o SO controla o hardware e o software do seu dispositivo.
+                </p>
+                <ul class="posic-ul">
+                    <li> 
+                        <ul>
+                            <li class="startup">Microsoft Windows: É como um assistente confiável que muitos de nós conhecemos bem. Ele mantém nossos computadores rodando, organiza nossos arquivos e nos ajuda a executar nossos programas favoritos. É como uma espécie de gerente de escritório, mantendo tudo organizado e funcionando sem problemas.</li>
+                            <li class="startup">Linux: É como um espírito livre e versátil. Existem muitas variações dele, cada uma com sua própria personalidade e conjunto de habilidades. Ele é amado por sua flexibilidade e capacidade de se adaptar a diferentes necessidades, como um amigo confiável que sempre tem uma solução para qualquer problema.</li>
+                            <li class="startup">macOS: Imagine que é o designer elegante e criativo da família. Ele é sofisticado e projetado para trabalhar perfeitamente com outros produtos da Apple. É como se fosse o assistente pessoal que torna a vida digital mais bonita e eficiente.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <h1 id="progweb">Programação<span> WEB</span></h1>
+                <h3 class="rob">O que aprendemos com o JS?</h3>
+                <img class="img" src="https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg" alt="JS">
+                <p>JavaScript é como a cola que une a web. É uma linguagem de programação versátil que permite aos desenvolvedores criar interatividade e dinamismo em páginas da web. Pense nisso como a magia por trás dos botões que você pode clicar, dos formulários que você pode preencher e das animações que você vê em muitos sites modernos. Interatividade: JavaScript permite que os desenvolvedores criem sites e aplicativos web que respondam às ações dos usuários. Por exemplo, quando você clica em um botão para abrir um menu ou preenche um formulário online, é provável que o JavaScript esteja trabalhando nos bastidores para tornar isso possível. <br></p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+        <!-- Home Proj 1 -->
+            <div>
+                <h3 class="position" id="proj-01">Projeto 02 (Junho)</h3>
+                <p class="position-p">
+                <span>Relembrando sobre desenvolver um site?</span><br><br> Desenvolver um projeto usando HTML e CSS pode ser uma jornada desafiadora, mas extremamente gratificante. À primeira vista, essas linguagens parecem simples, mas conforme você mergulha mais fundo, descobre a complexidade por trás da criação de um design coeso e funcional. Você se depara com desafios inesperados, desde alinhar elementos até garantir a responsividade em diferentes dispositivos e lidar com as peculiaridades de diferentes navegadores.
+                A batalha para fazer com que tudo se encaixe pode se transformar em um verdadeiro quebra-cabeça. Você está constantemente ajustando margens, paddings e tamanhos de fonte, tentando encontrar o equilíbrio perfeito. Às vezes, parece que você está preso em um ciclo interminável de tentativa e erro. <br><br>
+                Mas então, algo mágico acontece. Você vê o projeto ganhando vida no navegador. Seu design está atraente e todas as funcionalidades estão no lugar certo. A sensação de realização é indescritível. Todo o esforço investido parece valer a pena.
+                A capacidade de transformar conceitos visuais em código é uma habilidade incrível, que requer prática constante e aprendizado contínuo. Cada desafio superado não apenas testa suas habilidades técnicas, mas também sua paciência, perseverança e criatividade. E à medida que você cresce como desenvolvedor, seus projetos se tornam cada vez mais impressionantes.
+                </p>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <img class="position-exc" src="/img/Captura de tela 2024-03-03 164741.png" alt="Primeiro Projeto - Matemáticas">
+                <br>
+                <p class="position2-p">
+                <span>Sobre a primeira página (Home):</span><br><br>
+                A primeira coisa que você vê ao carregar a página é um menu de navegação elegante, talvez com transições suaves ao passar o mouse sobre cada opção. Este menu não só direciona os visitantes para diferentes partes do site, mas também é um elemento visualmente atraente que cria uma primeira impressão positiva.
+                Logo abaixo do menu, imagens impressionantes capturam a atenção do usuário. Essas imagens podem ser carrosséis ou banners dinâmicos que destacam os principais produtos, serviços ou mensagens que o site deseja transmitir. Cada imagem é escolhida com cuidado para transmitir uma mensagem específica e atrair o interesse do visitante.
+                <br><br>
+                À medida que você rola para baixo, encontra um footer acolhedor que completa a experiência. Aqui, há uma caixa de texto convidativa, incentivando os visitantes a inscreverem-se para receber atualizações por e-mail. Esta caixa de texto é simples, mas eficaz, com um design limpo que se integra perfeitamente ao restante do layout do site.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-03-03 164847.png" alt="Pitágoras">
+                <p class="position2-p">
+                    <span>Sobre a página de (Pitágoras):</span><br><br>
+                    Ao abrir a página, somos recebidos por um menu bonito e temático que nos guia pela jornada matemática inspiradora de Pitágoras. As opções do menu podem incluir seções como "Quem foi Pitágoras?", "Teorema de Pitágoras" e "Exemplos Práticos".
+            No centro da página, encontramos uma área dedicada à exploração do teorema de Pitágoras. Aqui, os visitantes podem inserir os comprimentos dos lados de um triângulo retângulo em campos de entrada. Ao clicar em um botão "Calcular", uma função JavaScript entra em ação para resolver a fórmula de Pitágoras e exibir o comprimento da hipotenusa.
+            <br><br>
+            A experiência é interativa e educativa. Os visitantes podem experimentar diferentes valores para os lados do triângulo e ver instantaneamente como o teorema de Pitágoras se aplica. É uma maneira envolvente de aprender e explorar conceitos matemáticos complexos.
+            Por fim, no rodapé da página, encontramos um footer elegante com informações adicionais sobre Pitágoras, links úteis e talvez até mesmo uma caixa de texto para os visitantes deixarem seus comentários ou dúvidas. É uma forma de encerrar a experiência com um toque final informativo e convidativo.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-03-03 164901.png" alt="Área">
+                <p class="position2-p">
+                    <span>Sobre a página de (Área):</span><br><br>
+                    Ao acessar a página com tema de "Área", somos recebidos por um menu bonito e intuitivo, que nos orienta por diferentes seções relacionadas aos cálculos de área. As opções do menu podem incluir categorias como "Área de Figuras Planas", "Área de Superfícies" e "Exemplos Práticos".
+            Na seção principal da página, há uma área interativa onde os visitantes podem resolver fórmulas de cálculo de áreas. Por exemplo, podem inserir as dimensões de um retângulo, um triângulo ou um círculo em campos de entrada. Ao clicar em um botão "Calcular", uma função JavaScript entra em ação para resolver a fórmula correspondente e exibir o resultado da área.
+            <br><br>
+            A experiência é educativa e envolvente. Os visitantes podem experimentar diferentes valores para as dimensões das figuras e ver instantaneamente como as fórmulas de cálculo de áreas funcionam na prática. É uma forma interativa de aprender e explorar conceitos matemáticos.
+            No rodapé da página, encontramos um footer informativo que fornece links úteis para recursos adicionais relacionados ao cálculo de áreas. Talvez inclua também uma caixa de texto para os visitantes deixarem suas opiniões, sugestões ou dúvidas. É uma maneira de encerrar a experiência com um toque final útil e convidativo.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-03-03 165024.png" alt="Temperatura">
+                <p class="position2-p">
+                    <span>Sobre a página de (Temperatura):</span><br><br>
+                    Ao acessar a página com tema de "Temperatura", somos recebidos por um menu bonito e intuitivo que nos guia por diferentes seções relacionadas à temperatura. As opções do menu podem incluir categorias como "Conversor de Temperatura", "Clima e Previsão" e "Curiosidades sobre Temperatura".
+            Na seção principal da página, há um conversor de temperatura interativo. Os visitantes podem inserir um valor em uma unidade de temperatura, como Celsius, Fahrenheit ou Kelvin, e selecionar a unidade para a qual desejam converter. Ao clicar em um botão "Converter", uma função JavaScript entra em ação para realizar a conversão e exibir o resultado.
+            <br><br>
+            A página oferece uma experiência educativa e prática. Os visitantes podem explorar diferentes valores e unidades de temperatura, testando conversões instantâneas. Isso proporciona uma maneira interativa de entender as diversas escalas de temperatura e como elas se relacionam.
+            No footer da página, há uma seção informativa, oferecendo links úteis para recursos adicionais sobre temperatura, como sites de previsão do tempo ou artigos sobre ciência climática. Além disso, uma caixa de texto convida os visitantes a deixarem seus comentários, perguntas ou sugestões, criando um encerramento acolhedor e propício à interação.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-03-03 165038.png" alt="Medidas ">
+                <p class="position2-p"> 
+                    <span>Sobre a página (Conversor de Medidas):</span><br><br>
+                    Ao acessar a página do "Conversor de Medidas", somos recebidos por um menu bonito e intuitivo, que nos orienta por diferentes seções relacionadas à conversão de unidades de medida. As opções do menu podem incluir categorias como "Comprimento", "Peso", "Volume" e "Temperatura".
+            Na seção principal da página, há um conversor de medidas interativo. Os visitantes podem inserir um valor em uma unidade de medida, como metros, quilogramas, litros ou Celsius, e selecionar a unidade para a qual desejam converter. Ao clicar em um botão "Converter", uma função JavaScript entra em ação para realizar a conversão e exibir o resultado.
+            <br><br>
+            A experiência é prática e útil. Os visitantes podem experimentar diferentes valores e unidades de medida, obtendo resultados instantâneos. Isso proporciona uma maneira interativa de entender e comparar diferentes sistemas de medida.
+            No rodapé da página, encontramos um footer informativo que fornece links úteis para recursos adicionais relacionados à conversão de medidas, como tabelas de conversão ou ferramentas de cálculo online. Também pode incluir uma caixa de texto para os visitantes deixarem seus comentários, perguntas ou sugestões, criando um encerramento acolhedor e propício à interação.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-03-03 165051.png" alt="Conversor de Velocidade">
+                <p class="position2-p"> 
+                    <span>Sobre a página (Conversor de Velocidade):</span><br><br>
+                    Ao entrar na página do "Conversor de Velocidade", somos recebidos por um menu bonito e intuitivo, projetado para orientar os visitantes por diferentes seções relacionadas à conversão de velocidade. As opções do menu podem incluir categorias como "Conversão de Velocidade Linear", "Conversão de Velocidade Angular", "Velocidade em diferentes unidades" e "Exemplos Práticos".
+            Na seção principal da página, há um conversor de velocidade interativo. Os visitantes podem inserir um valor em uma unidade de velocidade, como quilômetros por hora, metros por segundo ou milhas por hora, e selecionar a unidade para a qual desejam converter. Ao clicar em um botão "Converter", uma função JavaScript entra em ação para realizar a conversão e exibir o resultado.
+            <br><br>
+            A experiência é prática e educativa. Os visitantes podem experimentar diferentes valores e unidades de velocidade, obtendo resultados instantâneos. Isso oferece uma maneira interativa de entender e comparar diferentes sistemas de medição de velocidade.
+            <br><br>
+            No rodapé da página, encontramos um footer informativo que fornece links úteis para recursos adicionais relacionados à conversão de velocidade, como informações sobre velocidade média, cálculos de tempo e distância, ou artigos sobre conceitos de física relacionados à velocidade. Além disso, uma caixa de texto convida os visitantes a deixarem seus comentários, perguntas ou sugestões, criando um encerramento acolhedor e propício à interação.
+            Essa página combina elementos visuais atraentes, funcionalidade interativa e conteúdo informativo para criar uma experiência completa e prática para os visitantes que desejam realizar conversões de velocidade.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div class="gerencia" id="gerenc">
+                <h1>Gerenciamento <span>de Conteúdo</span></h1>
+                <p class="position-p">
+                <span>O que é um Gerenciamento de Conteúdo?</span><br><br> 
+                O gerenciamento de conteúdo em informática é um conjunto de práticas e tecnologias destinadas a organizar, armazenar e controlar o acesso a informações digitais de maneira eficiente e segura. Funciona como um sistema centralizado para criar, revisar, armazenar e publicar conteúdo digital, garantindo sua integridade, acessibilidade e relevância ao longo do tempo. Na prática, o gerenciamento de conteúdo envolve o uso de plataformas e ferramentas específicas, como sistemas de gestão de conteúdo (CMS), bancos de dados, metadados e políticas de segurança da informação.
+                <br><br>
+                Essas ferramentas permitem a criação de fluxos de trabalho colaborativos, a organização estruturada de informações, a aplicação de permissões de acesso granulares e a automação de processos relacionados ao ciclo de vida do conteúdo. Além disso, o gerenciamento de conteúdo aborda questões de governança, garantindo conformidade com regulamentações de privacidade e segurança de dados, bem como a manutenção da consistência e qualidade do conteúdo ao longo do tempo. Também desempenha um papel fundamental na personalização e entrega de conteúdo sob medida para diferentes públicos e canais de distribuição.
+                </p>
+                <img class="position-exc" src="https://kinsta.com/pt/wp-content/uploads/sites/3/2019/02/sistema-de-gerenciamento-de-conteudo-1024x512.png" alt="CMS">
+                <br>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <h3 class="rob">O que vimos no WordPress?</h3>
+                <img class="img" src="https://engineering.fb.com/wp-content/uploads/2012/09/520116_edf5_2.jpg" alt="WP">
+                <p>O WordPress é uma plataforma de gerenciamento de conteúdo (CMS) amplamente reconhecida e utilizada na indústria de desenvolvimento web. Inicialmente concebido como uma plataforma para blogs, o WordPress evoluiu ao longo dos anos para se tornar uma solução abrangente para a criação e gerenciamento de websites de diversos tipos e tamanhos.
+                    <br><br>
+                    O WordPress oferece uma ampla gama de recursos e funcionalidades que o tornam uma escolha popular para empresas, organizações e indivíduos que buscam uma solução flexível, escalável e fácil de usar para criar e manter suas presenças online.<br></p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div class="gerencia">
+                <h1>Design</h1>
+                <p class="position-p">
+                <span>O que é Design?</span><br><br> 
+                Design é uma disciplina multifacetada que se estende por várias indústrias e áreas de atuação, abrangendo desde a concepção estética até a funcionalidade e usabilidade de produtos, interfaces e ambientes. No contexto profissional, o design desempenha um papel fundamental na criação de soluções inovadoras e eficazes para problemas complexos, com o objetivo de melhorar a experiência do usuário, aumentar a eficiência e alcançar os objetivos comerciais.
+                Os profissionais de design devem possuir uma combinação única de habilidades criativas, técnicas e analíticas. 
+                <br><br>
+                Eles são responsáveis por entender as necessidades e desejos dos usuários, assim como as demandas do mercado e as restrições técnicas, e transformar essas informações em soluções visualmente atraentes e funcionalmente eficazes.
+                No âmbito profissional, o design pode se manifestar de várias formas, incluindo design gráfico, design de produtos, design de interface do usuário (UI), design de experiência do usuário (UX), design de interiores, design de moda, entre outros. Cada uma dessas áreas exige conjuntos específicos de habilidades e conhecimentos, mas todas compartilham o mesmo objetivo de criar soluções que sejam esteticamente atraentes, intuitivas de usar e eficazes em atender às necessidades do usuário e aos objetivos do negócio.
+                </p>
+                <img class="position-exc" src="https://storage.googleapis.com/atados-v3/user-uploaded/images/89d8d4a6-f365-4e80-9f94-c72c3cd66998.jpg" alt="Design">
+                <br>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <a href="https://www.figma.com/file/ftpbPDouadUE9ySBdZuAlB/Proj.-01-(Figma-2023-Design)?type=design&node-id=0-1&mode=design"><img class="img-right" src="https://spin.atomicobject.com/wp-content/uploads/Figma-Image.jpg" alt="Figma"></a>
+                <p class="p-left">
+                <span>Figma:</span><br><br>
+                    O Figma é uma poderosa ferramenta de design e prototipagem colaborativa baseada na web, amplamente utilizada por designers de interface de usuário (UI), designers de experiência do usuário (UX), equipes de desenvolvimento e outros profissionais de design. Lançado em 2016, o Figma ganhou popularidade rapidamente devido à sua abordagem inovadora para o design colaborativo e sua capacidade de permitir que equipes trabalhem juntas em tempo real, independentemente da localização geográfica.
+                    <br><br>
+                    Clique na imagem!
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <br><br><br><br><br>
+                <a href="https://www.canva.com/folder/FAFsgPcKlVY"><img class="img" src="https://tm.ibxk.com.br/2023/06/15/15175818283394.png?ims=1200x675" alt="Canva"></a>
+                <p>
+                    <span class="sem-p">Canva:</span><br><br>
+                    O Canva é uma plataforma de design gráfico online que permite criar uma ampla variedade de materiais visuais, desde gráficos para mídias sociais e apresentações até convites e pôsteres. Lançado em 2012, o Canva rapidamente se tornou popular devido à sua interface amigável e à variedade de recursos disponíveis para usuários de todos os níveis de habilidade.</p>
+                    <br><br><br><br><br><br>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div class="gerencia">
+                <h1>Redes de <span>Computadores</span></h1>
+                <p class="position-p">
+                <span>O que é uma Rede de Computador?</span><br><br> 
+                Uma rede de computadores é um conjunto de dispositivos interconectados que podem compartilhar recursos e trocar informações entre si. Esses dispositivos podem incluir computadores, servidores, dispositivos de armazenamento, impressoras, roteadores, switches, entre outros. O principal objetivo de uma rede de computadores é permitir a comunicação e o compartilhamento de recursos entre os dispositivos conectados.
+                <br><br>
+                LAN (Local Area Network - Rede Local): Uma rede local é geralmente limitada a uma área geográfica específica, como um prédio, escritório ou campus. Os dispositivos em uma LAN estão geralmente conectados por meio de cabos Ethernet ou Wi-Fi e podem compartilhar recursos, como arquivos, impressoras e conexão com a internet.
+                <br><br>
+                WAN (Wide Area Network - Rede de Área Ampla): Uma WAN abrange uma área geográfica maior, como uma cidade, país ou até mesmo vários países. Elas geralmente são estabelecidas por meio de conexões de longa distância, como linhas dedicadas, redes de fibra óptica ou conexões via satélite. A internet é um exemplo de uma WAN global.
+                <br><br>
+                MAN (Metropolitan Area Network - Rede Metropolitana): Uma MAN está situada entre uma LAN e uma WAN em termos de escala geográfica, cobrindo uma área metropolitana como uma cidade ou região suburbana.
+                </p>
+                <img class="position-exc" src="https://inputec.com.br/wp-content/uploads/2019/12/Inputec-Tipos-De-Redes-Internet-Computadores-Tecnologia-Da-Informa%C3%A7%C3%A3o-960x675.jpg" alt="Rede">
+                <br>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="img-right" src="https://cf.shopee.com.br/file/03f4ea301523b4965558a516efaa01f0" alt="Cripador">
+                <p class="p-left">
+                <span>Cripador o que é?</span><br><br>
+                Um cripador de rede é uma ferramenta especializada usada para realizar essa crimpagem. Ele geralmente consiste em um alicate com um mecanismo de crimpagem embutido e diferentes cavidades para acomodar os vários tipos de conectores RJ45. O cripador de rede é utilizado para cortar o cabo na medida adequada, retirar o revestimento externo, organizar os fios internos de acordo com o padrão de pinagem correto e finalmente pressionar o conector sobre os fios, fixando-os de maneira segura.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="img" src="https://dehumtudo.com.br/wp-content/uploads/2021/10/100_x_conector_rj45_macho_cat5e_storm_1547_1_269c940587a22c3eba58bb9b2d69a216.jpg" alt="rj-45">
+                <p>
+                    <span class="sem-p">O que é um RJ-45?</span><br><br>
+                    O RJ-45 é um tipo de conector amplamente utilizado em redes de computadores para conectar dispositivos como computadores, roteadores, switches, impressoras de rede e outros equipamentos de rede. Ele é especialmente comum em redes Ethernet.
+                    A sigla "RJ" significa "Registered Jack" (conector registrado) e o número "45" indica o tipo específico de conector. Originalmente, o RJ-45 foi desenvolvido para telefonia, mas hoje em dia é mais comumente associado a redes de computadores.</p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="img-right" src="https://cdn.awsli.com.br/600x450/1700/1700153/produto/100529616/9f9dfdd20f.jpg" alt="Cripador">
+                <p class="p-left">
+                <span>Cabo de Rede o que é?</span><br><br>
+                Um cabo de rede, também chamado de cabo Ethernet ou cabo de LAN, é fundamental para conectar dispositivos em uma rede e permitir a transferência de dados. Existem dois tipos principais de cabos: o de par trançado, feito de fios de cobre trançados, e o de fibra óptica, que usa fibras de vidro ou plástico para transmitir dados por pulsos de luz. A escolha entre eles depende das necessidades específicas da rede, como distância, largura de banda e imunidade a interferências. Ambos os tipos têm diferentes categorias e padrões de conectores. Em suma, os cabos de rede são essenciais para garantir uma comunicação rápida e confiável entre dispositivos em uma rede.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="interface">
+        <!-- Home Proj 1 -->
+            <div>
+                <h3 class="position" id="proj-02">Projeto 03 (Dez)</h3>
+                <p class="position-p">
+                    <span>Desenvolver um site pela planta (Figma):</span><br><br>
+                    Começar a criação de um site pela planta no Figma é uma prática comum e altamente eficaz. O Figma é uma ferramenta de design colaborativo baseada em nuvem que permite criar protótipos interativos, layouts de páginas e elementos de design com facilidade. Aqui está um guia passo a passo sobre como iniciar a criação de um site usando o Figma, começando pela planta:
+                    Defina os objetivos do site: Antes de começar a desenhar, é importante ter uma compreensão clara dos objetivos e do público-alvo do site. Isso ajudará a guiar suas decisões de design ao longo do processo.
+                    Crie um novo projeto no Figma: Abra o Figma e crie um novo projeto para o site. Escolha as dimensões adequadas para o design, como largura e altura da tela, com base nas necessidades do projeto.
+                    <br><br>
+                    Desenhe a estrutura básica do site: Comece desenhando a estrutura básica do site, conhecida como planta baixa ou wireframe. Isso inclui a disposição dos elementos principais, como cabeçalho, menu de navegação, conteúdo principal, barra lateral (se aplicável), rodapé e qualquer outra seção relevante.
+                    Use formas simples e linhas para representar os elementos: Na planta baixa, concentre-se em usar formas simples, como retângulos e círculos, e linhas para representar os diferentes elementos do site. Evite adicionar detalhes visuais neste estágio e concentre-se apenas na estrutura e organização dos elementos.
+                    Considere a usabilidade e a navegação: Ao projetar a planta baixa, leve em consideração a usabilidade e a experiência do usuário. Certifique-se de que a navegação seja intuitiva e que os elementos principais estejam facilmente acessíveis aos usuários.
+                </p>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <img class="position-exc" src="/img/Captura de tela 2024-03-10 114313.png" alt="Primeiro Projeto - Home">
+                <br>
+                <p class="position2-p">
+                <span>Sobre a primeira página (Home):</span><br><br>
+                A página inicial apresenta um layout limpo e moderno, com um menu de navegação transparente no topo da página, fornecendo acesso fácil aos diferentes recursos e seções do site, mantendo uma estética elegante.
+                No topo da página, destaca-se uma imagem de destaque que retrata visualmente o um céu nublado em baixo temos um carrocel de imagens com imagem, seja com uma frota de caminhões, contêineres ou qualquer outro meio de transporte relevante. 
+                <br><br>
+                Essa imagem não apenas cativa os visitantes, mas também comunica de forma instantânea a essência do negócio. 
+                Em seguida, há quadrados animados ou ícones que fornecem informações adicionais sobre os serviços oferecidos pela transportadora, como proatividade, agilidade, custo benefício, entre outros. Esses elementos animados adicionam dinamismo à página, enquanto destacam os pontos-chave do negócio de forma visualmente atraente.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-03-10 114332.png" alt="Transportadora">
+                <p class="position2-p">
+                    <span>Sobre a página de (Transportadora):</span><br><br>
+                    Ao acessar a página "Armazenagem", os visitantes são recebidos com um design visualmente atraente e organizado. Botões animados capturam a atenção dos usuários, direcionando-os para áreas específicas da página ou ações importantes, como "Cadastro", "Sobre".
+                    A página é ricamente ilustrada com imagens que retratam os diferentes aspectos do serviço de armazenamento oferecido pela transportadora. Essas imagens podem incluir depósitos, prateleiras de armazenamento, empilhadeiras e equipes trabalhando no manuseio de mercadorias. As imagens são selecionadas para transmitir profissionalismo, segurança e eficiência nas operações de armazenagem da empresa.
+                    <br><br>
+                    Além das imagens, a página "Armazenagem" contém uma quantidade significativa de informações detalhadas sobre os serviços de armazenamento oferecidos. Isso pode incluir descrições dos tipos de armazenamento disponíveis (como armazenagem em temperatura controlada, armazenagem a seco, armazenagem de longo prazo, etc.), capacidades de armazenamento, processos de gestão de estoque, segurança e medidas de proteção, além de políticas de armazenagem e termos contratuais.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-03-10 114352.png" alt="Sobre">
+                <p class="position2-p">
+                    <span>Sobre a página de (Sobre):</span><br><br>
+                    A página "Sobre" em um site de transportadora é uma oportunidade valiosa para a empresa se apresentar aos visitantes, compartilhar sua história, missão, valores e destacar suas conquistas e diferenciais. Aqui está uma descrição dessa página, com foco em texto abundante e imagens animadas:
+                    Ao acessar a página "Sobre", os visitantes são recebidos com uma narrativa envolvente sobre a história e os valores da empresa. Texto abundante é usado para contar a jornada da transportadora, desde sua fundação até o presente, destacando marcos importantes, experiências significativas e sucessos alcançados ao longo do tempo.
+                    Imagens animadas complementam o conteúdo textual, trazendo à vida a história da empresa de forma visualmente atraente. Essas imagens podem incluir animações que mostram o crescimento da empresa ao longo dos anos, a evolução de suas instalações, a diversidade de sua equipe e sua integração com tecnologias avançadas no setor de transporte e logística.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="interface">
+            <div>
+                <img class="position-exc" src="/img/Captura de tela 2024-03-10 114403.png" alt="Temperatura">
+                <p class="position2-p">
+                    <span>Sobre a página de (Login e Cadastro):</span><br><br>
+                    Ao acessar a página de login e cadastro, os usuários são recebidos com uma interface limpa e intuitiva que permite tanto fazer login em uma conta existente quanto criar uma nova conta na mesma tela. Isso proporciona conveniência aos usuários, evitando a necessidade de navegar entre diferentes páginas ou seções do site.
+                    A transição entre os modos de login e cadastro é suave e fluida, utilizando efeitos de transição que tornam a mudança de contexto visualmente agradável e sem interrupções bruscas na experiência do usuário.
+                    <br><br>
+                    Na seção de login, os usuários podem inserir suas credenciais de acesso, como nome de usuário ou endereço de e-mail e senha. Um sistema de validação de valores verifica se as informações fornecidas estão corretas e correspondem a uma conta válida no sistema. Caso contrário, são exibidas mensagens de erro claras e informativas para orientar os usuários sobre como corrigir os problemas de entrada.
+                    Por outro lado, na seção de cadastro, os usuários podem preencher um formulário com informações pessoais, como nome, endereço de e-mail, senha e qualquer outro dado necessário para criar uma conta. Novamente, um sistema de validação de valores verifica se todas as informações fornecidas estão corretas e atendem aos critérios de entrada necessários. Se houver erros ou campos em branco, mensagens de erro são exibidas para indicar onde as correções são necessárias.
+                </p>
+            </div>
+        </div>
+    </section>
+    <br><br><br><br><br><br><br>
+</main>
 <footer>
     <div class="interface">
         <div class="line-footer">
@@ -454,16 +756,16 @@ Essa página combina elementos visuais atraentes, funcionalidade interativa e co
         <a href="#startup" class="menu-a ai-1">
             <i class="bi bi-briefcase"></i>
         </a>
-        <a href="#robotica" class="menu-a ai-2">
-            <i class="bi bi-cpu"></i>
-        </a>
-        <a href="#poo" class="menu-a ai-3">
+        <a href="#poo" class="menu-a ai-2">
             <i class="bi bi-code-square"></i>
         </a>
-        <a href="#so" class="menu-a ai-4">
+        <a href="#so" class="menu-a ai-3">
             <i class="bi bi-microsoft"></i>
         </a>
-        <a href="#progweb" class="menu-a ai-5">
+        <a href="#gerenc" class="menu-a ai-4">
+            <i class="bi bi-card-checklist"></i>
+        </a>
+        <a href="#proj-02" class="menu-a ai-5">
             <i class="bi bi-code"></i>
         </a>
     </nav>

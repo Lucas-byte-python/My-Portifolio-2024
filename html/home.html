@@ -10,6 +10,7 @@
     <script src="/js/macara.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" href="/img//Lucas-removebg-preview.ico">
+    <script src="/js/white.js"></script>
 
 </head>
 <body>
@@ -27,8 +28,10 @@
         </ul>
     </div>
     <div class="login-button">
-        <div class="btn btn-other">
-            <a href="#form"><span class="btn-login">Fale Comigo</span></a>
+        <div class="dark-mode-button">
+            <button id="darkModeButton" class="transparent" onclick="toggleDarkMode()">
+                <i id="darkModeIcon" class="bi bi-moon"></i>
+            </button>
         </div>
     </div>
 
@@ -49,10 +52,10 @@
         </div>
     </div>
 </header>
-<br><br><br><br><br><br><br><br><br><br><br>
 <!-- Desenvolvimento -->
 <main>
-    <section id="comeco">
+    <section class="comeco" id="comeco">
+      <div class="interface">
         <div class="primeira">
             <img class="yo" src="/img/foto_linda.jpg" alt="Lucas-Santil">
             <h1><span>Inovando as aplicações em WEB</span> para o mundo digital</h1>
@@ -63,6 +66,7 @@
                 <a href="#eu" class="button-1"><button>Saiba mais sobre mim</button></a> 
             </div>
         </div>
+    </div>
     </section>
     <section class="especialidades" id="espe">
         <div class="interface">
@@ -72,7 +76,7 @@
                 <div class="especialidades-box">
                     <i class="bi bi-code-square"></i>
                     <h3>Website</h3>
-                    <p class="conjunto"><a href="introduction.html">Um website é um conjunto de páginas que são programadas em uma linguagem, geralmente em HTML e CSS, com ou sem JavaScript e talvez com PHP ou outra, que apresentam um conteúdo previamente programado do site, loja virtual ou blog em si.</a></p>
+                    <p class="conjunto"><a href="#port">Um website é um conjunto de páginas que são programadas em uma linguagem, geralmente em HTML e CSS, com ou sem JavaScript e talvez com PHP ou outra, que apresentam um conteúdo previamente programado do site, loja virtual ou blog em si.</a></p>
                 </div>
                 <div class="especialidades-box">
                     <i class="bi bi-card-text"></i>
@@ -96,7 +100,12 @@
                 </div>
                 <div class="txt-sobre">
                     <h2>MUITO PRAZER, <span>SOU LUCAS SANTIL</span></h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis placeat ipsa sit. Sequi autem, eius veniam possimus assumenda accusantium impedit rem soluta illo fuga, dolor accusamus minus, ullam dolorum ducimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus ipsum, aspernatur dicta voluptas dolorum officiis accusamus. Accusamus minus aperiam magnam, voluptatum aliquam porro facilis possimus, quae ad iusto voluptas vel!</p>
+                    <p>
+                        Oii, me chamo Lucas, tenho 16 anos e sou apaixonado por programação e criação de sites. Desde que me lembro, sempre fui fascinado pela tecnologia e pelo mundo digital. Passo horas explorando diferentes linguagens de programação, experimentando novas técnicas e criando projetos inovadores.
+                        <br><br>
+                        Cada linha de código que escrevo me traz uma sensação de realização e me motiva a continuar aprendendo e evoluindo. Adoro desafios e estou sempre em busca de novos conhecimentos para aprimorar minhas habilidades.
+                        <br><br>
+                        Quando se trata de criação de sites, adoro combinar minha habilidade técnica com minha criatividade. Cada projeto é uma oportunidade de expressar minha visão e criar algo único e funcional. Desde o design até a implementação, gosto de me envolver em todos os aspectos do processo de desenvolvimento.</p>
                     <div class="btn-social">
                         <a href="https://www.instagram.com/lucas.s_tec.info/"><button><i class="bi bi-instagram"></i></button></a>
                         <a href="https://twitter.com/LucasSS_ofc"><button><i class="bi bi-twitter-x"></i></button></a>
@@ -111,6 +120,7 @@
     <section class="progresso">
         <div class="interface">
             <h2 class="titulo">MEU <span>PROGRESSO</span></h2>
+            <br><br><br><br><br>
             <div class="flex">
                     <div class="box">
                         <div class="box-circle">
@@ -126,7 +136,6 @@
                             <h2>92%</h2>
                         </div>
                     </div>
-
                     <div class="box-2">
                         <div class="box-circle-2">
                             <h3>Infrestrutura</h3>
@@ -141,7 +150,6 @@
                             <h2>70%</h2>
                         </div>
                     </div>
-
                     <div class="box-3">
                         <div class="box-circle-3">
                             <h3>Design</h3>
@@ -156,6 +164,25 @@
                             <h2>90%</h2>
                         </div>
                     </div>
+            </div>
+            <div class="especialidades-box">
+                <i class="bi bi-cpu-fill"></i>
+                <h3>Infrestrutura</h3>
+                <p class="conjunto">Ao longo dos anos, tenho me dedicado a aprimorar meus conhecimentos em diversos aspectos da infraestrutura de TI. Desde a configuração e administração de redes até a gestão de servidores e sistemas de armazenamento, tenho trabalhado arduamente para desenvolver minhas habilidades.
+
+                    Acredito que minha experiência prática combinada com minha formação acadêmica me proporcionaram uma base sólida para lidar com uma variedade de desafios no dia a dia. No entanto, reconheço que ainda há muito a aprender e a aperfeiçoar.</p>
+            </div>
+            <div class="especialidades-box">
+                <i class="bi bi-code-slash"></i>
+                <h3>WEB</h3>
+                <p class="conjunto">Bom, considerando minha experiência e conhecimento no ramo de desenvolvimento web, eu diria que minhas habilidades estão em torno de 92%. Isso significa que estou muito confiante e competente em uma variedade de áreas relacionadas à criação e manutenção de websites e aplicativos web.
+                    
+                    Posso desenvolver sites dinâmicos e responsivos usando uma variedade de tecnologias, como HTML, CSS, JavaScript e frameworks modernos como React.js ou Angular.js. Além disso, tenho um bom entendimento de bancos de dados, como MySQL e MongoDB, o que me permite criar sistemas robustos e eficientes para armazenar e manipular dados.</p>
+            </div>
+            <div class="especialidades-box">
+                <i class="bi bi-card-image"></i>
+                <h3>Design</h3>
+                <p class="conjunto">Tenho experiência em utilizar softwares de design gráfico como Adobe Photoshop, Canva e Figma que é muito usado para fazer uma planta do site, o que me permite criar layouts e elementos visuais impressionantes para websites, aplicativos e materiais impressos. Além disso, estou familiarizado com as melhores práticas de design de interface do usuário (UI) e design de experiência do usuário (UX), o que me permite criar designs intuitivos e atraentes que proporcionam uma excelente experiência para o usuário final.</p>
             </div>
         </div>
     </section>
@@ -191,7 +218,6 @@
             </div>
         </div>
     </section>
-</main>
 <footer>
     <div class="interface">
         <div class="line-footer">
@@ -237,5 +263,6 @@
         </a>
     </nav>
 </div>
+</main>
 </body>
 </html>
