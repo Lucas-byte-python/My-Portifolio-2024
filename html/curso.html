@@ -1,11 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meus Certificados</title>
+<link rel="stylesheet" href="/css/cursos.css">
+<script src="/js/cert.js"></script>
+<script src="/js/white.js"></script>
+<link rel="stylesheet" href="/css/home.css">
+<link rel="stylesheet" href="/scss/home-but.css">
+<script src="/js/pag1.js"></script>
+<script src="/js/macara.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="icon" href="/img//Lucas-removebg-preview.ico">
 </head>
 <body>
-    
+<header>
+    <nav class="nav-bar">
+    <div class="logo">
+        <img src="/img/Lucas-removebg-preview.png" alt="Lucas-Developer">
+    </div>
+    <div class="nav-list">
+        <ul class="menu">
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="pag1.html" class="nav-link">1º Ano</a></li>
+            <li class="nav-item"><a href="pag2.html" class="nav-link">2º Ano</a></li>
+            <li class="nav-item"><a href="pag3.html" class="nav-link">3º Ano</a></li>
+        </ul>
+    </div>
+    <div class="login-button">
+        <div class="dark-mode-button">
+            <button id="darkModeButton" class="transparent" onclick="toggleDarkMode()">
+                <i id="darkModeIcon" class="bi bi-moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="/img/menu_white_36dp.svg" alt=""></button>
+    </div>
+</nav>
+    <div class="mobile-menu">
+        <ul>
+            <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="pag1.html" class="nav-link">1º Ano</a></li>
+            <li class="nav-item"><a href="pag2.html" class="nav-link">2º Ano</a></li>
+            <li class="nav-item"><a href="pag3.html" class="nav-link">3º Ano</a></li>
+        </ul>
+
+        <div class="login-button">
+            <button class="btn-login">Login</button>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="inicio">
+        <div class="interface">
+            <div class="inicio" id="galeria"> 
+                <div class="certificado" id="cert1" onclick="openImage('cert1')">
+                    <a href="#cert1">
+                        <img src="/img/cert-ard.png" alt="cert-arduino">
+                    </a>
+                    <div class="detalhes">
+                        Certificado do Arduino Day<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert2" onclick="openImage('cert2')">
+                    <a href="#cert2">
+                        <img src="/img/cert-aws.png" alt="cert-aws">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da AWS<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert3" onclick="openImage('cert3')">
+                    <a href="#cert3">
+                        <img src="/img/cert-hack.png" alt="cert-hacker">
+                    </a>
+                    <div class="detalhes">
+                        Certificado do Hackers do Bem<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert4" onclick="openImage('cert4')">
+                    <a href="#cert4">
+                        <img src="/img/cert-hauwei.png" alt="cert-hauwei">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da Huawei<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert5" onclick="openImage('cert5')">
+                    <a href="#cert5">
+                        <img src="/img/cert-dio1.png" alt="cert-dio">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da DIO<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert6" onclick="openImage('cert6')">
+                    <a href="#cert6">
+                        <img src="/img/cert-dio2.png" alt="cert-dio">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da DIO<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert7" onclick="openImage('cert7')">
+                    <a href="#cert7">
+                        <img src="/img/cert-dio3.png" alt="cert-dio">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da DIO<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert8" onclick="openImage('cert8')">
+                    <a href="#cert8">
+                        <img src="/img/cert-dio4.png" alt="cert-dio">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da DIO<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert9" onclick="openImage('cert9')">
+                    <a href="#cert9">
+                        <img src="/img/cert-dio5.png" alt="cert-dio">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da DIO<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert10" onclick="openImage('cert10')">
+                    <a href="#cert10">
+                        <img src="/img/cert-dio6.png" alt="cert-dio">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da DIO<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert11" onclick="openImage('cert11')">
+                    <a href="#cert11">
+                        <img src="/img/cert-dio7.png" alt="cert-dio">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da DIO<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert12" onclick="openImage('cert12')">
+                    <a href="#cert12">
+                        <img src="/img/cert-dio8.png" alt="cert-dio">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da DIO<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert13" onclick="openImage('cert13')">
+                    <a href="#cert13">
+                        <img src="/img/cert-dio9.png" alt="cert-dio">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da DIO<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+                <div class="certificado" id="cert14" onclick="openImage('cert14')">
+                    <a href="#cert14">
+                        <img src="/img/cert-dio10.png" alt="cert-dio">
+                    </a>
+                    <div class="detalhes">
+                        Certificado da DIO<br> <a href="#fechar">x</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 </body>
 </html>

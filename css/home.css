@@ -1190,27 +1190,26 @@ circle:nth-child(2) {
     }
 }
 
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 560px) {
     .primeira h1 {
-        font-size: 30px;
-        margin-left: 100px;
-        margin-right: 90px;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
         text-align: center;
-
     }
     .primeira h1 span {
-        font-size: 30px;
+        font-size: 20px;
     }
     .primeira .paragrafo {
         font-size: 16px;
-        margin-left: 100px;
-        margin-right: 90px;
+        margin-left: 60px;
+        margin-right: 60px;
     }
     .button-1 {
-        margin-left: 90px;
+        margin-left: 140px;
     }
     .especialidades .titulo {
-        font-size: 30px;
+        font-size: 20px;
     }
     section.especialidades .flex {
         flex-direction: column; 
@@ -1223,74 +1222,60 @@ circle:nth-child(2) {
         margin-right: 20px;
     }
     h2.titulo {
-        font-size: 24px; 
+        font-size: 20px; 
     }
     .especialidades .especialidades-box i {
-        font-size: 50px; 
+        font-size: 30px; 
     }
     .especialidades .especialidades-box h3 {
         font-size: 20px; 
         margin: 10px 0;
     }
-    .sobre .txt-sobre h2{
+    .progresso .especialidades-box h3 {
+        font-size: 20px;
+    }
+    .progresso .especialidades-box i {
         font-size: 30px;
-        margin-left: -400px;
+    }
+    .progresso .especialidades-box p {
+        font-size: 15px;
+    }
+    .sobre .txt-sobre h2{
+        font-size: 20px;
+        margin-left: -300px;
+        margin-right: -500px;
         margin-top: -250px;
     }
     .sobre .txt-sobre h2 span{
-        font-size: 30px;
+        font-size: 20px;
     }
     .sobre .txt-sobre p{
-        font-size: 16px;
-        margin-left: -500px;
-        margin-right: 90px;
+        font-size: 15px;
+        margin-left: -340px;
+        margin-right: 20px;
         margin-bottom: 340px;
     }
+    .sobre .txt-sobre .btn-social {
+        margin-left: -320px;
+    }
     .sobre .img-sobre img {
-        margin-left: 120px;
-    }
-    .btn-social {
-        margin-top: 600px;
-        margin-left: -360px;
-    }
-    .progresso .box .box-circle {
-        margin-top: 1600px;
-    }
-    .progresso .titulo {
-        font-size: 30px ;
-    }
-    .progresso .box  .number {
-        margin-top: 803px;
-    }
-    .progresso .box-2 .box-circle-2  {
-        margin-top: 2150px;
-        margin-left: 800px; 
-    }
-    .progresso .box-2  .number-2 {
-        margin-top: 1079px;
-        margin-left: 397px;
-    }
-    .progresso .box-3 .box-circle-3  {
-        margin-top: 2700px;
-        margin-left: -510px;
-    }
-    .progresso .box-3  .number-3 {
-        margin-top: 1353px;
-        margin-left: -399px;
+        margin-top: 230px;
+        margin-left: 75px;
+        width: auto;
+        height: 300px;
     }
     .portifolio .titulo {
         margin-top: 500px;
-        font-size: 30px;
+        font-size: 20px;
     }
     section.portifolio .flex {
         flex-direction: column; 
         align-items: center;
     }
     .img-port {
-        width: 100%; 
+        width: 70%; 
         height: 360px;
         margin: 0 0 40px;
-
     }
     .img-port:hover {
         background-position: 100% 0%; 
@@ -1308,7 +1293,9 @@ circle:nth-child(2) {
         margin-top: -80px;
     }
     footer .line-footer .btn-social {
-        margin-top: 10px;
+        margin-top: -100px;
+        margin-left: -225px;
+        width: 500px;
     }
     footer .line-footer .logo-footer {
         margin-top: 10px;
