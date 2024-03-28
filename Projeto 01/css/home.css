@@ -1,0 +1,18 @@
+body{
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-color: rgb(220, 220, 236);
+    color:rgb(0, 0, 0);
+}
+.pop{
+    height: 10%;
+    float: left;
+    width: 1,2%;
+}
+p{
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+
+    

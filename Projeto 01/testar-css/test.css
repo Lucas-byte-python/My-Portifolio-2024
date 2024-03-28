@@ -1,0 +1,31 @@
+
+div{
+    width:483px;
+    height:298px;
+    background:#676470;
+    transition:all 0.3s ease;
+}
+  
+
+.fade
+{
+        opacity:0.5;
+        
+}
+.fade:hover
+{
+        opacity:1;
+        align-items: center;
+        padding: auto;
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
+}
+
+.oi{
+    font-size: 70px;
+    align-items: center;
+    padding: 10px;
+    margin: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
