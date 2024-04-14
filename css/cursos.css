@@ -144,7 +144,37 @@ section.inicio {
     cursor: pointer;
 }
 
+.certificado-aws {
+    width: 30%;
+    margin: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.certificado-hua {
+    width: 30%;
+    margin: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
 .certificado img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.certificado-aws img {
+    width: 100%;
+    height: 300px;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.certificado-hua img {
     width: 100%;
     height: 300px;
     display: block;
@@ -166,6 +196,34 @@ section.inicio {
     z-index: 9999;
 }
 
+.certificado-aws:target {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 650px; 
+    padding: 10px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.certificado-hua:target {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px; 
+    padding: 10px;
+    border: solid 1px #333;
+    box-shadow: 0 0 25px 10px #000;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
 .certificado:target img {
     width: auto;
     height: 500px; 
@@ -173,7 +231,29 @@ section.inicio {
     border-radius: 5px;
 }
 
+.certificado-aws:target img {
+    width: auto;
+    height: 500px; 
+    display: block;
+    border-radius: 5px;
+}
+
+.certificado-hua:target img {
+    width: auto;
+    height: 500px; 
+    display: block;
+    border-radius: 5px;
+}
+
 .certificado:target .detalhes {
+    display: block;
+}
+
+.certificado-aws:target .detalhes {
+    display: block;
+}
+
+.certificado-hua:target .detalhes {
     display: block;
 }
 

@@ -186,11 +186,6 @@ body {
     overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-    width: 6px;
-    background-color: transparent;
-}
-
 header {
     background-color: #201b2c;
     position: fixed;
@@ -483,8 +478,8 @@ p.paragrafo {
     height: 400px;
     border-radius: 20px;
     margin-left: 900px;
-    margin-top: 50px;
-    opacity: 0.5;
+    margin-top: 160px;
+    opacity: 1;
 }
 
 img.yo {
@@ -504,7 +499,8 @@ img.yo {
 /* Section 2*/
 section.especialidades {
     padding: 40px 4%;
-    margin-top: 250px;
+    margin-top: 120px;
+    height: 800px;
 }
 
 section.especialidades .flex {
@@ -516,6 +512,7 @@ h2.titulo {
     font-size: 38px;
     text-align: center;
     animation: go-back 2s;
+    margin-top: 100px;
 }
 
 h2.titulo span {
@@ -590,6 +587,10 @@ section.sobre .flex{
     margin-top: 60px;
 }
 
+section.sobre {
+    margin-top: 120px;
+}
+
 .sobre .txt-sobre {
     color: #fff;
 }
@@ -637,7 +638,7 @@ section.sobre .flex{
 
 section.comeco {
     margin-top: 120px;
-    margin-bottom: 400px;
+    height: 52rem;
 }
 
 section.portifolio {
@@ -1009,7 +1010,7 @@ circle:nth-child(2) {
 }
 
 .menu-a i{
-    margin-left: 18px;
+    margin-left: 19px;
 }
 
 .menu-btn, .menu-a {
@@ -1147,7 +1148,7 @@ circle:nth-child(2) {
     z-index: 1000; 
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (min-width: 450px) and (max-width: 730px) {
     .nav-bar {
         padding: 1.5rem 4rem;
     }
@@ -1187,6 +1188,125 @@ circle:nth-child(2) {
     }
     .open {
         display: block;
+    }
+    .primeira h1 {
+        font-size: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+    }
+    .primeira h1 span {
+        font-size: 20px;
+    }
+    .primeira .paragrafo {
+        font-size: 16px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .button-1 {
+        margin-left: 250px;
+    }
+    .especialidades .titulo {
+        font-size: 20px;
+    }
+    section.especialidades .flex {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .especialidades .especialidades-box {
+        width: 100%; 
+        margin-bottom: 20px; 
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    h2.titulo {
+        font-size: 20px; 
+    }
+    .especialidades .especialidades-box i {
+        font-size: 30px; 
+    }
+    .especialidades .especialidades-box h3 {
+        font-size: 20px; 
+        margin: 10px 0;
+    }
+    .progresso .especialidades-box h3 {
+        font-size: 20px;
+    }
+    .progresso .especialidades-box i {
+        font-size: 30px;
+    }
+    .progresso .especialidades-box p {
+        font-size: 15px;
+    }
+    .sobre .txt-sobre h2{
+        font-size: 20px;
+        margin-left: -440px;
+        margin-right: -500px;
+        margin-top: 200px;
+    }
+    .sobre .txt-sobre h2 span{
+        font-size: 20px;
+    }
+    .sobre .txt-sobre p{
+        font-size: 15px;
+        margin-left: -440px;
+        margin-right: 20px;
+        margin-bottom: 340px;
+    }
+    .sobre .txt-sobre .btn-social {
+        margin-left: -320px;
+    }
+    .sobre .img-sobre img {
+        margin-top: 500px;
+        margin-left: 175px;
+        width: auto;
+        height: 300px;
+    }
+    .portifolio .titulo {
+        margin-top: 500px;
+        font-size: 20px;
+    }
+    section.portifolio .flex {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .progresso .box, .box-2, .box-3 {
+        opacity: 0;
+        margin-top: -300px;
+    }
+    .progresso.especialidades-box {
+        margin-top: -30px;
+    }
+    .img-port {
+        width: 70%; 
+        height: 360px;
+        margin: 0 0 40px;
+    }
+    .img-port:hover {
+        background-position: 100% 0%; 
+    }
+    .overplay {
+        font-size: 18px; 
+    }
+    footer {
+        margin-top: 200px;
+    }
+    footer .line-footer {
+        margin-top: -200px;
+    }
+    .interface .line-footer {
+        margin-top: -80px;
+    }
+    footer .line-footer .btn-social {
+        margin-top: -100px;
+        margin-left: -225px;
+        width: 500px;
+    }
+    footer .line-footer .logo-footer {
+        margin-top: 10px;
+    }
+    .menu-2 {
+        display: none;
     }
 }
 
