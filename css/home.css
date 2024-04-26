@@ -1253,42 +1253,65 @@ circle:nth-child(2) {
         font-size: 20px;
     }
 
-    .box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+    .progresso .flex {
+        opacity: 0;
     }
 
-    .box-circle {
-        width: 80px;
-        height: 80px;
-        border-radius: 50%;
-        border: 5px solid #000;
+    .progresso .especialidades-box {
+        width: 280px;
+        height: auto;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        margin-left: -260px;
-        margin-top: -250px;
+        margin: 0 auto;
+        margin-bottom: 1070px;
+        margin-top: -1050px;
     }
 
-    .box-circle h3 {
+    .progresso .especialidades-box h3 {
+        font-size: 15px;
+    }
+
+    .progresso .especialidades-box p {
+        font-size: 12px;
+    }
+
+    .progresso .especialidades-box i {
+        font-size: 40px;
+    }
+
+    .portifolio h2 {
         font-size: 20px;
-        margin-top: -40px;
-        margin-left: 75px;
     }
 
-    svg {
-        width: 100px;
-        height: 100px;
+    .portifolio .img-port {
+        margin: 0 auto;
+        margin-bottom: 30px;
     }
 
-    .number {
-        font-size: 15px;
-        margin-top: -130px;
-        margin-left: -125px;
+    .formulario .interface {
+        margin-top: -350px;
     }
 
-    .number h2 {
-        font-size: 15px;
+    .formulario h2 {
+        font-size: 20px;
+    }
+
+    .formulario input {
+        width: 200px;
+    }
+
+    .formulario textarea {
+        width: 200px;
+    }
+
+    .formulario form .btn-enviar {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .formulario form .btn-enviar input {
+        width: 200px;
+        height: auto;
     }
 }
