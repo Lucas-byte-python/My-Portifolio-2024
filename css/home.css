@@ -1148,7 +1148,7 @@ circle:nth-child(2) {
     z-index: 1000; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .primeira h1 {
         display: flex;
         flex-direction: column;
@@ -1176,6 +1176,12 @@ circle:nth-child(2) {
         flex-direction: column;
         margin: 0 auto;
         text-align: center;
+    }
+
+    .comeco .button-1 {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
     }
 
     .interface {
@@ -1313,5 +1319,22 @@ circle:nth-child(2) {
     .formulario form .btn-enviar input {
         width: 200px;
         height: auto;
+    }
+
+    footer .interface {
+        margin-top: -250px;
+    }
+
+    footer .logo-footer {
+        margin: 0 auto;
+    }
+
+    footer .btn-social {
+        margin: 0 auto;
+        margin-top: -100px;
+    }
+
+    footer .line-footer {
+        margin-top: 0px;
     }
 }
