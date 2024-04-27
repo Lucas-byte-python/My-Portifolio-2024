@@ -276,3 +276,216 @@ a {
 .principal {
     height: 150px;
 }
+
+@media screen and (max-width: 768px) {
+    .logo {
+        opacity: 0;
+    }
+    
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        width: 2px;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+    }
+    
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-top: -190px;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: flex;
+        margin-top: -200px;
+    }
+    .open {
+        display: block;
+    }
+
+    .proj-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .interface {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line-vertical {
+        display: none;
+    }
+
+    .icon {
+        max-width: 30px;
+    }
+
+    .glow-on-hover {
+        width: calc(50% - 50px); 
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 900px) {
+    header {
+        position: absolute;
+    }
+
+    .logo {
+        opacity: 1;
+        margin-top: 10px;
+        margin-left: -23px;
+    }
+    
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+        padding: 20px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 2px;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+    }
+    
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-top: -200px;
+        margin-left: 250px;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: flex;
+        margin-top: -200px;
+    }
+    .open {
+        display: block;
+    }
+
+    .proj-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .interface {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .line-vertical {
+        display: none;
+    }
+
+    .icon {
+        max-width: 30px;
+    }
+
+    .glow-on-hover {
+        width: calc(50% - 50px); 
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px){
+    header {
+        position: absolute;
+    }
+
+    .logo {
+        opacity: 1;
+        margin-top: 10px;
+        margin-left: -23px;
+    }
+
+    .nav-list .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20 auto;
+    }
+
+    .menu .nav-item {
+        padding: 30px;
+        width: 50px;
+    }
+
+    .menu .nav-link {
+        padding: 20px;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 2px;
+    }
+}
+
