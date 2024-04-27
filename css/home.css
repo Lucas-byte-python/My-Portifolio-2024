@@ -1434,6 +1434,7 @@ circle:nth-child(2) {
 
     .nav-item {
         display: none;
+        padding: 20px;
     }
 
     .nav-link {
@@ -1697,18 +1698,63 @@ circle:nth-child(2) {
     }
 }
 
-@media  screen and (min-width: 900px) and (max-width: 1100) {
+@media screen and (min-width: 900px) and (max-width: 1100px){
+    header {
+        position: absolute;
+    }
+
+    .logo {
+        opacity: 1;
+        margin-top: 10px;
+        margin-left: -23px;
+    }
+
+    .nav-list .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20 auto;
+    }
+
+    .menu .nav-item {
+        padding: 30px;
+        width: 50px;
+    }
+
+    .menu .nav-link {
+        padding: 20px;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 2px;
+    }
+    
     .primeira h1 {
         display: flex;
         flex-direction: column;
         text-align: center;
         margin: 0 auto;
         margin-top: -500px;
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .primeira h1 span {
-        font-size: 25px;
+        font-size: 30px;
+    }
+
+    .yo {
+        opacity: 0;
     }
 
     .primeira p {
@@ -1719,7 +1765,7 @@ circle:nth-child(2) {
         padding: 15px;
         margin-left: 30px;
         margin-right: 30px;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .primeira .text-box .button-1 {
@@ -1745,7 +1791,7 @@ circle:nth-child(2) {
     }
 
     .especialidades h2 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .flex {
@@ -1790,7 +1836,7 @@ circle:nth-child(2) {
     }
 
     .sobre .txt-sobre h2 {
-        font-size: 25px;
+        font-size: 30px;
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -1822,7 +1868,7 @@ circle:nth-child(2) {
     }
 
     .progresso h2 {
-        font-size: 25px;
+        font-size: 30px;
         margin-bottom: 500px;
     }
 
@@ -1858,7 +1904,228 @@ circle:nth-child(2) {
     }
 
     .portifolio h2 {
+        font-size: 30px;
+    }
+
+    .portifolio .img-port {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .formulario .interface {
+        margin-top: -450px;
+    }
+
+    .formulario h2 {
         font-size: 25px;
+    }
+
+    .formulario input {
+        width: 300px;
+    }
+
+    .formulario textarea {
+        width: 300px;
+    }
+
+    .formulario form .btn-enviar {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .formulario form .btn-enviar input {
+        width: 250px;
+        height: auto;
+    }
+
+    footer .interface {
+        margin-top: -250px;
+    }
+
+    footer .logo-footer {
+        margin: 20 auto;
+    }
+
+    footer .btn-social {
+        margin: -10 auto;
+        margin-top: 20px;
+    }
+
+    footer .line-footer {
+        margin-top: -20px;
+    }
+
+    .menu-2 {
+        opacity: 0;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1400px){
+    .primeira h1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: -500px;
+        font-size: 30px;
+    }
+
+    .primeira h1 span {
+        font-size: 30px;
+    }
+
+    .yo {
+        opacity: 0;
+    }
+
+    .primeira p {
+        display: flex;
+        text-align: justify;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 15px;
+        margin-left: 30px;
+        margin-right: 30px;
+        font-size: 20px;
+    }
+
+    .primeira .text-box .button-1 {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .comeco .button-1 {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .interface {
+        max-height: 1280px;
+        margin: 0 auto;
+    }
+
+    .especialidades .interface {
+        margin-top: -500px;
+    }
+
+    .especialidades h2 {
+        font-size: 30px;
+    }
+
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .especialidades-box {
+        width: calc(85% - 10px); /* 50% do espaço disponível com 20px de espaçamento entre os boxes */
+        margin: 10px;
+        text-align: center;
+        background-color: rgb(46, 179, 124);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .especialidades-box i {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .especialidades .especialidades-box h3 {
+        font-size: 25px;
+    }
+
+    .especialidades .especialidades-box p {
+        font-size: 20px;
+    }
+
+    .especialidades .especialidades-box i {
+        font-size: 40px;
+    }
+
+    .sobre .interface {
+        margin-top: -300px;
+    }
+
+    .sobre img {
+        width: auto;
+        height: 450px;
+    }
+
+    .sobre .txt-sobre h2 {
+        font-size: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre .txt-sobre p {
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    .sobre .txt-sobre .btn-social {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sobre .txt-sobre .btn-social a {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    .progresso .interface {
+        margin-top: -250px;
+    }
+
+    .progresso h2 {
+        font-size: 30px;
+        margin-bottom: 500px;
+    }
+
+    .progresso .flex {
+        opacity: 0;
+    }
+
+    .progresso .especialidades-box {
+        width: 600px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 1070px;
+        margin-top: -1050px;
+    }
+
+    .progresso .especialidades-box h3 {
+        font-size: 25px;
+    }
+
+    .progresso .especialidades-box p {
+        font-size: 15px;
+    }
+
+    .progresso .especialidades-box i {
+        font-size: 40px;
+    }
+
+    .portifolio .interface {
+        margin-top: -1100px;
+    }
+
+    .portifolio h2 {
+        font-size: 30px;
     }
 
     .portifolio .img-port {

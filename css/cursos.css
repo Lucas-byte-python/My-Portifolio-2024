@@ -131,6 +131,7 @@ header {
 section.inicio {
     margin-top: 100px;
 }
+
 #galeria {
     display: flex;
     flex-wrap: wrap;
@@ -272,4 +273,304 @@ section.inicio {
 
 .detalhes a:hover {
     color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        opacity: 0;
+    }
+    
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        width: 2px;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+    }
+    
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-top: -190px;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: flex;
+        margin-top: -200px;
+    }
+    .open {
+        display: block;
+    }
+
+    .certificado {
+        width: 45%;
+    }
+
+    .certificado img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .certificado-aws {
+        width: 45%;
+    }
+
+    .certificado-aws img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .certificado-hua {
+        width: 45%;
+    }
+
+    .certificado-hua img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .detalhes {
+        font-size: 12px;
+    }
+
+    .detalhes {
+        width: 120px;
+        height: 80px;
+    }
+
+    .certificado:target {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+        width: 400px; 
+        padding: 10px;
+        border: solid 1px #333;
+        box-shadow: 0 0 25px 10px #000;
+        background: #fff;
+        border-radius: 5px;
+        z-index: 9999;
+    }
+
+    .certificado-aws:target {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-55%, -50%);
+        width: 400px; 
+        padding: 10px;
+        border: solid 1px #333;
+        box-shadow: 0 0 25px 10px #000;
+        background: #fff;
+        border-radius: 5px;
+        z-index: 9999;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 900px) {
+    header {
+        position: absolute;
+    }
+
+    .logo {
+        opacity: 1;
+        margin-top: 10px;
+        margin-left: -23px;
+    }
+    
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: none;
+        padding: 20px;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 2px;
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+        margin-top: 20px;
+        width: auto;
+        height: auto;
+    }
+    
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-top: -200px;
+        margin-left: 250px;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu .login-button {
+        display: flex;
+        margin-top: -200px;
+    }
+    .open {
+        display: block;
+    }
+
+    .certificado {
+        width: 45%;
+    }
+
+    .certificado img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .certificado-aws {
+        width: 45%;
+    }
+
+    .certificado-aws img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .certificado-hua {
+        width: 45%;
+    }
+
+    .certificado-hua img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .certificado:target {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 550px; 
+        padding: 10px;
+        border: solid 1px #333;
+        box-shadow: 0 0 25px 10px #000;
+        background: #fff;
+        border-radius: 5px;
+        z-index: 9999;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px){
+    header {
+        position: absolute;
+    }
+
+    .logo {
+        opacity: 1;
+        margin-top: 10px;
+        margin-left: -23px;
+    }
+
+    .nav-list .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20 auto;
+    }
+
+    .menu .nav-item {
+        padding: 30px;
+        width: 50px;
+    }
+
+    .menu .nav-link {
+        padding: 20px;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+
+    .nav-item {
+        display: flex;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        width: 2px;
+    }
+
+    .certificado {
+        width: 45%;
+    }
+
+    .certificado img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .certificado-aws {
+        width: 45%;
+    }
+
+    .certificado-aws img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .certificado-hua {
+        width: 45%;
+    }
+
+    .certificado-hua img {
+        max-width: 100%;
+        height: auto;
+    }
 }
