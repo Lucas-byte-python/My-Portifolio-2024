@@ -741,6 +741,168 @@ section.sobre {
     box-shadow: 0 0 10px #ffffff78;
 }
 
+.percurso {
+    background: #201b2c;
+    height: 800px;
+}
+
+.percurso .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.percurso .timeline::after {
+    content: '';
+    position: absolute;
+    height: 700px;
+    width: 6px;
+    background: #04fa19;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 40px;
+    z-index: -2px;
+}
+
+.percurso .container {
+    padding: 60px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.percurso .content::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    line-height: 250px;
+    right: -20px;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 100;
+    font-size: 1.8rem;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: violet;
+    transform: translateX(-1825%);
+    transform: translateY(30%);
+}
+
+.percurso .left {
+    left: 0;
+    margin-left: -20px;
+}
+
+.percurso .right {
+   left: 50%; 
+   margin-left: 30px;
+}
+
+.percurso .left::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 40px;
+    border-width: 10px 0 10px 10px;
+    transform: translateX(-50%);
+}
+
+.percurso .headring {
+    text-align: center;
+    color: #FFF;
+    font-size: 40px;
+    margin-top: 300px;
+    margin-bottom: 40px;
+}
+
+.percurso .headring span {
+    text-align: center;
+    color: #00FF08;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.percurso .right::before {
+    content: '';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 2;
+    right: 620px;
+    border-width: 10px 0 10px 10px;
+    transform: translateX(-50%);
+}
+
+.percurso .right::after {
+    left: -16px;
+}
+
+.percurso .content {
+    background: rgb(0, 0, 0);
+    position: relative;
+    border-radius: 6px;
+}
+
+.percurso .content .tag {
+    font-size: 15px;
+    padding-top: 12px;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #fff;
+}
+
+.percurso .content .decs {
+    margin-left: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.percurso .content .decs h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.percurso .content .decs p {
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.percurso .container.left::before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    right: calc(100% + 10px);
+    transform: translateY(100%);
+    transform: translateX(6590%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent rgb(0, 0, 0);
+}
+
+.percurso .container.right::before {
+    content: '';
+    position: absolute;
+    top: 90%;
+    left: calc(100% + 10px);
+    transform: translateY(-50%);
+    transform: translateX(-6590%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgb(0, 0, 0) transparent transparent;
+}
+
 section.comeco {
     margin-top: 120px;
     height: 52rem;
@@ -1364,7 +1526,7 @@ circle:nth-child(2) {
         justify-content: center;
     }
     .especialidades-box {
-        width: calc(85% - 10px); /* 50% do espaço disponível com 20px de espaçamento entre os boxes */
+        width: calc(85% - 10px); 
         margin: 10px;
         text-align: center;
         background-color: rgb(46, 179, 124);
@@ -1518,6 +1680,40 @@ circle:nth-child(2) {
 
     header {
         position: absolute;
+    }
+    .skills .container {
+        width: 90%; /* Reduza um pouco a largura do container em telas menores */
+        padding: 1rem; /* Diminua o espaçamento interno */
+    }
+
+    .skills .heading {
+        font-size: 32px; /* Reduza o tamanho da fonte do título em telas menores */
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(3, 1fr); /* Altere o número de colunas para 3 em telas menores */
+        gap: 1rem; /* Ajuste o espaçamento entre as barras */
+    }
+
+    .info img {
+        height: 40px; /* Reduza a altura da imagem */
+    }
+
+    .skills .container .bar {
+        margin-bottom: 10px; /* Reduza o espaçamento inferior das barras */
+    }
+
+    .skills .container .bar .info span {
+        font-size: 0.9rem; /* Reduza o tamanho da fonte do texto nas barras */
+    }
+
+    .skills .heading {
+        font-size: 20px;
+    }
+
+    .skills {
+        margin-top: -300px;
+        margin-bottom: 600px;
     }
 }
 
@@ -1801,6 +1997,41 @@ circle:nth-child(2) {
     .menu-2 {
         opacity: 0;
     }
+
+    .skills .container {
+        width: 90%; /* Reduza um pouco a largura do container em telas menores */
+        padding: 1rem; /* Diminua o espaçamento interno */
+    }
+
+    .skills .heading {
+        font-size: 32px; /* Reduza o tamanho da fonte do título em telas menores */
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(3, 1fr); /* Altere o número de colunas para 3 em telas menores */
+        gap: 1rem; /* Ajuste o espaçamento entre as barras */
+    }
+
+    .info img {
+        height: 40px; /* Reduza a altura da imagem */
+    }
+
+    .skills .container .bar {
+        margin-bottom: 10px; /* Reduza o espaçamento inferior das barras */
+    }
+
+    .skills .container .bar .info span {
+        font-size: 1rem; /* Reduza o tamanho da fonte do texto nas barras */
+    }
+
+    .skills .heading {
+        font-size: 25px;
+    }
+
+    .skills {
+        margin-top: -300px;
+        margin-bottom: 600px;
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1100px){
@@ -2063,6 +2294,40 @@ circle:nth-child(2) {
     .menu-2 {
         opacity: 0;
     }
+    .skills .container {
+        width: 90%; /* Reduza um pouco a largura do container em telas menores */
+        padding: 1rem; /* Diminua o espaçamento interno */
+    }
+
+    .skills .heading {
+        font-size: 32px; /* Reduza o tamanho da fonte do título em telas menores */
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(3, 1fr); /* Altere o número de colunas para 3 em telas menores */
+        gap: 1rem; /* Ajuste o espaçamento entre as barras */
+    }
+
+    .info img {
+        height: 40px; /* Reduza a altura da imagem */
+    }
+
+    .skills .container .bar {
+        margin-bottom: 10px; /* Reduza o espaçamento inferior das barras */
+    }
+
+    .skills .container .bar .info span {
+        font-size: 1rem; /* Reduza o tamanho da fonte do texto nas barras */
+    }
+
+    .skills .heading {
+        font-size: 25px;
+    }
+
+    .skills {
+        margin-top: -300px;
+        margin-bottom: 600px;
+    }
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1400px){
@@ -2283,5 +2548,40 @@ circle:nth-child(2) {
 
     .menu-2 {
         opacity: 0;
+    }
+
+    .skills .container {
+        width: 90%; /* Reduza um pouco a largura do container em telas menores */
+        padding: 1rem; /* Diminua o espaçamento interno */
+    }
+
+    .skills .heading {
+        font-size: 32px; /* Reduza o tamanho da fonte do título em telas menores */
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(3, 1fr); /* Altere o número de colunas para 3 em telas menores */
+        gap: 1rem; /* Ajuste o espaçamento entre as barras */
+    }
+
+    .info img {
+        height: 40px; /* Reduza a altura da imagem */
+    }
+
+    .skills .container .bar {
+        margin-bottom: 10px; /* Reduza o espaçamento inferior das barras */
+    }
+
+    .skills .container .bar .info span {
+        font-size: 1rem; /* Reduza o tamanho da fonte do texto nas barras */
+    }
+
+    .skills .heading {
+        font-size: 30px;
+    }
+
+    .skills {
+        margin-top: -300px;
+        margin-bottom: 600px;
     }
 }
