@@ -1681,6 +1681,7 @@ circle:nth-child(2) {
     header {
         position: absolute;
     }
+
     .skills .container {
         width: 90%; /* Reduza um pouco a largura do container em telas menores */
         padding: 1rem; /* Diminua o espaçamento interno */
@@ -1704,16 +1705,67 @@ circle:nth-child(2) {
     }
 
     .skills .container .bar .info span {
-        font-size: 0.9rem; /* Reduza o tamanho da fonte do texto nas barras */
+        font-size: 1rem; /* Reduza o tamanho da fonte do texto nas barras */
     }
 
     .skills .heading {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .skills {
         margin-top: -300px;
         margin-bottom: 600px;
+    }
+
+    .percurso .timeline::after {
+        height: auto;
+        width: 4px;
+        margin-left: 20px;
+    }
+
+    .percurso .container {
+        width: 90%; /* Reduz a largura do container para caber em telas menores */
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+
+    .percurso .timeline::after {
+        opacity: 0;
+    }
+
+    .percurso .content .tag {
+        font-size: 13px;
+        padding-top: 8px; /* Reduz o espaçamento superior da tag */
+        padding-bottom: 8px; /* Reduz o espaçamento inferior da tag */
+    }
+
+    .percurso .content .decs {
+        margin-left: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .percurso .content .decs h3 {
+        font-size: 12px; 
+    }
+
+    .percurso .content .decs p {
+        font-size: 10px;
+    }
+
+    .percurso .container.left::before,
+    .percurso .container.right::before {
+        display: none;
+    }
+
+    .percurso .headring {
+        font-size: 24px; /* Reduz o tamanho da fonte do título principal */
+        margin-top: 100px; /* Reduz o espaçamento superior do título principal */
+        margin-bottom: 10px; 
+    }
+
+    .percurso .left,
+    .percurso .right {
+        left: 0 !important; /* Força a posição dos quadrados à esquerda */
+        margin-left: 0 !important; /* Remove o deslocamento dos quadrados */
     }
 }
 
