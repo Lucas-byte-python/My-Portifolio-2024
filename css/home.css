@@ -437,9 +437,47 @@ h1 {
     animation: go-up 2s;
 }
 
+h1 span {
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    color: #00f7ff;
+    font-size: 40px;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s;
+}
+
+.typing-animation {
+    animation: blinkCursor 500ms steps(40) infinite normal, 
+    typing 4s steps(40) 1s normal both;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 11.9em;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
 .primeira span {
     color: #00FF08;
     font-size: 42px;
+}
+
+.typing-effect {
+    overflow: hidden; 
+    display: inline-block; 
 }
 
 p.paragrafo {
@@ -494,6 +532,64 @@ img.yo {
     100% {
         top: 30px;
     }
+}
+
+.skills {
+    background: #201b2c;
+    height: 800px;
+}
+
+.skills .container {
+    background: #2c8fad;
+    color: #ff0000;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.info img {
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.skills .container .bar {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 1rem;
+    background: #000000;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.skills .container .bar:hover {
+    box-shadow: 0 4px 10px rgb(167, 15, 15);
+    transform: scale(1.03);
+}
+
+.skills .container .bar .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skills .container .bar .info span {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+
 }
 
 /* Section 2*/
