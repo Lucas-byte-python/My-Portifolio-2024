@@ -540,8 +540,8 @@ img.yo {
 }
 
 .skills .container {
-    background: #2c8fad;
-    color: #ff0000;
+    background: #5d6d72;
+    color: #00FF08;
     border-radius: 1rem;
     padding: 2rem;
     width: 70%;
@@ -550,10 +550,19 @@ img.yo {
     margin-top: 2rem;
 }
 
+.skills .heading {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #00FF08;
+}
+
 .info img {
     width: auto;
     height: 50px;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 .skills .container .row {
@@ -573,7 +582,7 @@ img.yo {
 }
 
 .skills .container .bar:hover {
-    box-shadow: 0 4px 10px rgb(167, 15, 15);
+    box-shadow: 0 4px 10px rgb(8, 240, 220);
     transform: scale(1.03);
 }
 
@@ -586,7 +595,7 @@ img.yo {
 }
 
 .skills .container .bar .info span {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 500;
     margin-left: 0.5rem;
 
