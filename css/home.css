@@ -873,6 +873,8 @@ section.sobre {
     font-size: 13px;
     font-weight: 500;
     color: #fff;
+    text-align: justify;
+    margin-right: 20px;
 }
 
 .percurso .container.left::before {
@@ -1592,7 +1594,8 @@ circle:nth-child(2) {
 
     .progresso h2 {
         font-size: 20px;
-        margin-bottom: 0px;
+        margin-bottom: 500px;
+        margin-top: -1300px;
     }
 
     .progresso .flex {
@@ -1624,6 +1627,10 @@ circle:nth-child(2) {
 
     .portifolio h2 {
         font-size: 20px;
+    }
+
+    .portifolio .interface {
+        margin-top: -1100px;
     }
 
     .portifolio .img-port {
@@ -1757,15 +1764,25 @@ circle:nth-child(2) {
     }
 
     .percurso .headring {
-        font-size: 24px; /* Reduz o tamanho da fonte do título principal */
+        font-size: 25px; /* Reduz o tamanho da fonte do título principal */
         margin-top: 100px; /* Reduz o espaçamento superior do título principal */
         margin-bottom: 10px; 
+        text-transform: uppercase;
+    }
+
+    .percurso .headring span {
+        font-size: 25px;
+        text-transform: uppercase;
     }
 
     .percurso .left,
     .percurso .right {
         left: 0 !important; /* Força a posição dos quadrados à esquerda */
         margin-left: 0 !important; /* Remove o deslocamento dos quadrados */
+    }
+
+    .percurso {
+        margin-bottom: 1000px;
     }
 }
 
@@ -2084,6 +2101,67 @@ circle:nth-child(2) {
         margin-top: -300px;
         margin-bottom: 600px;
     }
+
+    .percurso {
+        margin-top: 400px;
+    }
+
+    .percurso .timeline::after {
+        height: auto;
+        width: 4px;
+        margin-left: 20px;
+    }
+
+    .percurso .container {
+        width: 90%; /* Reduz a largura do container para caber em telas menores */
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+
+    .percurso .timeline::after {
+        opacity: 0;
+    }
+
+    .percurso .content .tag {
+        font-size: 13px;
+        padding-top: 8px; /* Reduz o espaçamento superior da tag */
+        padding-bottom: 8px; /* Reduz o espaçamento inferior da tag */
+    }
+
+    .percurso .content .decs {
+        margin-left: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .percurso .content .decs h3 {
+        font-size: 12px; 
+    }
+
+    .percurso .content .decs p {
+        font-size: 14px;
+    }
+
+    .percurso .container.left::before,
+    .percurso .container.right::before {
+        display: none;
+    }
+
+    .percurso .headring {
+        font-size: 30px; /* Reduz o tamanho da fonte do título principal */
+        margin-top: 100px; /* Reduz o espaçamento superior do título principal */
+        margin-bottom: 10px; 
+        text-transform: uppercase;
+    }
+
+    .percurso .headring span {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .percurso .left,
+    .percurso .right {
+        left: 0 !important; /* Força a posição dos quadrados à esquerda */
+        margin-left: 0 !important; /* Remove o deslocamento dos quadrados */
+    }
 }
 
 @media screen and (min-width: 900px) and (max-width: 1100px){
@@ -2380,6 +2458,98 @@ circle:nth-child(2) {
         margin-top: -300px;
         margin-bottom: 600px;
     }
+
+    .skills .container {
+        width: 90%; /* Reduza um pouco a largura do container em telas menores */
+        padding: 1rem; /* Diminua o espaçamento interno */
+    }
+
+    .skills .heading {
+        font-size: 32px; /* Reduza o tamanho da fonte do título em telas menores */
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(3, 1fr); /* Altere o número de colunas para 3 em telas menores */
+        gap: 1rem; /* Ajuste o espaçamento entre as barras */
+    }
+
+    .info img {
+        height: 40px; /* Reduza a altura da imagem */
+    }
+
+    .skills .container .bar {
+        margin-bottom: 10px; /* Reduza o espaçamento inferior das barras */
+    }
+
+    .skills .container .bar .info span {
+        font-size: 1rem; /* Reduza o tamanho da fonte do texto nas barras */
+    }
+
+    .skills .heading {
+        font-size: 25px;
+    }
+
+    .skills {
+        margin-top: -300px;
+        margin-bottom: 600px;
+    }
+
+    .percurso .timeline::after {
+        height: auto;
+        width: 4px;
+        margin-left: 20px;
+    }
+
+    .percurso .container {
+        width: 90%; /* Reduz a largura do container para caber em telas menores */
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+
+    .percurso .timeline::after {
+        opacity: 0;
+    }
+
+    .percurso .content .tag {
+        font-size: 13px;
+        padding-top: 8px; /* Reduz o espaçamento superior da tag */
+        padding-bottom: 8px; /* Reduz o espaçamento inferior da tag */
+    }
+
+    .percurso .content .decs {
+        margin-left: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .percurso .content .decs h3 {
+        font-size: 12px; 
+    }
+
+    .percurso .content .decs p {
+        font-size: 15px;
+    }
+
+    .percurso .container.left::before,
+    .percurso .container.right::before {
+        display: none;
+    }
+
+    .percurso .headring {
+        font-size: 30px; /* Reduz o tamanho da fonte do título principal */
+        margin-top: 100px; /* Reduz o espaçamento superior do título principal */
+        margin-bottom: 10px; 
+        text-transform: uppercase;
+    }
+
+    .percurso .headring span {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+    .percurso .left,
+    .percurso .right {
+        left: 0 !important; /* Força a posição dos quadrados à esquerda */
+        margin-left: 0 !important; /* Remove o deslocamento dos quadrados */
+    }
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1400px){
@@ -2635,5 +2805,97 @@ circle:nth-child(2) {
     .skills {
         margin-top: -300px;
         margin-bottom: 600px;
+    }
+
+    .skills .container {
+        width: 90%; /* Reduza um pouco a largura do container em telas menores */
+        padding: 1rem; /* Diminua o espaçamento interno */
+    }
+
+    .skills .heading {
+        font-size: 32px; /* Reduza o tamanho da fonte do título em telas menores */
+    }
+
+    .skills .container .row {
+        grid-template-columns: repeat(3, 1fr); /* Altere o número de colunas para 3 em telas menores */
+        gap: 1rem; /* Ajuste o espaçamento entre as barras */
+    }
+
+    .info img {
+        height: 40px; /* Reduza a altura da imagem */
+    }
+
+    .skills .container .bar {
+        margin-bottom: 10px; /* Reduza o espaçamento inferior das barras */
+    }
+
+    .skills .container .bar .info span {
+        font-size: 1rem; /* Reduza o tamanho da fonte do texto nas barras */
+    }
+
+    .skills .heading {
+        font-size: 25px;
+    }
+
+    .skills {
+        margin-top: -300px;
+        margin-bottom: 600px;
+    }
+
+    .percurso .timeline::after {
+        height: auto;
+        width: 4px;
+        margin-left: 20px;
+    }
+
+    .percurso .container {
+        width: 90%; /* Reduz a largura do container para caber em telas menores */
+        margin: 0 auto; /* Centraliza o container na tela */
+    }
+
+    .percurso .timeline::after {
+        opacity: 0;
+    }
+
+    .percurso .content .tag {
+        font-size: 15px;
+        padding-top: 8px; /* Reduz o espaçamento superior da tag */
+        padding-bottom: 8px; /* Reduz o espaçamento inferior da tag */
+    }
+
+    .percurso .content .decs {
+        margin-left: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .percurso .content .decs h3 {
+        font-size: 30px; 
+    }
+
+    .percurso .content .decs p {
+        margin-top: 2px;
+        font-size: 15px;
+    }
+
+    .percurso .container.left::before,
+    .percurso .container.right::before {
+        display: none;
+    }
+
+    .percurso .headring {
+        font-size: 35px; /* Reduz o tamanho da fonte do título principal */
+        margin-top: 100px; /* Reduz o espaçamento superior do título principal */
+        margin-bottom: 10px; 
+        text-transform: uppercase;
+    }
+
+    .percurso .headring span {
+        font-size: 35px;
+    }
+
+    .percurso .left,
+    .percurso .right {
+        left: 0 !important; /* Força a posição dos quadrados à esquerda */
+        margin-left: 0 !important; /* Remove o deslocamento dos quadrados */
     }
 }
