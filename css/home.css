@@ -1690,7 +1690,7 @@ circle:nth-child(2) {
     }
 
     .skills .container {
-        width: 90%; /* Reduza um pouco a largura do container em telas menores */
+        width: 90%; 
         padding: 1rem; /* Diminua o espaçamento interno */
     }
 
@@ -2773,7 +2773,7 @@ circle:nth-child(2) {
     }
 
     .skills .container {
-        width: 90%; /* Reduza um pouco a largura do container em telas menores */
+        width: 90%; 
         padding: 1rem; /* Diminua o espaçamento interno */
     }
 
@@ -2808,7 +2808,7 @@ circle:nth-child(2) {
     }
 
     .skills .container {
-        width: 90%; /* Reduza um pouco a largura do container em telas menores */
+        width: 90%; 
         padding: 1rem; /* Diminua o espaçamento interno */
     }
 
