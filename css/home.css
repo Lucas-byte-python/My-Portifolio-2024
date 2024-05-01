@@ -2614,7 +2614,7 @@ circle:nth-child(2) {
     }
 
     .especialidades-box {
-        width: calc(85% - 10px); /* 50% do espaço disponível com 20px de espaçamento entre os boxes */
+        width: calc(85% - 10px); 
         margin: 10px;
         text-align: center;
         background-color: rgb(46, 179, 124);
