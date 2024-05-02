@@ -31,6 +31,8 @@ body {
     max-width: 50%;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* ou outra opção de alinhamento desejada */
 }
 
 .dark header {
