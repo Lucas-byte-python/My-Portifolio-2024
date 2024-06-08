@@ -46,7 +46,6 @@ body {
 
 header {
     background-color: #201b2c;
-    position: fixed;
     margin-left: 0px;
     z-index: 1000;
     height: 120px;
@@ -279,6 +278,19 @@ a {
     height: 150px;
 }
 
+body::-webkit-scrollbar {
+    width: 6px; /* largura da barra de rolagem */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* cor do indicador da barra de rolagem */
+    border-radius: 3px; /* borda arredondada do indicador */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa; /* cor do indicador ao passar o mouse sobre ele */
+}
+
 @media screen and (max-width: 768px) {
     .logo {
         opacity: 0;
@@ -361,7 +373,7 @@ a {
 
 @media  screen and (min-width: 768px) and (max-width: 900px) {
     header {
-        position: absolute;
+        position: relative;
     }
 
     .logo {
@@ -450,7 +462,7 @@ a {
 
 @media screen and (min-width: 900px) and (max-width: 1100px){
     header {
-        position: absolute;
+        position: relative;
     }
 
     .logo {

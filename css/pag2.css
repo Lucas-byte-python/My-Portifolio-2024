@@ -124,8 +124,16 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 6px;
-    background-color: transparent;
+    width: 6px; /* largura da barra de rolagem */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* cor do indicador da barra de rolagem */
+    border-radius: 3px; /* borda arredondada do indicador */
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #aaa; /* cor do indicador ao passar o mouse sobre ele */
 }
 
 header {
