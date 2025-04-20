@@ -3,11 +3,9 @@
 ### Using Html, CSS and JS
 
 
-![Home](Home.png)
+<img src="Home.png" style="margin-button: 20px;">
 ![Home-2](Home-2.png)
-<br
 ![Pag-1](Pag-1.png)
 ![Pag-1](Pag-1-(2).png)
-<br>
 ![Pag-Home-White](White-Home.png)
 ![Pag-One-White](White-Pag1.png)
