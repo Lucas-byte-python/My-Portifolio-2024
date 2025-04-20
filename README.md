@@ -3,9 +3,9 @@
 ### Using Html, CSS and JS
 
 
-<img src="Home.png" style="margin-button: 20px;">
-![Home-2](Home-2.png)
-![Pag-1](Pag-1.png)
-![Pag-1](Pag-1-(2).png)
-![Pag-Home-White](White-Home.png)
-![Pag-One-White](White-Pag1.png)
+<img src="Home.png" width="250" style="margin-right: 10px;">
+<img src="Home-2.png" width="250" style="margin-right: 10px;">
+<img src="Pag-1.png" width="250" style="margin-right: 10px;">
+<img src="Pag-1-(2).png" width="250" style="margin-right: 10px;">
+<img src="White-Home.png" width="250" style="margin-right: 10px;">
+<img src="White-Pag1.png" width="250">
