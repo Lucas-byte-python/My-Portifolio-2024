@@ -41,6 +41,18 @@ html {
     color: #ffffff;
 }
 
+.dark .skills {
+    background-color: white;
+}
+
+.dark .skills .heading {
+    color: #0340d0;
+}
+
+.dark .skills .heading span {
+    color: #000000;
+}
+
 .dark .especialidades {
     background-color: #8a2be2;
 }
@@ -81,9 +93,21 @@ html {
     background-color: #000000;
     color: #ffffff;
 }
+.dark .percurso {
+    background-color: white;
+}
+
+.dark .percurso .headring{
+    color: rgb(0, 0, 0)
+}
+
+.dark .percurso .headring span{
+    color: #0340d0
+}
 
 .dark .progresso {
     background-color: #8a2be2;
+    margin-top: 0;
 }
 
 .dark .progresso .titulo span {
@@ -2915,4 +2939,4 @@ circle:nth-child(2) {
         left: 0 !important; /* Força a posição dos quadrados à esquerda */
         margin-left: 0 !important; /* Remove o deslocamento dos quadrados */
     }
-}
+}   
