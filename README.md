@@ -7,7 +7,7 @@
 ![Home-2](Home.png)
 <br/>
 ![Pag-1](Pag-1.png)
-![Pag-1](Pag-1(2).png)
+![Pag-1](Pag-1 (2).png)
 <br/>
 ![Pag-Home-White](White-Home.png)
 ![Pag-One-White](White-Pag1.png)
